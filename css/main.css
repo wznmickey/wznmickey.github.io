@@ -1859,7 +1859,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c1eed9;
+  background: #ff9ae2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3026,4 +3026,11 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
+}
+.site-author-image {
+  border-radius: 100%;
+  padding: 2px;
+  border: 2px dashed #fff;
+  animation: cycle 2s 0.5s forwards;
+  transition: border-radius 2s;
 }
