@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 30 Apr 2019 13:42:49 GMT</pubDate>
+    <pubDate>Tue, 30 Apr 2019 13:50:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,13 +18,29 @@
       <pubDate>Tue, 30 Apr 2019 13:37:37 GMT</pubDate>
       <description>
       
-        
-        
-          
-          
-            
-          
-        
+        &lt;p&gt;原题：&lt;a href=&quot;https://www.luogu.org/problem/show?pid=1000&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.luogu.org/problem/show?pid=1000&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。&lt;br&gt;                &lt;strong&gt;&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;               &lt;strong&gt;&lt;strong&gt;&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    ####....#.
+  #..###.....##....
+  ###.......######              ###            ###
+     ...........               #...#          #...#
+    ##*#######                 #.#.#          #.#.#
+ ####*******######             #.#.#          #.#.#
+...#***.****.*###....          #...#          #...#
+....**********##.....           ###            ###
+....****    *****....
+  ####        ####
+######        ######
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;##############################################################&lt;/p&gt;
+&lt;p&gt;#…#……#.##…#……#.##…#……#.##——————#&lt;/p&gt;
+&lt;p&gt;###########################################——————#&lt;/p&gt;
+&lt;p&gt;#..#….#….##..#….#….##..#….#….#####################&lt;/p&gt;
+&lt;p&gt;##########################################    #———-#&lt;/p&gt;
+&lt;p&gt;#…..#……##…..#……##…..#……#    #———-#&lt;/p&gt;
+&lt;p&gt;##########################################    #———-#&lt;/p&gt;
+&lt;p&gt;#.#..#….#..##.#..#….#..##.#..#….#..#    #———-#&lt;/p&gt;
+&lt;p&gt;##########################################    ############&lt;br&gt;
       
       </description>
       
