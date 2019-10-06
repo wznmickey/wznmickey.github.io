@@ -1,0 +1,32 @@
+---
+title: About me
+date: 2019-08-29 00:00:00
+---
+# 我是谁？
+上海交通大学附属中学闵行分校的一名学生。”+3“选课为物理、地理、生物。退役noip选手。
+# 为什么要建站？
+一开始是为了发题解，然而自己太菜，于是就发生活内容了。
+# 建站用到的工具有哪些？
+网址注册       freenom 
+静态网页储存   github和coding
+DNS服务器      cloudflare
+生成软件       hexo
+主题           next
+插件           若干
+访客、评论储存 leancloud
+图床           路过图床，原来曾用七牛云与微博图床
+邮箱           yandex，原来是pingly
+# 如何看
+为了减少首页看到的字数，在首页无法直接看完全文，使用rss时无法查看原文，请打开实际链接查看。
+rss地址:https://wznmickey.tk/rss2
+# 友链
+## 当前友链
+自己的一个小尝试: https://jfmfer.tk
+交附闵分官网: http://www.jdfzmh.sjtu.edu.cn/index/Index!Index.htm
+# 友链添加？
+在评论里面留言，视情况确定是否添加。
+eg:
+网站名:静静的小窝
+网址:https://wznmickey.tk
+类型:生活记录
+邮箱:first@wznmickey.tk
