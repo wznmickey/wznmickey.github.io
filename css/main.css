@@ -1919,7 +1919,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff42;
+  background: #54ff14;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3127,7 +3127,7 @@ body {
   transition: border-radius 2s;
 }
 .headband {
-  background: #f0a0d0;
+  background: #f60;
 }
 .site-meta {
   background: #f0a0d0;
