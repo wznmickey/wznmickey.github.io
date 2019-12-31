@@ -1919,7 +1919,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #54ff14;
+  background: #662d50;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3127,10 +3127,10 @@ body {
   transition: border-radius 2s;
 }
 .headband {
-  background: #f60;
+  background: #d70008;
 }
 .site-meta {
-  background: #f0a0d0;
+  background: #d70008;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -3140,6 +3140,9 @@ body {
 .site-title {
   color: #fff;
   font-size: 25px;
+}
+.content-wrap {
+  background: rgba(255,255,255,0.769);
 }
 .post-body p a {
   color: #f0a0d0;
