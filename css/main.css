@@ -1919,7 +1919,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #662d50;
+  background: #37ff5c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3143,6 +3143,9 @@ body {
 }
 .content-wrap {
   background: rgba(255,255,255,0.769);
+}
+.footer {
+  text-shadow: 2px 2px 8px #00f3ff;
 }
 .post-body p a {
   color: #f0a0d0;
