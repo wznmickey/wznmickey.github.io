@@ -986,7 +986,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  134
+                  135
                 </span>
               
 
@@ -1027,27 +1027,7 @@
           
             <p>原题：<a href="https://www.luogu.org/problem/show?pid=1000" target="_blank" rel="noopener">https://www.luogu.org/problem/show?pid=1000</a></p>
 <blockquote>
-<p>超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。<br>                <strong><em>**</em></strong><br>               <strong><strong><em>**</em></strong></strong></p>
-<pre><code>    ####....#.
-  #..###.....##....
-  ###.......######              ###            ###
-     ...........               #...#          #...#
-    ##*#######                 #.#.#          #.#.#
- ####*******######             #.#.#          #.#.#
-...#***.****.*###....          #...#          #...#
-....**********##.....           ###            ###
-....****    *****....
-  ####        ####
-######        ######
-</code></pre><p>##############################################################</p>
-<p>#…#……#.##…#……#.##…#……#.##——————#</p>
-<p>###########################################——————#</p>
-<p>#..#….#….##..#….#….##..#….#….#####################</p>
-<p>##########################################    #———-#</p>
-<p>#…..#……##…..#……##…..#……#    #———-#</p>
-<p>##########################################    #———-#</p>
-<p>#.#..#….#..##.#..#….#..##.#..#….#..#    #———-#</p>
-<p>##########################################    ############</p>
+<p>超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">                ********</span><br><span class="line">               ************</span><br><span class="line">               ####....#.</span><br><span class="line">             #..###.....##....</span><br><span class="line">             ###.......######              ###            ###</span><br><span class="line">                ...........               #...#          #...#</span><br><span class="line">               ##*#######                 #.#.#          #.#.#</span><br><span class="line">            ####*******######             #.#.#          #.#.#</span><br><span class="line">           ...#***.****.*###....          #...#          #...#</span><br><span class="line">           ....**********##.....           ###            ###</span><br><span class="line">           ....****    *****....</span><br><span class="line">             ####        ####</span><br><span class="line">           ######        ######</span><br><span class="line">##############################################################</span><br><span class="line">#...#......#.##...#......#.##...#......#.##------------------#</span><br><span class="line">###########################################------------------#</span><br><span class="line">#..#....#....##..#....#....##..#....#....#####################</span><br><span class="line">##########################################    #----------#</span><br><span class="line">#.....#......##.....#......##.....#......#    #----------#</span><br><span class="line">##########################################    #----------#</span><br><span class="line">#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#</span><br><span class="line">##########################################    ############</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <p>看了洛谷上的C++的题解都是一行一行打printf，最省的也是每行打一个双引号，没必要啊，直接\n换行就可以了啊。<br>代码如下。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;                ********\n               ************\n               ####....#.\n             #..###.....##....\n             ###.......######              ###            ###\n                ...........               #...#          #...#\n               ##*#######                 #.#.#          #.#.#\n            ####*******######             #.#.#          #.#.#\n           ...#***.****.*###....          #...#          #...#\n           ....**********##.....           ###            ###\n           ....****    *****....\n             ####        ####\n           ######        ######\n##############################################################\n#...#......#.##...#......#.##...#......#.##------------------#\n###########################################------------------#\n#..#....#....##..#....#....##..#....#....#####################\n##########################################    #----------#\n#.....#......##.....#......##.....#......#    #----------#\n##########################################    #----------#\n#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#\n##########################################    ############&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
