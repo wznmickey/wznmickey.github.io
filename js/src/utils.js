@@ -42,7 +42,7 @@ NexT.utils = NexT.$u = {
     $('#posts').find('img').lazyload({
       //placeholder: '/images/loading.gif',
       effect: 'fadeIn',
-      threshold : 0
+      threshold : 200
     });
   },
 

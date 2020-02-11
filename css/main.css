@@ -1049,13 +1049,6 @@ pre .javascript .function {
 .comments {
   margin: 60px 20px 0;
 }
-.tag-cloud {
-  text-align: center;
-}
-.tag-cloud a {
-  display: inline-block;
-  margin: 10px;
-}
 .back-to-top {
   display: none;
   margin: 20px -10px -20px;
@@ -1849,7 +1842,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3479fa;
+  background: #ff1333;
 }
 .links-of-blogroll {
   font-size: 13px;
