@@ -8,8 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>记录自己的感受与收获</description>
-    <pubDate>Sat, 15 Feb 2020 15:31:56 GMT</pubDate>
+    <pubDate>Sun, 01 Mar 2020 14:12:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>云笔记|inote</title>
+      <link>https://wznmickey.com/2020/inote/</link>
+      <guid>https://wznmickey.com/2020/inote/</guid>
+      <pubDate>Sun, 01 Mar 2020 14:12:51 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            
+          
+        
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/inote/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>闵行高三一模作文|Chinese Composition of First Minghang Mock Exam</title>
