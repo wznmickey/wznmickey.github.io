@@ -8,8 +8,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>记录自己的感受与收获</description>
-    <pubDate>Fri, 06 Mar 2020 07:01:37 GMT</pubDate>
+    <pubDate>Fri, 13 Mar 2020 07:52:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>一道数学题|a_math_problem</title>
+      <link>https://wznmickey.com/2020/a-math-problem/</link>
+      <guid>https://wznmickey.com/2020/a-math-problem/</guid>
+      <pubDate>Fri, 13 Mar 2020 07:52:35 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;一天遇到了一道题&lt;br&gt;&lt;a href=&quot;https://s1.ax1x.com/2020/03/13/8uorSf.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://s1.ax1x.com/2020/03/13/8uorSf.md.png&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;br&gt;思考半天也不知道第三小问怎么做，幸好首项只有36种可能，枚举了[1,17]中的奇数就算出了答案，老师讲评时也用了枚举法算的，还画出了这幅图，让我有了一种图论题的感觉。&lt;br&gt;&lt;a href=&quot;https://s1.ax1x.com/2020/03/13/8uosl8.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://s1.ax1x.com/2020/03/13/8uosl8.md.png&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;br&gt;老师又让我们思考36改为其他数值的情况，然而我并不能想出来，又想到仿佛可以用图的方法做，于是就写了一段算了一下。结果如下：&lt;br&gt;&lt;a href=&quot;https://s1.ax1x.com/2020/03/13/8uogmQ.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://s1.ax1x.com/2020/03/13/8uogmQ.png&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;br&gt;这有什么规律吗？去问了老师，结果老师回复&lt;br&gt;&lt;a href=&quot;https://s1.ax1x.com/2020/03/13/8uo6Og.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://s1.ax1x.com/2020/03/13/8uo6Og.md.png&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;br&gt;是我想太多了。&lt;/p&gt;
+&lt;p&gt;好久没做过题了，也比较懒，数据量也不大，就比较暴力了，代码如下：&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/a-math-problem/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>做一个真正的关注者|Pay true attention</title>
@@ -35,13 +50,64 @@
       <pubDate>Sun, 01 Mar 2020 14:12:51 GMT</pubDate>
       <description>
       
-        
-        
-          
-          
-            
-          
-        
+        &lt;p&gt;&lt;a href=&quot;https://i.loli.net/2020/03/03/qKcVQbGviFeHNSy.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://i.loli.net/2020/03/03/uzgqcLIS8UQfkD3.png&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;文言知识&quot;&gt;&lt;a href=&quot;#文言知识&quot; class=&quot;headerlink&quot; title=&quot;文言知识&quot;&gt;&lt;/a&gt;文言知识&lt;/h1&gt;&lt;h2 id=&quot;词类活用&quot;&gt;&lt;a href=&quot;#词类活用&quot; class=&quot;headerlink&quot; title=&quot;词类活用&quot;&gt;&lt;/a&gt;词类活用&lt;/h2&gt;&lt;h3 id=&quot;一般&quot;&gt;&lt;a href=&quot;#一般&quot; class=&quot;headerlink&quot; title=&quot;一般&quot;&gt;&lt;/a&gt;一般&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;词性→句子中的成分→词类活用类型&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;名词活用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;作谓语&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;名词作动词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;作状语&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;名词作状语&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;形容词活用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;作谓语&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;形容词作动词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;作主语或宾语&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;形容词作名词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;动词活用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;作主语或宾语&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;动词作名词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;特殊&quot;&gt;&lt;a href=&quot;#特殊&quot; class=&quot;headerlink&quot; title=&quot;特殊&quot;&gt;&lt;/a&gt;特殊&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;使动&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;动作由后面宾语发出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;意动&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;强调主观的认识&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;为动&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;代替宾语如何&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
       
       </description>
       
