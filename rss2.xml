@@ -8,11 +8,31 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>记录自己的感受与收获</description>
-    <pubDate>Fri, 13 Mar 2020 07:52:35 GMT</pubDate>
+    <pubDate>Tue, 17 Mar 2020 09:41:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>一道数学题|a_math_problem</title>
+      <title>美国之行|A Travel To The USA</title>
+      <link>https://wznmickey.com/2020/a-travel-to-the-USA/</link>
+      <guid>https://wznmickey.com/2020/a-travel-to-the-USA/</guid>
+      <pubDate>Tue, 17 Mar 2020 09:41:26 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            
+          
+        
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/a-travel-to-the-USA/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>一道数学题|A Math Problem</title>
       <link>https://wznmickey.com/2020/a-math-problem/</link>
       <guid>https://wznmickey.com/2020/a-math-problem/</guid>
       <pubDate>Fri, 13 Mar 2020 07:52:35 GMT</pubDate>
