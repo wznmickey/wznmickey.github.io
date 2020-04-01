@@ -2883,7 +2883,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">博文 posts</span>
                 </a>
               </div>
@@ -2896,7 +2896,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">标签 tags</span>
                 </a>
               </div>
@@ -3021,7 +3021,7 @@
     
       <span class="post-meta-item-text">总字数统计 Site words total count&#58;</span>
     
-    <span title="总字数统计 Site words total count">26.7k</span>
+    <span title="总字数统计 Site words total count">27.3k</span>
   
 </div>
 
@@ -3038,7 +3038,7 @@
 
 
 
-  <div class="footer-custom"><a target="_blank" href="https://wznmickey.com/agreement">使用须知|Something You Should Know</a><a target="_blank" href="https://wznmickey.com/about">关于|About me& my site</a></div>
+  <div class="footer-custom"><a target="_blank" href="https://wznmickey.com/agreement">使用须知|usage notice</a><a target="_blank" href="https://wznmickey.com/about">关于|About</a></div>
 
         
 
@@ -3643,12 +3643,12 @@
 (function(){
     var bp = document.createElement('script');
     var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(bp, s);
 })();
@@ -3713,6 +3713,28 @@
 
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
   <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
