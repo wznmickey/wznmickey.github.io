@@ -234,6 +234,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-works">
+          <a href="/works/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-picture-o"></i> <br>
+            
+            作品|Works
+          </a>
+        </li>
+      
 
       
         <li class="menu-item menu-item-search">
@@ -621,18 +631,22 @@
 
       
         
-          
-            <h1 id="原题"><a href="#原题" class="headerlink" title="原题"></a>原题</h1><p>起因是一道考试时遇到的题</p>
+          <h1 id="原题"><a href="#原题" class="headerlink" title="原题"></a>原题</h1><p>起因是一道考试时遇到的题</p>
 <blockquote>
 <p>设$n=\overline{abc}$表示一个三位数，记$f(n)=(a+b+c)+(a\cdot b+b\cdot c+c\cdot a)+a\cdot b\cdot c$，则满足$f(n)=n$的三位数个数是<strong>__</strong>。</p>
 </blockquote>
 <p>最暴力的我做题时直接把含a的多项式和含b的多项式及c与$f(n)=100a+10b+c$的对应系数取等号联立方程，然后求出$\begin{cases}b=9\\c=9\end{cases}$，之后求出199,299,399,⋯,999共九个三位数，然而我总感觉有问题，于是写了程序检验了一下，发现$f(n)\leq n$，最后想了好久证明了出来。<br>如下：<br>$f(n)-n \\<br>=(a+b+c)+(a\cdot b+b\cdot c+c\cdot a)+a\cdot b\cdot c-(100a+10b+c)\\<br>=a(1+b+c+b\cdot c)+b(1+a\cdot c)+c-(100a+10b+c)\\<br>=a(1+b+c+b\cdot c-100)+b(1+a\cdot c-10)\\<br>a(1+9+9+9*9-100)+b(1+9-10)\\<br>\leq0$<br>当且仅当$b=c=9$时等号成立</p>
-<h1 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h1><p>上课老师讲课时化为了$f(n)=(a+1)(b+1)(c+1)-1$进行计算。<br>然后我就想如果是其他位数时,也满足这个条件吗？<br>检验呢一下发现int范围内都符合，当且仅当除最高位都为9时等号成立。<br>想了好久证明，觉得可以用数学归纳法如下：<br>命题：$(a₁+1)(a₂+1)(a₃+1)\dots (aₙ₊₁-1)\leq \overline{a₁a₂a₃⋯aₙ}$对$n \in N^*$且$n \geq 2 $ 恒成立,当且仅当$a₂=a₃=⋯=aₙ=9$时等号成立,$a₁,a₂,a₃ ⋯ aₙ ∈ \{0,1,2,3,4,5,6,7,8,9\}$<br>当$n=2$时，$(a₁+1)(a₂+1)-1-(a₁*10+a₂)=a₁a₂+a₁+a₂-10a₂-a₃=a₁(a₂-9) \leq 0$,当且仅当$a₂=9$时等号成立<br>假设当$n=k \in N^*$且$k \geq 2$时 $(a₁+1)(a₂+1)(a₃+1)⋯(aₖ+1)-1 \leq \overline{a₁a₂a₃⋯aₖ}$成立且当且仅当$a₂=a₃=⋯=aₖ=9$时等号成立<br>当$n=k+1$时，<br>$(a₁+1)(a₂+1)⋯(aₖ+1)(aₖ₊₁+1)-1- \overline{a₁a₂a₃⋯aₖ}\\<br>=(aₖ₊₁+1)[(a₁+1)(a₂+1)⋯(aₖ+1)-1+1]-1-10* \overline{a₁a₂a₃⋯aₖ}-aₖ₊₁\\<br>=(aₖ₊₁+1)[(a₁+1)(a₂+1)⋯(aₖ+1)-1-\overline{a₁a₂a₃⋯aₖ}] +(aₖ₊₁-9)\overline{a₁a₂a₃⋯aₖ}\leq 0$<br>当且仅当$a₂=a₃=⋯=aₖ=aₖ₊₁=9$时等号成立<br>所以$(a₁+1)(a₂+1)(a₃+1)\dots (aₙ₊₁-1)\leq \overline{a₁a₂a₃⋯aₙ}$对$n \in N^*$且$n \geq 2 $ 恒成立,当且仅当$a₂=a₃=⋯=aₙ=9$时等号成立,$a₁,a₂,a₃ ⋯ aₙ ∈ \{0,1,2,3,4,5,6,7,8,9\}$</p>
-
-          
+<h1 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h1><p>上课老师讲课时化为了$f(n)=(a+1)(b+1)(c+1)-1$进行计算。<br>然后我就想如果是其他位数时,也满足这个条件吗？<br>检验呢一下发现int范围内都符合，当且仅当除最高位都为9时等号成立。<br>想了好久证明，觉得可以用数学归纳法如下：<br>命题：$(a₁+1)(a₂+1)(a₃+1)\dots (aₙ₊₁-1)\leq \overline{a₁a₂a₃⋯aₙ}$对$n \in N^*$且$n \geq 2 $ 恒成立,当且仅当$a₂=a₃=⋯=aₙ=9$时等号成立,$a₁,a₂,a₃ ⋯ aₙ ∈ \{0,1,2,3,4,5,6,7,8,9\}$<br>当$n=2$时，$(a₁+1)(a₂+1)-1-(a₁*10+a₂)=a₁a₂+a₁+a₂-10a₂-a₃=a₁(a₂-9) \leq 0$,当且仅当$a₂=9$时等号成立<br>假设当$n=k \in N^*$且$k \geq 2$时 $(a₁+1)(a₂+1)(a₃+1)⋯(aₖ+1)-1 \leq \overline{a₁a₂a₃⋯aₖ}$成立且当且仅当$a₂=a₃=⋯=aₖ=9$时等号成立<br>当$n=k+1$时，<br>$(a₁+1)(a₂+1)⋯(aₖ+1)(aₖ₊₁+1)-1- \overline{a₁a₂a₃⋯aₖ}\\<br>=(aₖ₊₁+1)[(a₁+1)(a₂+1)⋯(aₖ+1)-1+1]-1-10* \overline{a₁a₂a₃⋯aₖ}-aₖ₊₁\\<br>=(aₖ₊₁+1)[(a₁+1)(a₂+1)⋯(aₖ+1)-1-\overline{a₁a₂a₃⋯aₖ}] +(aₖ₊₁-9)\overline{a₁a₂a₃⋯aₖ}\leq 0$<br>当且仅当$a₂=a₃=⋯=aₖ=aₖ₊₁=9$时等号成立<br>所以$(a₁+1)(a₂+1)(a₃+1)\dots (aₙ₊₁-1)\leq \overline{a₁a₂a₃⋯aₙ}$对$n \in N^*$且$n \geq 2 $ 恒成立,当且仅当$a₂=a₃=⋯=aₙ=9$时等号成立,$a₁,a₂,a₃ ⋯ aₙ ∈ \{0,1,2,3,4,5,6,7,8,9\}$<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/a-math-problem-from-3-to-n/#更多 more" rel="contents">
+              阅读全文 Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
     
     
     
@@ -1006,13 +1020,17 @@
 
       
         
-          
-            <p><img src="https://pic.downk.cc/item/5e7f6676504f4bcb049e6853.jpg" alt="图片"><br>涉及的链接：<br><a href="https://github.com/neruthes/neidi-renmin-zhiyuanjun-xianzhang/blob/master/%E5%86%85%E5%9C%B0%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E5%AE%AA%E7%AB%A0.md" target="_blank" rel="noopener">https://github.com/neruthes/neidi-renmin-zhiyuanjun-xianzhang/blob/master/%E5%86%85%E5%9C%B0%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E5%AE%AA%E7%AB%A0.md</a><br><a href="https://github.com/neruthes/zhao" target="_blank" rel="noopener">https://github.com/neruthes/zhao</a><br><a href="https://neruthes.xyz/" target="_blank" rel="noopener">https://neruthes.xyz/</a><br><a href="https://twitter.com/neruthes" target="_blank" rel="noopener">https://twitter.com/neruthes</a><br><a href="https://cybernations.fandom.com/wiki/Communist_Party_of_CyberNations" target="_blank" rel="noopener">https://cybernations.fandom.com/wiki/Communist_Party_of_CyberNations</a><br><a href="https://maskbook.com/" target="_blank" rel="noopener">https://maskbook.com/</a><br><a href="https://ccphq.org/" target="_blank" rel="noopener">https://ccphq.org/</a><br><a href="https://thewesttimes.com/?lang=en" target="_blank" rel="noopener">https://thewesttimes.com/?lang=en</a><br><a href="https://zhuanlan.zhihu.com/p/113072138" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/113072138</a><br><a href="https://www.zhihu.com/people/c3ea1d88feb5" target="_blank" rel="noopener">https://www.zhihu.com/people/c3ea1d88feb5</a><br><a href="https://www.uscyberpatriot.org/Pages/About/What-is-CyberPatriot.aspx" target="_blank" rel="noopener">https://www.uscyberpatriot.org/Pages/About/What-is-CyberPatriot.aspx</a><br><a href="https://twitter.com/TheWestTimes" target="_blank" rel="noopener">https://twitter.com/TheWestTimes</a><br><a href="https://ccphq.org/" target="_blank" rel="noopener">https://ccphq.org/</a></p>
-
-          
+          <p><img src="https://pic.downk.cc/item/5e7f6676504f4bcb049e6853.jpg" alt="图片"><br>涉及的链接：<br><a href="https://github.com/neruthes/neidi-renmin-zhiyuanjun-xianzhang/blob/master/%E5%86%85%E5%9C%B0%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E5%AE%AA%E7%AB%A0.md" target="_blank" rel="noopener">https://github.com/neruthes/neidi-renmin-zhiyuanjun-xianzhang/blob/master/%E5%86%85%E5%9C%B0%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E5%AE%AA%E7%AB%A0.md</a><br><a href="https://github.com/neruthes/zhao" target="_blank" rel="noopener">https://github.com/neruthes/zhao</a><br><a href="https://neruthes.xyz/" target="_blank" rel="noopener">https://neruthes.xyz/</a><br><a href="https://twitter.com/neruthes" target="_blank" rel="noopener">https://twitter.com/neruthes</a><br><a href="https://cybernations.fandom.com/wiki/Communist_Party_of_CyberNations" target="_blank" rel="noopener">https://cybernations.fandom.com/wiki/Communist_Party_of_CyberNations</a><br><a href="https://maskbook.com/" target="_blank" rel="noopener">https://maskbook.com/</a><br><a href="https://ccphq.org/" target="_blank" rel="noopener">https://ccphq.org/</a><br><a href="https://thewesttimes.com/?lang=en" target="_blank" rel="noopener">https://thewesttimes.com/?lang=en</a><br><a href="https://zhuanlan.zhihu.com/p/113072138" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/113072138</a><br><a href="https://www.zhihu.com/people/c3ea1d88feb5" target="_blank" rel="noopener">https://www.zhihu.com/people/c3ea1d88feb5</a><br><a href="https://www.uscyberpatriot.org/Pages/About/What-is-CyberPatriot.aspx" target="_blank" rel="noopener">https://www.uscyberpatriot.org/Pages/About/What-is-CyberPatriot.aspx</a><br><a href="https://twitter.com/TheWestTimes" target="_blank" rel="noopener">https://twitter.com/TheWestTimes</a><br><a href="https://ccphq.org/" target="_blank" rel="noopener">https://ccphq.org/</a><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/Where-I-Am/#更多 more" rel="contents">
+              阅读全文 Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
     
     
     
@@ -1190,8 +1208,7 @@
 
       
         
-          
-            <p>本文为转载，原文链接:<a href="https://mogeko.me/2020/077/" target="_blank" rel="noopener">https://mogeko.me/2020/077/</a><br>采用知识共享署名 - 非商业性使用 4.0 国际许可协议进行许可<br>译者：<a href="https://mogeko.me/about/" target="_blank" rel="noopener">Mogeko</a><br>原文作者：<a href="https://thewesttimes.com/?author-0&lang=en" target="_blank" rel="noopener">Neruthes</a><br>原文链接：<a href="https://thewesttimes.com/?article-4--china-will-not-save-europe&lang=en" target="_blank" rel="noopener">China Will Not Save Europe</a><br><img src="https://s1.ax1x.com/2020/03/28/GECqP0.jpg" alt="题图"></p>
+          <p>本文为转载，原文链接:<a href="https://mogeko.me/2020/077/" target="_blank" rel="noopener">https://mogeko.me/2020/077/</a><br>采用知识共享署名 - 非商业性使用 4.0 国际许可协议进行许可<br>译者：<a href="https://mogeko.me/about/" target="_blank" rel="noopener">Mogeko</a><br>原文作者：<a href="https://thewesttimes.com/?author-0&lang=en" target="_blank" rel="noopener">Neruthes</a><br>原文链接：<a href="https://thewesttimes.com/?article-4--china-will-not-save-europe&lang=en" target="_blank" rel="noopener">China Will Not Save Europe</a><br><img src="https://s1.ax1x.com/2020/03/28/GECqP0.jpg" alt="题图"></p>
 <blockquote>
 <p>翻译了《西方时报》3 月 15 日发的一篇社论，目的是给大家提供一些不一样的思路，不代表我的政治观点和立场。</p>
 </blockquote>
@@ -1213,12 +1230,17 @@
 <p>在与德国发生<a href="https://www.thelocal.ch/20200312/mask-hysteria" target="_blank" rel="noopener">两起纠纷</a>后，我们将可以看到瑞士如何加强与中国的联系。猜猜哪些航空公司将因其与中国的物流联系而受到瑞士政府的青睐？</p>
 <h1 id="像中国一样团结"><a href="#像中国一样团结" class="headerlink" title="像中国一样团结"></a>像中国一样团结</h1><p>现在的欧盟乱成一团。成员国之间相互发表出口禁令。思路很简单。如果疫情被控制在一个地方，那么其他地方将无需应对 (疫情)。供给给疫区的物品 (按照这个逻辑应该是指普通商品) 越晚，疫情就越难以传播到外部。</p>
 <p>更具讽刺意味的是，在中国 —— 一个经常被西方人歧视的国家 —— 情况却恰恰相反。其他省份为湖北提供了巨大的帮助；湖北的每一个城市都从相应的省获得了全面的医疗援助。动员了数千名医生来抗击疫情。中国人民团结起来。中国人民 (主动) 参与流行病控制，在欧洲这完全是行不通的，甚至是白日梦。现在，谁才是真正的病夫？</p>
-<p>除非欧洲像中国那样<strong>团结</strong>，否则欧洲只能追求而不能实现「真正的欧盟」(a common identity or a common interest)。否则，一旦危险来临，欧洲的合作将会崩溃，而后欧洲国家 (又不得不) 单独向中国寻求帮助。</p>
-
-          
+<p>除非欧洲像中国那样<strong>团结</strong>，否则欧洲只能追求而不能实现「真正的欧盟」(a common identity or a common interest)。否则，一旦危险来临，欧洲的合作将会崩溃，而后欧洲国家 (又不得不) 单独向中国寻求帮助。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/China-Will-Not-Save-Europe/#更多 more" rel="contents">
+              阅读全文 Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
     
     
     
