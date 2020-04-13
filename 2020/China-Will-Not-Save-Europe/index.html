@@ -106,7 +106,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":false,"onmobile":true},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -715,6 +715,10 @@
                     <a href="https://xstar.news/" title="星文" target="_blank">星文</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="https://krau.top/" title="krau'blog" target="_blank">krau'blog</a>
+                  </li>
+                
               </ul>
             </div>
           
@@ -744,6 +748,8 @@
 	  
         <div class="back-to-top">
           <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
           
         </div>
       
@@ -945,7 +951,7 @@
         notify: false,
         app_id: 'tkBc4Uth249fNaNbqfHUv0O5-9Nh9j0Va',
         app_key: 'LBaho4lHEi0RD7u67IGXUp0j',
-        placeholder: '欢迎留言',
+        placeholder: '雁过留名，让我知道你的存在吧',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
