@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="原题：https://www.luogu.org/problem/show?pid=1000  超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。12345678910111213141516171819202122                ********               ************               ####....#.">
+<meta name="description" content="原题：https://www.luogu.org/problem/show?pid=1000  超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。  12345678910111213141516171819202122                ********               ************               ####....#.">
 <meta name="keywords" content="中文,c++,题解,洛谷">
 <meta property="og:type" content="article">
 <meta property="og:title" content="洛谷P1000题解">
 <meta property="og:url" content="https://wznmickey.com/2019/洛谷P1000题解/index.html">
 <meta property="og:site_name" content="静静的小窝">
-<meta property="og:description" content="原题：https://www.luogu.org/problem/show?pid=1000  超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。12345678910111213141516171819202122                ********               ************               ####....#.">
+<meta property="og:description" content="原题：https://www.luogu.org/problem/show?pid=1000  超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。  12345678910111213141516171819202122                ********               ************               ####....#.">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-04-30T13:37:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="洛谷P1000题解">
-<meta name="twitter:description" content="原题：https://www.luogu.org/problem/show?pid=1000  超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。12345678910111213141516171819202122                ********               ************               ####....#.">
+<meta name="twitter:description" content="原题：https://www.luogu.org/problem/show?pid=1000  超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。  12345678910111213141516171819202122                ********               ************               ####....#.">
 
 
 
@@ -245,12 +245,32 @@
         </li>
       
         
-        <li class="menu-item menu-item-rss">
+        <li class="menu-item menu-item-订阅|rss">
           <a href="/rss2.xml" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-rss"></i> <br>
             
-            RSS
+            订阅|RSS
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-开往|travelling">
+          <a href="https://travellings.now.sh/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-plane"></i> <br>
+            
+            开往|Travelling
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-友链|links">
+          <a href="/links/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-users"></i> <br>
+            
+            友链|Links
           </a>
         </li>
       
@@ -451,8 +471,9 @@
       
         <p>原题：<a href="https://www.luogu.org/problem/show?pid=1000" target="_blank" rel="noopener">https://www.luogu.org/problem/show?pid=1000</a></p>
 <blockquote>
-<p>超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">                ********</span><br><span class="line">               ************</span><br><span class="line">               ####....#.</span><br><span class="line">             #..###.....##....</span><br><span class="line">             ###.......######              ###            ###</span><br><span class="line">                ...........               #...#          #...#</span><br><span class="line">               ##*#######                 #.#.#          #.#.#</span><br><span class="line">            ####*******######             #.#.#          #.#.#</span><br><span class="line">           ...#***.****.*###....          #...#          #...#</span><br><span class="line">           ....**********##.....           ###            ###</span><br><span class="line">           ....****    *****....</span><br><span class="line">             ####        ####</span><br><span class="line">           ######        ######</span><br><span class="line">##############################################################</span><br><span class="line">#...#......#.##...#......#.##...#......#.##------------------#</span><br><span class="line">###########################################------------------#</span><br><span class="line">#..#....#....##..#....#....##..#....#....#####################</span><br><span class="line">##########################################    #----------#</span><br><span class="line">#.....#......##.....#......##.....#......#    #----------#</span><br><span class="line">##########################################    #----------#</span><br><span class="line">#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#</span><br><span class="line">##########################################    ############</span><br></pre></td></tr></table></figure></p>
+<p>超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。</p>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">                ********</span><br><span class="line">               ************</span><br><span class="line">               ####....#.</span><br><span class="line">             #..###.....##....</span><br><span class="line">             ###.......######              ###            ###</span><br><span class="line">                ...........               #...#          #...#</span><br><span class="line">               ##*#######                 #.#.#          #.#.#</span><br><span class="line">            ####*******######             #.#.#          #.#.#</span><br><span class="line">           ...#***.****.*###....          #...#          #...#</span><br><span class="line">           ....**********##.....           ###            ###</span><br><span class="line">           ....****    *****....</span><br><span class="line">             ####        ####</span><br><span class="line">           ######        ######</span><br><span class="line">##############################################################</span><br><span class="line">#...#......#.##...#......#.##...#......#.##------------------#</span><br><span class="line">###########################################------------------#</span><br><span class="line">#..#....#....##..#....#....##..#....#....#####################</span><br><span class="line">##########################################    #----------#</span><br><span class="line">#.....#......##.....#......##.....#......#    #----------#</span><br><span class="line">##########################################    #----------#</span><br><span class="line">#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#</span><br><span class="line">##########################################    ############</span><br></pre></td></tr></table></figure>
 <p>看了洛谷上的C++的题解都是一行一行打printf，最省的也是每行打一个双引号，没必要啊，直接\n换行就可以了啊。<br>代码如下。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"                ********\n               ************\n               ####....#.\n             #..###.....##....\n             ###.......######              ###            ###\n                ...........               #...#          #...#\n               ##*#######                 #.#.#          #.#.#\n            ####*******######             #.#.#          #.#.#\n           ...#***.****.*###....          #...#          #...#\n           ....**********##.....           ###            ###\n           ....****    *****....\n             ####        ####\n           ######        ######\n##############################################################\n#...#......#.##...#......#.##...#......#.##------------------#\n###########################################------------------#\n#..#....#....##..#....#....##..#....#....#####################\n##########################################    #----------#\n#.....#......##.....#......##.....#......#    #----------#\n##########################################    #----------#\n#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#\n##########################################    ############"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <a id="more"></a> 
       
@@ -742,7 +763,7 @@
     
       <span class="post-meta-item-text">总字数统计 Site words total count&#58;</span>
     
-    <span title="总字数统计 Site words total count">27.3k</span>
+    <span title="总字数统计 Site words total count">27.4k</span>
   
 </div>
 
