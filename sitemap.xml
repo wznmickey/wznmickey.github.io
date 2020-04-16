@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wznmickey.com/about/index.html</loc>
+    
+    <lastmod>2020-04-16T09:13:20.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wznmickey.com/links/index.html</loc>
     
     <lastmod>2020-04-15T15:43:22.541Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>https://wznmickey.com/2020/a-travel-to-the-USA/</loc>
     
     <lastmod>2020-03-17T09:41:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wznmickey.com/about/index.html</loc>
-    
-    <lastmod>2020-03-17T09:12:20.000Z</lastmod>
     
   </url>
   
