@@ -44,7 +44,6 @@
 
 
 
-  <link href="/css/shuoshuov1.0.css" rel="stylesheet" type="text/css">
 
 
 
@@ -71,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="中文,想法,转载,政治,">
+  <meta name="keywords" content="中文,转载,政治,想法,">
 
 
 
@@ -85,7 +84,7 @@
 
 
 <meta name="description" content="本文为转载，原文链接:https://mogeko.me/2020/077/采用知识共享署名 - 非商业性使用 4.0 国际许可协议进行许可译者：Mogeko原文作者：Neruthes原文链接：China Will Not Save Europe   翻译了《西方时报》3 月 15 日发的一篇社论，目的是给大家提供一些不一样的思路，不代表我的政治观点和立场。  现在 (新冠病毒) 正式在全球全球范">
-<meta name="keywords" content="中文,想法,转载,政治">
+<meta name="keywords" content="中文,转载,政治,想法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中国不是欧洲的救世主|China Will Not Save Europe">
 <meta property="og:url" content="https://wznmickey.com/2020/China-Will-Not-Save-Europe/index.html">
@@ -372,9 +371,12 @@
         
 
         <div class="post-meta">
-          
-            <i class="fa fa-thumb-tack"></i>
-            <font color="7D26CD">置顶</font>
+            
+            
+              <i class="fa fa-thumb-tack"></i>
+              <font color="7D26CD">置顶</font> 
+            
+            
             <br>
           
           <span class="post-time">
@@ -546,11 +548,11 @@
           
             <a href="/tags/中文/" rel="tag"># 中文</a>
           
-            <a href="/tags/想法/" rel="tag"># 想法</a>
-          
             <a href="/tags/转载/" rel="tag"># 转载</a>
           
             <a href="/tags/政治/" rel="tag"># 政治</a>
+          
+            <a href="/tags/想法/" rel="tag"># 想法</a>
           
         </div>
       
@@ -770,6 +772,10 @@
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://verbg.com/" title="动G Blog" target="_blank">动G Blog</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://cherrycat.gitee.io" title="五月森林 志" target="_blank">五月森林 志</a>
                   </li>
                 
               </ul>
@@ -1002,10 +1008,11 @@
         notify: false,
         app_id: 'tkBc4Uth249fNaNbqfHUv0O5-9Nh9j0Va',
         app_key: 'LBaho4lHEi0RD7u67IGXUp0j',
-        placeholder: '雁过留名，让我知道你的存在吧',
+        placeholder: '雁过留声，让我知道你的存在吧',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
+        visitor: true
     });
   </script>
 
@@ -1335,112 +1342,6 @@
 
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  
-  <script>AV.initialize("tkBc4Uth249fNaNbqfHUv0O5-9Nh9j0Va", "LBaho4lHEi0RD7u67IGXUp0j");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
 
   
 
