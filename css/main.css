@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1c3200;
+  background: #e3ffd5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3171,14 +3171,14 @@ pre .javascript .function {
     text-align: left;
   }
 }
+.sidebar-inner.affix {
+  border-radius: 20px;
+}
 body {
   background-image: url("/images/background.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
-.main-inner {
-  opacity: 0.9;
 }
 .site-author-image {
   border-radius: 100%;
@@ -3202,21 +3202,36 @@ body {
   color: #fff;
   font-size: 25px;
 }
-.content-wrap {
-  background: rgba(255,255,255,0.769);
-}
-.footer {
-  text-shadow: -1px -1px 20px #e896e8;
+.post-body .note.info {
+  background-color: #eef7fa;
+  border-radius: 7px 25px 25px 7px;
+  border-left-width: 8px;
+  border-left-color: #428bca;
 }
 .btn {
   color: #3090e4;
-  background: #e896e8;
-  border: 1px solid #e896e8;
+  border: 2px solid #e896e8;
+  border-radius: 10px;
 }
 .btn:hover {
   color: #e896e8;
-  background: #3090e4;
+  background: #fff;
   border-color: #3090e4;
+}
+.footer {
+  font-size: 14px;
+}
+.footer-inner {
+  width: 960px;
+  background: #f7f9fd;
+  padding-left: inherit;
+  border-radius: 10px;
+}
+.main-inner {
+  opacity: 0.95;
+}
+.back-to-top {
+  background: rgba(249,245,245,0);
 }
 .works-page {
   margin-top: -50px;
