@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wznmickey.com/about/index.html</loc>
+    
+    <lastmod>2020-07-19T15:38:20.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wznmickey.com/2020/selection-sort/</loc>
     
     <lastmod>2020-07-09T01:59:44.000Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://wznmickey.com/works/index.html</loc>
     
     <lastmod>2020-06-26T17:03:02.252Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wznmickey.com/about/index.html</loc>
-    
-    <lastmod>2020-06-26T16:13:20.000Z</lastmod>
     
   </url>
   
