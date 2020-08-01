@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff6aff;
+  background: #cbc34a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3316,4 +3316,9 @@ body {
     min-width: 75px;
     font-size: 13px;
   }
+}
+.use-motion .sidebar .motion-element {
+  opacity: 1;
+  display: block;
+  text-align: center;
 }
