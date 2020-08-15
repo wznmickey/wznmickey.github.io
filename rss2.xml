@@ -8,8 +8,24 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>记录自己的感受与收获</description>
-    <pubDate>Thu, 30 Jul 2020 13:58:06 GMT</pubDate>
+    <pubDate>Sat, 15 Aug 2020 15:08:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>冒泡排序与排序的稳定性|Bubble Sort and Stability</title>
+      <link>https://wznmickey.com/2020/bubble-sort/</link>
+      <guid>https://wznmickey.com/2020/bubble-sort/</guid>
+      <pubDate>Sat, 15 Aug 2020 15:08:30 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;第一期选择排序： &lt;a href=&quot;https://wznmickey.com/2020/selection-sort/&quot;&gt;https://wznmickey.com/2020/selection-sort/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;视频版：&lt;br&gt;Bilibili: &lt;a href=&quot;https://www.bilibili.com/video/BV1Dt4y1U7SR/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/BV1Dt4y1U7SR/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文字版：&lt;br&gt;水中气泡有大有小，&lt;br&gt;上升速度也有快有慢，&lt;br&gt;比较相邻的2个气泡，&lt;br&gt;就可以明白哪个先到水面。&lt;br&gt;同样的，&lt;br&gt;我们也可以比较相邻的2个数字，&lt;br&gt;从而排序。&lt;br&gt;大家好，这里是静谈算法，&lt;br&gt;我是静静。&lt;br&gt;你在看的是排序算法的第二期，冒泡排序与排序的稳定性。&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/bubble-sort/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>看完哔哩哔哩上的NASA的火星车直播后的一些话|My words after watching NASA&#39;s launch of the Mars 2020 perseverance rover live on Bilibili</title>
@@ -35,7 +51,8 @@
       <pubDate>Thu, 09 Jul 2020 01:59:44 GMT</pubDate>
       <description>
       
-        &lt;p&gt;视频版：&lt;br&gt;Bilibili: &lt;a href=&quot;https://www.bilibili.com/video/BV1W5411e7cF&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/BV1W5411e7cF&lt;/a&gt;&lt;br&gt;YouTube: &lt;a href=&quot;https://www.youtube.com/watch?v=e3Gvnat-_uQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=e3Gvnat-_uQ&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;第二期冒泡排序与排序的稳定性: &lt;a href=&quot;https://wznmickey.com/2020/bubble-sort/&quot;&gt;https://wznmickey.com/2020/bubble-sort/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;视频版：&lt;br&gt;Bilibili: &lt;a href=&quot;https://www.bilibili.com/video/BV1W5411e7cF&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/BV1W5411e7cF&lt;/a&gt;&lt;br&gt;YouTube: &lt;a href=&quot;https://www.youtube.com/watch?v=e3Gvnat-_uQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=e3Gvnat-_uQ&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;文字版：&lt;br&gt;这是一次考试中你们班同学考试的成绩，&lt;br&gt;输入数据后，电脑可以快速告诉你最高分与排名，&lt;br&gt;电脑是怎么做到的？&lt;br&gt;如何有序排列数字？&lt;br&gt;
       
       </description>
