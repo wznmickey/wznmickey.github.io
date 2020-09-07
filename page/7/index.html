@@ -354,6 +354,198 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2019/洛谷P1000题解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="静静">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="静静的小窝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/洛谷P1000题解/" itemprop="url">洛谷P1000题解</a></h2>
+        
+
+        <div class="post-meta">
+          
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于 Posted&#58;</span>
+              
+              <time title="创建于 Post created" itemprop="dateCreated datePublished" datetime="2019-04-30T21:37:37+08:00">
+                2019-04-30
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于 Post modified&#58;</span>
+              
+              <time title="更新于 Post modified" itemprop="dateModified" datetime="2019-04-30T21:37:37+08:00">
+                2019-04-30
+              </time>
+            
+          </span>
+
+          
+          
+<br>         
+
+          
+
+            
+              <span class="post-comments-count">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/洛谷P1000题解/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/洛谷P1000题解/" itemprop="commentCount"></span>
+                </a>
+                <span class="post-meta-divider">|</span>
+              </span>
+            
+          
+          
+          
+             <span id="/2019/洛谷P1000题解/" class="leancloud_visitors" data-flag-title="洛谷P1000题解">
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+          
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计 Words count in article&#58;</span>
+                
+                <span title="字数统计 Words count in article">
+                  133
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 Reading time(min) &asymp;</span>
+                
+                <span title="阅读时长 Reading time(min)">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>原题：<a href="https://www.luogu.org/problem/show?pid=1000" target="_blank" rel="noopener">https://www.luogu.org/problem/show?pid=1000</a></p>
+<blockquote>
+<p>超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">                ********</span><br><span class="line">               ************</span><br><span class="line">               ####....#.</span><br><span class="line">             #..###.....##....</span><br><span class="line">             ###.......######              ###            ###</span><br><span class="line">                ...........               #...#          #...#</span><br><span class="line">               ##*#######                 #.#.#          #.#.#</span><br><span class="line">            ####*******######             #.#.#          #.#.#</span><br><span class="line">           ...#***.****.*###....          #...#          #...#</span><br><span class="line">           ....**********##.....           ###            ###</span><br><span class="line">           ....****    *****....</span><br><span class="line">             ####        ####</span><br><span class="line">           ######        ######</span><br><span class="line">##############################################################</span><br><span class="line">#...#......#.##...#......#.##...#......#.##------------------#</span><br><span class="line">###########################################------------------#</span><br><span class="line">#..#....#....##..#....#....##..#....#....#####################</span><br><span class="line">##########################################    #----------#</span><br><span class="line">#.....#......##.....#......##.....#......#    #----------#</span><br><span class="line">##########################################    #----------#</span><br><span class="line">#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#</span><br><span class="line">##########################################    ############</span><br></pre></td></tr></table></figure>
+<p>看了洛谷上的C++的题解都是一行一行打printf，最省的也是每行打一个双引号，没必要啊，直接\n换行就可以了啊。<br>代码如下。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"                ********\n               ************\n               ####....#.\n             #..###.....##....\n             ###.......######              ###            ###\n                ...........               #...#          #...#\n               ##*#######                 #.#.#          #.#.#\n            ####*******######             #.#.#          #.#.#\n           ...#***.****.*###....          #...#          #...#\n           ....**********##.....           ###            ###\n           ....****    *****....\n             ####        ####\n           ######        ######\n##############################################################\n#...#......#.##...#......#.##...#......#.##------------------#\n###########################################------------------#\n#..#....#....##..#....#....##..#....#....#####################\n##########################################    #----------#\n#.....#......##.....#......##.....#......#    #----------#\n##########################################    #----------#\n#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#\n##########################################    ############"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/洛谷P1000题解/#更多 more" rel="contents">
+              阅读全文 Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2019/探访商飞/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -960,7 +1152,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">博文 posts</span>
                 </a>
               </div>
@@ -973,7 +1165,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签 tags</span>
                 </a>
               </div>
@@ -1100,7 +1292,7 @@
     
       <span class="post-meta-item-text">总字数统计 Site words total count&#58;</span>
     
-    <span title="总字数统计 Site words total count">31.6k</span>
+    <span title="总字数统计 Site words total count">32.6k</span>
   
 </div>
 

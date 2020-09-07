@@ -8,8 +8,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>记录自己的感受与收获</description>
-    <pubDate>Sat, 15 Aug 2020 15:08:30 GMT</pubDate>
+    <pubDate>Mon, 07 Sep 2020 14:49:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>背包问题|knapsack_problem</title>
+      <link>https://wznmickey.com/2020/knapsack-problem/</link>
+      <guid>https://wznmickey.com/2020/knapsack-problem/</guid>
+      <pubDate>Mon, 07 Sep 2020 14:49:15 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;视频版： &lt;a href=&quot;https://www.bilibili.com/video/BV1pa4y1E7CC/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/BV1pa4y1E7CC/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文字版：&lt;br&gt;在商店里面对着琳琅满目的商品，&lt;br&gt;再看看自己空瘪的钱包，&lt;br&gt;这么多自己想要的，&lt;br&gt;该怎么选择啊？&lt;br&gt;如何破除选择困难症？&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/knapsack-problem/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>冒泡排序与排序的稳定性|Bubble Sort and Stability</title>
