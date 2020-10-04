@@ -9,8 +9,35 @@
     <atom:link href="https://wznmickey.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>记录自己的感受与收获</description>
-    <pubDate>Mon, 07 Sep 2020 14:49:15 GMT</pubDate>
+    <pubDate>Sun, 04 Oct 2020 15:34:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>出生|Birth</title>
+      <link>https://wznmickey.com/2020/novel-birth/</link>
+      <guid>https://wznmickey.com/2020/novel-birth/</guid>
+      <pubDate>Sun, 04 Oct 2020 15:34:50 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description></description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://wznmickey.com/tags/%E5%B0%8F%E8%AF%B4/">小说</category>
+      
+      <category domain="https://wznmickey.com/tags/Engish/">Engish</category>
+      
+      
+      <comments>https://wznmickey.com/2020/novel-birth/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>背包问题|knapsack_problem</title>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wznmickey.com/2020/novel-birth/</loc>
+    
+    <lastmod>2020-10-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wznmickey.com/works/%E9%97%B5%E5%88%86%E8%89%BA%E6%9C%AF%E8%8A%82%E5%92%8C%E7%A7%91%E6%8A%80%E8%8A%82/index.html</loc>
     
     <lastmod>2020-10-04</lastmod>
@@ -502,6 +509,20 @@
   
   <url>
     <loc>https://wznmickey.com/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-10-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wznmickey.com/tags/%E5%B0%8F%E8%AF%B4/</loc>
+    <lastmod>2020-10-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wznmickey.com/tags/Engish/</loc>
     <lastmod>2020-10-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
