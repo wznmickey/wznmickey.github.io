@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/applelogo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo_32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo_16.png">
+  <link rel="mask-icon" href="/images/logo_16.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"wznmickey.com","root":"/","scheme":"Pisces","version":"8.0.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}};
+  </script>
+
+  <meta name="description" content="视频版： https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1pa4y1E7CC&#x2F; 文字版：在商店里面对着琳琅满目的商品，再看看自己空瘪的钱包，这么多自己想要的，该怎么选择啊？如何破除选择困难症？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="背包问题|knapsack_problem">
+<meta property="og:url" content="https://wznmickey.com/2020/knapsack-problem/index.html">
+<meta property="og:site_name" content="静静的小窝">
+<meta property="og:description" content="视频版： https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1pa4y1E7CC&#x2F; 文字版：在商店里面对着琳琅满目的商品，再看看自己空瘪的钱包，这么多自己想要的，该怎么选择啊？如何破除选择困难症？">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-07T14:49:15.000Z">
+<meta property="article:modified_time" content="2020-09-07T14:49:15.000Z">
+<meta property="article:author" content="静静">
+<meta property="article:tag" content="中文">
+<meta property="article:tag" content="静谈算法">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="动态规划">
+<meta property="article:tag" content="背包">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wznmickey.com/2020/knapsack-problem/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>背包问题|knapsack_problem | 静静的小窝</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fec397109c6f59e50f63db0338dc6432";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/rss2.xml" title="静静的小窝" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">静静的小窝</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">记录自己的感受与收获</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页|Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于|About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签|Tags<span class="badge">27</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档|Archives<span class="badge">34</span></a>
+
+  </li>
+        <li class="menu-item menu-item-作品|works">
+
+    <a href="/works/" rel="section"><i class="fas fa-images fa-fw"></i>作品|works</a>
+
+  </li>
+        <li class="menu-item menu-item-工具|tools">
+
+    <a href="/tools/" rel="section"><i class="fa fa-wrench fa-fw"></i>工具|Tools</a>
+
+  </li>
+        <li class="menu-item menu-item-订阅|rss">
+
+    <a href="/rss2.xml" rel="section"><i class="fa fa-rss fa-fw"></i>订阅|RSS</a>
+
+  </li>
+        <li class="menu-item menu-item-开往|travelling">
+
+    <span class="exturl" data-url="aHR0cHM6Ly90cmF2ZWxsaW5ncy5ub3cuc2gv"><i class="fa fa-plane fa-fw"></i>开往|Travelling</span>
+
+  </li>
+        <li class="menu-item menu-item-友链|links">
+
+    <a href="/links/" rel="section"><i class="fa fa-users fa-fw"></i>友链|Links</a>
+
+  </li>
+        <li class="menu-item menu-item-短博|shortblog">
+
+    <span class="exturl" data-url="aHR0cHM6Ly9zYi53em5taWNrZXkuY29t"><i class="fa fa-lightbulb fa-fw"></i>短博|Shortblog</span>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索|Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录|Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览|Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="静静"
+      src="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
+  <p class="site-author-name" itemprop="name">静静</p>
+  <div class="site-description" itemprop="description">记录自己的感受与收获</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="mailto:first@wznmickey.com" title="E-Mail → mailto:first@wznmickey.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zYi53em5taWNrZXkuY29t" title="短博 → https:&#x2F;&#x2F;sb.wznmickey.com"><i class="fa fa-lightbulb fa-fw"></i>短博</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vODkyMjI0NjE=" title="哔哩哔哩生活 → https:&#x2F;&#x2F;space.bilibili.com&#x2F;89222461"><i class="fa fa-tv fa-fw"></i>哔哩哔哩生活</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vNjI4NjQ2OTM5" title="哔哩哔哩算法 → https:&#x2F;&#x2F;space.bilibili.com&#x2F;628646939"><i class="fa fa-tv fa-fw"></i>哔哩哔哩算法</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93ZWliby5jb20vd3pubWlja2V5" title="微博 → https:&#x2F;&#x2F;weibo.com&#x2F;wznmickey"><i class="fab fa-weibo fa-fw"></i>微博</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS93em5taWNrZXk=" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;wznmickey"><i class="fab fa-twitter fa-fw"></i>Twitter</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ1YweVlTbkx0Uk1mWVRKVXdPS1FlRmcvY2hhbm5lbHM/dmlld19hcz1zdWJzY3JpYmVy" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCV0yYSnLtRMfYTJUwOKQeFg&#x2F;channels?view_as&#x3D;subscriber"><i class="fab fa-youtube fa-fw"></i>YouTube</span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      友情链接|links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9yZXZlcmJsb2cuY24v" title="https:&#x2F;&#x2F;www.foreverblog.cn&#x2F;">十年之约</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly90cmF2ZWxsaW5ncy5ub3cuc2gv" title="https:&#x2F;&#x2F;travellings.now.sh&#x2F;">开往</span>
+        </li>
+    </ul>
+  </div>
+
+      </section>
+        <div class="back-to-top animated">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2020/knapsack-problem/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
+      <meta itemprop="name" content="静静">
+      <meta itemprop="description" content="记录自己的感受与收获">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="静静的小窝">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          背包问题|knapsack_problem
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-09-07 22:49:15" itemprop="dateCreated datePublished" datetime="2020-09-07T22:49:15+08:00">2020-09-07</time>
+    </span>
+
+  
+    <span id="/2020/knapsack-problem/" class="post-meta-item leancloud_visitors" data-flag-title="背包问题|knapsack_problem" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/knapsack-problem/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/knapsack-problem/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>视频版： <span class="exturl" data-url="aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMXBhNHkxRTdDQy8=">https://www.bilibili.com/video/BV1pa4y1E7CC/<i class="fa fa-external-link-alt"></i></span></p>
+<p>文字版：<br>在商店里面对着琳琅满目的商品，<br>再看看自己空瘪的钱包，<br>这么多自己想要的，<br>该怎么选择啊？<br>如何破除选择困难症？</p>
+<a id="more"></a>
+<p>大家好，<br>欢迎来到静谈算法，<br>我是静静。<br>不妨假设有5个想购买的物品，<br>分别是面包、快乐水、薯片、奶茶和月饼，有着不同的价格和满意值，<br>如何在10元的预算中获得最大的满意值呢？<br>为了方便考虑，我们假设最多购买一件<br>显然，这些东西被摆放在不同的货架上，不会被同时看见，选择是一步一步做的.<br>对于每一件商品，都有买或者不买2种可能的情况，<br>如果购买，那么满意值等于之前购买的商品的满意值加当前物品的满意值，<br>如果不买，那么满意值就是之前购买的商品的满意值。<br>同时，买与不买也影响着花费的钱。<br>不妨考虑一下这个例子。<br>对于第一个商品面包，花费7元及以上就可以购买，<br>同时获得9满意值（小于7元就算0满意值），<br>然后是快乐水，如果不买快乐水，那么满意值就等于上一行的值，<br>如果购买，满意值就是上一行的左侧2格的满意值加2，<br>以这一格为例，不购买就是花费7元买一个面包，满意值为9，<br>购买就是花费5元买面包（买不起为0满意），花2元买快乐水，<br>满意值为2。<br>比较9与2，取较大的值为9。<br>之后是薯片，同样的，比较花相同的钱的情况下，<br>买与不买薯片的2种情况中哪种满意值大。<br>接着是奶茶，最后是月饼。<br>这样的操作后，最右下角的就是可能的最大满意值。<br>为了便于书写，我们不妨用p[i]表示第i种物品的价格，<br>用v[i]表示第i种物品的满意值，<br>用dp[i][j]表示在第1<del>i的物品中花费j元的最大可能满意值。<br>此时我们就可以写出公式为<br>买：dp[i][j]=v[i]+dp[i-1][j-p[i]]<br>即为花费p[i]元购买第i个商品的满意值与花费j-p[i]元在前i-1个商品中可能的最大满意值之和。<br>不买：dp[i][j]=dp[i-1][j]<br>即为花费j元在前i-1个商品中可能的最大满意值。<br>比较买与不买的2种情况，取较大值，即为第1</del>i的物品中花费j元的最大可能满意值。<br>不难发现，这种购买行为满足3个特点<br>1.最优子结构，即购买5件商品达到最大满意值时，<br>其中的任意件的购买总是也达到了最大值，可以独立求出。<br>2.无后效性，即前面购买不管怎样，<br>花费j元在前i个商品中的购买的最大满意值都不会变，<br>不会影响第i+1个商品的购买与否。<br>3.子问题有重叠性，即每一个物品的购买是独立的，不会干扰。<br>满足这三个特点的问题可以用动态规划（Dynamic Programming，DP）来解决<br>先找到问题的子问题的状态，再求出这些状态之间的转移方程，<br>再从最小的子问题开始着手解决问题。<br>在这里每种商品都只有买一件或不买2种状态，如果可以买任意件，又该如何呢？<br>想知道的话不要忘记点赞加关注，我是静静，我们下期再见。</p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">推荐</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\bubble-sort\" rel="bookmark">冒泡排序与排序的稳定性|Bubble Sort and Stability</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\selection-sort\" rel="bookmark">选择排序|Selection Sort</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\2019科学营Day1\" rel="bookmark">2019科学营Day1</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\2019科学营Day3\" rel="bookmark">2019科学营Day3</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\2019科学营Day4\" rel="bookmark">2019科学营Day4</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\A poem\" rel="bookmark">诗</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\China-Will-Not-Save-Europe\" rel="bookmark">中国不是欧洲的救世主|China Will Not Save Europe</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\OK\" rel="bookmark">OK!</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\MyWordsAfterWatchingNASA-sLaunchOfTheMars2020PerseveranceRoverLiveOnBilibili\" rel="bookmark">看完哔哩哔哩上的NASA的火星车直播后的一些话|My words after watching NASA's launch of the Mars 2020 perseverance rover live on Bilibili</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\Where-I-Am\" rel="bookmark">我在第几层|Where I Am</a></div>
+    </li>
+  </ul>
+
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>静静
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://wznmickey.com/2020/knapsack-problem/" title="背包问题|knapsack_problem">https://wznmickey.com/2020/knapsack-problem/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          
+
+  <div class="followme">
+    <span>欢迎关注我的其它发布渠道</span>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/wznmickey">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/rss2.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+          <div class="post-tags">
+              <a href="/tags/%E4%B8%AD%E6%96%87/" rel="tag"># 中文</a>
+              <a href="/tags/%E9%9D%99%E8%B0%88%E7%AE%97%E6%B3%95/" rel="tag"># 静谈算法</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag"># 动态规划</a>
+              <a href="/tags/%E8%83%8C%E5%8C%85/" rel="tag"># 背包</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/bubble-sort/" rel="prev" title="冒泡排序与排序的稳定性|Bubble Sort and Stability">
+                  <i class="fa fa-chevron-left"></i> 冒泡排序与排序的稳定性|Bubble Sort and Stability
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+  <div class="beian"><span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbg==">沪ICP备20021750号 </span>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">静静</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">47k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">43 分钟</span>
+  </span>
+</div>
+  <div class="powered-by">自豪地采用 Hexo|Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://wznmickey.com/2020/knapsack-problem/',]
+      });
+      });
+  </script>
+
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({"enable":true,"appId":"tkBc4Uth249fNaNbqfHUv0O5-9Nh9j0Va","appKey":"LBaho4lHEi0RD7u67IGXUp0j","serverURLs":"api1.wznmickey.com","placeholder":"让我知道你的存在吧","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-cn","visitor":true,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":["nick"]}, {
+      el: '#valine-comments',
+      path: "/2020/knapsack-problem/",
+      serverURLs: "api1.wznmickey.com"
+    }));
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

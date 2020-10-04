@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/applelogo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo_32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo_16.png">
+  <link rel="mask-icon" href="/images/logo_16.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"wznmickey.com","root":"/","scheme":"Pisces","version":"8.0.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}};
+  </script>
+
+  <meta name="description" content="一天遇到了一道题点击图片查看大图思考半天也不知道第三小问怎么做，幸好首项只有36种可能，枚举了[1,17]中的奇数就算出了答案，老师讲评时也用了枚举法算的，还画出了这幅图，让我有了一种图论题的感觉。老师又让我们思考36改为其他数值的情况，然而我并不能想出来，又想到仿佛可以用图的方法做，于是就写了一段算了一下。结果如下：这有什么规律吗？去问了老师，结果老师回复是我想太多了。 好久没做过题了，也比较懒">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一道数学题|A Math Problem">
+<meta property="og:url" content="https://wznmickey.com/2020/a-math-problem/index.html">
+<meta property="og:site_name" content="静静的小窝">
+<meta property="og:description" content="一天遇到了一道题点击图片查看大图思考半天也不知道第三小问怎么做，幸好首项只有36种可能，枚举了[1,17]中的奇数就算出了答案，老师讲评时也用了枚举法算的，还画出了这幅图，让我有了一种图论题的感觉。老师又让我们思考36改为其他数值的情况，然而我并不能想出来，又想到仿佛可以用图的方法做，于是就写了一段算了一下。结果如下：这有什么规律吗？去问了老师，结果老师回复是我想太多了。 好久没做过题了，也比较懒">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_1.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_2.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_3.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_4.jpg">
+<meta property="article:published_time" content="2020-03-13T07:52:35.000Z">
+<meta property="article:modified_time" content="2020-04-01T12:09:05.000Z">
+<meta property="article:author" content="静静">
+<meta property="article:tag" content="中文">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="c++">
+<meta property="article:tag" content="图">
+<meta property="article:tag" content="Floyd">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_1.jpg">
+
+
+<link rel="canonical" href="https://wznmickey.com/2020/a-math-problem/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>一道数学题|A Math Problem | 静静的小窝</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fec397109c6f59e50f63db0338dc6432";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/rss2.xml" title="静静的小窝" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">静静的小窝</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">记录自己的感受与收获</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页|Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于|About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签|Tags<span class="badge">27</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档|Archives<span class="badge">34</span></a>
+
+  </li>
+        <li class="menu-item menu-item-作品|works">
+
+    <a href="/works/" rel="section"><i class="fas fa-images fa-fw"></i>作品|works</a>
+
+  </li>
+        <li class="menu-item menu-item-工具|tools">
+
+    <a href="/tools/" rel="section"><i class="fa fa-wrench fa-fw"></i>工具|Tools</a>
+
+  </li>
+        <li class="menu-item menu-item-订阅|rss">
+
+    <a href="/rss2.xml" rel="section"><i class="fa fa-rss fa-fw"></i>订阅|RSS</a>
+
+  </li>
+        <li class="menu-item menu-item-开往|travelling">
+
+    <span class="exturl" data-url="aHR0cHM6Ly90cmF2ZWxsaW5ncy5ub3cuc2gv"><i class="fa fa-plane fa-fw"></i>开往|Travelling</span>
+
+  </li>
+        <li class="menu-item menu-item-友链|links">
+
+    <a href="/links/" rel="section"><i class="fa fa-users fa-fw"></i>友链|Links</a>
+
+  </li>
+        <li class="menu-item menu-item-短博|shortblog">
+
+    <span class="exturl" data-url="aHR0cHM6Ly9zYi53em5taWNrZXkuY29t"><i class="fa fa-lightbulb fa-fw"></i>短博|Shortblog</span>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索|Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录|Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览|Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="静静"
+      src="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
+  <p class="site-author-name" itemprop="name">静静</p>
+  <div class="site-description" itemprop="description">记录自己的感受与收获</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="mailto:first@wznmickey.com" title="E-Mail → mailto:first@wznmickey.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zYi53em5taWNrZXkuY29t" title="短博 → https:&#x2F;&#x2F;sb.wznmickey.com"><i class="fa fa-lightbulb fa-fw"></i>短博</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vODkyMjI0NjE=" title="哔哩哔哩生活 → https:&#x2F;&#x2F;space.bilibili.com&#x2F;89222461"><i class="fa fa-tv fa-fw"></i>哔哩哔哩生活</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vNjI4NjQ2OTM5" title="哔哩哔哩算法 → https:&#x2F;&#x2F;space.bilibili.com&#x2F;628646939"><i class="fa fa-tv fa-fw"></i>哔哩哔哩算法</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93ZWliby5jb20vd3pubWlja2V5" title="微博 → https:&#x2F;&#x2F;weibo.com&#x2F;wznmickey"><i class="fab fa-weibo fa-fw"></i>微博</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS93em5taWNrZXk=" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;wznmickey"><i class="fab fa-twitter fa-fw"></i>Twitter</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ1YweVlTbkx0Uk1mWVRKVXdPS1FlRmcvY2hhbm5lbHM/dmlld19hcz1zdWJzY3JpYmVy" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCV0yYSnLtRMfYTJUwOKQeFg&#x2F;channels?view_as&#x3D;subscriber"><i class="fab fa-youtube fa-fw"></i>YouTube</span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      友情链接|links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9yZXZlcmJsb2cuY24v" title="https:&#x2F;&#x2F;www.foreverblog.cn&#x2F;">十年之约</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly90cmF2ZWxsaW5ncy5ub3cuc2gv" title="https:&#x2F;&#x2F;travellings.now.sh&#x2F;">开往</span>
+        </li>
+    </ul>
+  </div>
+
+      </section>
+        <div class="back-to-top animated">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2020/a-math-problem/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
+      <meta itemprop="name" content="静静">
+      <meta itemprop="description" content="记录自己的感受与收获">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="静静的小窝">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          一道数学题|A Math Problem
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-03-13 15:52:35" itemprop="dateCreated datePublished" datetime="2020-03-13T15:52:35+08:00">2020-03-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-04-01 20:09:05" itemprop="dateModified" datetime="2020-04-01T20:09:05+08:00">2020-04-01</time>
+      </span>
+
+  
+    <span id="/2020/a-math-problem/" class="post-meta-item leancloud_visitors" data-flag-title="一道数学题|A Math Problem" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/a-math-problem/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/a-math-problem/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>一天遇到了一道题<br><small>点击图片查看大图</small><br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200313_1.png"><img src="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_1.jpg" title="点击查看大图"></a><br>思考半天也不知道第三小问怎么做，幸好首项只有36种可能，枚举了[1,17]中的奇数就算出了答案，老师讲评时也用了枚举法算的，还画出了这幅图，让我有了一种图论题的感觉。<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200313_2.png"><img src="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_2.jpg" title="点击查看大图"></a><br>老师又让我们思考36改为其他数值的情况，然而我并不能想出来，又想到仿佛可以用图的方法做，于是就写了一段算了一下。结果如下：<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200313_3.png"><img src="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_3.jpg" title="点击查看大图"></a><br>这有什么规律吗？去问了老师，结果老师回复<br><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200313_4.png"><img src="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_4.jpg" title="点击查看大图"></a><br>是我想太多了。</p>
+<p>好久没做过题了，也比较懒，数据量也不大，就比较暴力了，代码如下：</p>
+<a id="more"></a> 
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">a₁&lt;=2x,</span></span><br><span class="line"><span class="comment">aₙ₊₁= 2aₙ, 　　aₙ&lt;=x</span></span><br><span class="line"><span class="comment">　　　2aₙ-2x , aₙ&gt;x</span></span><br><span class="line"><span class="comment">题目中x=18</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">260</span>][<span class="number">260</span>];</span><br><span class="line">	<span class="keyword">int</span> m;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> x=<span class="number">1</span>;x&lt;=<span class="number">100</span>;x++)<span class="comment">//aₙ的最大值为2x</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> ans=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">255</span>;i++)</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=<span class="number">255</span>;j++)</span><br><span class="line">				a[i][j]=<span class="number">1000</span>;<span class="comment">//初始化</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">2</span>*x;i++)<span class="comment">//aₙ₋₁的值为i</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="comment">//计算aₙ的值</span></span><br><span class="line">			<span class="keyword">int</span> j;</span><br><span class="line">			<span class="keyword">if</span> (i&lt;=x) j=<span class="number">2</span>*i;</span><br><span class="line">			<span class="keyword">else</span> j=<span class="number">2</span>*i<span class="number">-2</span>*x;</span><br><span class="line">			a[i][j]=<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//算边</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">2</span>*x;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=<span class="number">2</span>*x;j++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> k=<span class="number">1</span>;k&lt;=<span class="number">2</span>*x;k++)</span><br><span class="line">				&#123;</span><br><span class="line">					a[j][k]=min(a[j][k],a[j][i]+a[i][k]);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//计算元素最大个数</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">2</span>*x;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=<span class="number">2</span>*x;j++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">if</span> (a[i][j]!=<span class="number">1000</span>) ans=max(ans,a[i][j]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		ans++;<span class="comment">//点数=边数+1</span></span><br><span class="line">		m=<span class="number">2</span>*x;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d %d\n&quot;</span>,m,ans);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>解答最后有这么一段话：</p>
+<blockquote>
+<p>事实上，规律是：<br>首项是整数时，第二项是偶数，第三项是4的倍数，任意一项不超过36<br>(1)    如果首项是3的倍数，那么由第二问的结论，每一项都是3的倍数，那么第三项是12的倍数，只能是12或24或36，于是由递推关系，第三项起最多2项，考虑前两项，M的元素最多4个，实际上M的元素个数可能是1或2或3或4<br>(2)    如果首项不是3的倍数，则M中的元素均不是3的倍数，所以第三项可能是4、8、16、20、28、32其中一项，那么以后形成这6项之间的循环，于是考虑前两项，M中元素最多8项，实际上M的元素个数可能是6或7或8<br>综上，M的元素个数最多为8个，当首项为1或5或7或11或13或17或19或23或25或29或31或35时取到。</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">推荐</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\a-math-problem-from-3-to-n\" rel="bookmark">从3到n——一道数学题|a math problem from 3 to N</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\洛谷P1000题解\" rel="bookmark">洛谷P1000题解</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\2019科学营Day1\" rel="bookmark">2019科学营Day1</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\2019科学营Day3\" rel="bookmark">2019科学营Day3</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\2019科学营Day4\" rel="bookmark">2019科学营Day4</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\A poem\" rel="bookmark">诗</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\China-Will-Not-Save-Europe\" rel="bookmark">中国不是欧洲的救世主|China Will Not Save Europe</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\OK\" rel="bookmark">OK!</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\MyWordsAfterWatchingNASA-sLaunchOfTheMars2020PerseveranceRoverLiveOnBilibili\" rel="bookmark">看完哔哩哔哩上的NASA的火星车直播后的一些话|My words after watching NASA's launch of the Mars 2020 perseverance rover live on Bilibili</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\Where-I-Am\" rel="bookmark">我在第几层|Where I Am</a></div>
+    </li>
+  </ul>
+
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>静静
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://wznmickey.com/2020/a-math-problem/" title="一道数学题|A Math Problem">https://wznmickey.com/2020/a-math-problem/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          
+
+  <div class="followme">
+    <span>欢迎关注我的其它发布渠道</span>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/wznmickey">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/rss2.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+          <div class="post-tags">
+              <a href="/tags/%E4%B8%AD%E6%96%87/" rel="tag"># 中文</a>
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+              <a href="/tags/c/" rel="tag"># c++</a>
+              <a href="/tags/%E5%9B%BE/" rel="tag"># 图</a>
+              <a href="/tags/Floyd/" rel="tag"># Floyd</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/pay-true-attention/" rel="prev" title="做一个真正的关注者|Pay true attention">
+                  <i class="fa fa-chevron-left"></i> 做一个真正的关注者|Pay true attention
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/a-travel-to-the-USA/" rel="next" title="美国之行|A Travel To The USA">
+                  美国之行|A Travel To The USA <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+  <div class="beian"><span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbg==">沪ICP备20021750号 </span>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">静静</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">47k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">43 分钟</span>
+  </span>
+</div>
+  <div class="powered-by">自豪地采用 Hexo|Powered by <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+  
+      <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://wznmickey.com/2020/a-math-problem/',]
+      });
+      });
+  </script>
+
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({"enable":true,"appId":"tkBc4Uth249fNaNbqfHUv0O5-9Nh9j0Va","appKey":"LBaho4lHEi0RD7u67IGXUp0j","serverURLs":"api1.wznmickey.com","placeholder":"让我知道你的存在吧","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-cn","visitor":true,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":["nick"]}, {
+      el: '#valine-comments',
+      path: "/2020/a-math-problem/",
+      serverURLs: "api1.wznmickey.com"
+    }));
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
