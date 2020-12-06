@@ -5,6 +5,7 @@
   <channel>
     <title>静静的小窝</title>
     <link>https://wznmickey.com/</link>
+<<<<<<< HEAD
     
     <atom:link href="https://wznmickey.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
@@ -119,6 +120,27 @@
       
       <comments>https://wznmickey.com/2020/knapsack-problem/#disqus_thread</comments>
       
+=======
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>记录自己的感受与收获</description>
+    <pubDate>Mon, 07 Sep 2020 14:49:15 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>背包问题|knapsack_problem</title>
+      <link>https://wznmickey.com/2020/knapsack-problem/</link>
+      <guid>https://wznmickey.com/2020/knapsack-problem/</guid>
+      <pubDate>Mon, 07 Sep 2020 14:49:15 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;视频版： &lt;a href=&quot;https://www.bilibili.com/video/BV1pa4y1E7CC/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/BV1pa4y1E7CC/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文字版：&lt;br&gt;在商店里面对着琳琅满目的商品，&lt;br&gt;再看看自己空瘪的钱包，&lt;br&gt;这么多自己想要的，&lt;br&gt;该怎么选择啊？&lt;br&gt;如何破除选择困难症？&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/knapsack-problem/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -126,6 +148,7 @@
       <link>https://wznmickey.com/2020/bubble-sort/</link>
       <guid>https://wznmickey.com/2020/bubble-sort/</guid>
       <pubDate>Sat, 15 Aug 2020 15:08:30 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;第一期选择排序： &lt;a href=&quot;https://wznmickey.com/2020/selection-sort/&quot;&gt;https://wznmickey.com/2020/selection-sort/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;视频版：&lt;br&gt;Bilibili: &lt;a href=&quot;https://www.bilibili.com/video/BV1Dt4y1U7SR/&quot;&gt;https://www.bilibili.com/video/BV1Dt4y1U7SR/&lt;/a&gt;&lt;/p&gt;
@@ -150,6 +173,17 @@
       
       <comments>https://wznmickey.com/2020/bubble-sort/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;第一期选择排序： &lt;a href=&quot;https://wznmickey.com/2020/selection-sort/&quot;&gt;https://wznmickey.com/2020/selection-sort/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;视频版：&lt;br&gt;Bilibili: &lt;a href=&quot;https://www.bilibili.com/video/BV1Dt4y1U7SR/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/BV1Dt4y1U7SR/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文字版：&lt;br&gt;水中气泡有大有小，&lt;br&gt;上升速度也有快有慢，&lt;br&gt;比较相邻的2个气泡，&lt;br&gt;就可以明白哪个先到水面。&lt;br&gt;同样的，&lt;br&gt;我们也可以比较相邻的2个数字，&lt;br&gt;从而排序。&lt;br&gt;大家好，这里是静谈算法，&lt;br&gt;我是静静。&lt;br&gt;你在看的是排序算法的第二期，冒泡排序与排序的稳定性。&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/bubble-sort/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -157,6 +191,7 @@
       <link>https://wznmickey.com/2020/MyWordsAfterWatchingNASA-sLaunchOfTheMars2020PerseveranceRoverLiveOnBilibili/</link>
       <guid>https://wznmickey.com/2020/MyWordsAfterWatchingNASA-sLaunchOfTheMars2020PerseveranceRoverLiveOnBilibili/</guid>
       <pubDate>Thu, 30 Jul 2020 13:58:06 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;一开始是在自己的短博 &lt;a href=&quot;https://sb.wznmickey.com/&quot;&gt;https://sb.wznmickey.com&lt;/a&gt; 上的，想了想这里也发吧。&lt;/p&gt;
 &lt;/div&gt;
@@ -176,6 +211,18 @@
       
       <comments>https://wznmickey.com/2020/MyWordsAfterWatchingNASA-sLaunchOfTheMars2020PerseveranceRoverLiveOnBilibili/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;一开始是在自己的短博 &lt;a href=&quot;https://sb.wznmickey.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://sb.wznmickey.com&lt;/a&gt; 上的，想了想这里也发吧。&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;　　中国在过去的几乎100%计划经济中逐步加入了市场经济，一些分不清的人就会将一些市场行为视为计划的产物（通常是一些不好的行为），将一些计划主导的行为视为市场主导的行为。&lt;br&gt;　　我现在是不怎么认同市场的，市场的衡量手段只有金钱，其他的任何都被金钱量化，很显然会导致对金钱的崇拜。什么文化人性都是表象。允许多样的度量标准，开辟多条跑道，可以避免了绝对的度量标准。资源竞争在不同领域中展开。当然，不同跑道上的人无法衡量，当资源不充足的时候时不同领域的资源分配就会有矛盾，不存在市场中的绝对的名为金钱的比较尺。可能只有机器的发展能解决这一问题，毕竟机器没有人权。也许以后我不会这么认为，但至少现在我是这样认为的。&lt;br&gt;　　关于言论自由我一直的看法都是这样的：内容在某平台能否出现的结果其实和政治正确没什么关系。如果该平台内有支持此种观点的势力存在，就可以出现，如果遗憾地没有任何一个势力支持你的言论，就不能出现在这个平台上。当然一些势力可能是跨平台的，可能为了自己的目的支持一些内容，然后马上禁止内容，挑起事端。&lt;/p&gt;
+&lt;p&gt;　　刚才的看完NASA火星车发射的直播后写的，把自己一些想法打了出来。&lt;br&gt;　　就事实来讲，斗鱼之类的直播平台正常直播，B站（哔哩哔哩弹幕网）的一些直播被掐掉了。这就是B站自己的行为，和许多其他的行为（如屏蔽一些内容）一样是企业的商业行为或是管理员的个人行为，非说是计划的内容，干什么？&lt;br&gt;　　这些年一些部门一直在背锅，一些企业的行为全被认为是他们的行为，还有一些谣言中的行为，自己不如愿的全部有了目标。这也不满意那也不满意，我看“缸中之脑”蛮好的，可以私人定制，省的因为他人的行为受损。&lt;/p&gt;
+&lt;p&gt;　　甲：我看D不好啊。&lt;br&gt;　　乙：C和E蛮近的，一起处理了吧。&lt;br&gt;　　丙：前半部分字母都不许出现了。&lt;br&gt;　　丁：英文字母全禁了。&lt;br&gt;　　戊：用外国文字是民族不自信，所有非中文全部不允许。&lt;br&gt;　　己：禁止文字！&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/MyWordsAfterWatchingNASA-sLaunchOfTheMars2020PerseveranceRoverLiveOnBilibili/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -183,6 +230,7 @@
       <link>https://wznmickey.com/2020/selection-sort/</link>
       <guid>https://wznmickey.com/2020/selection-sort/</guid>
       <pubDate>Thu, 09 Jul 2020 01:59:44 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;第二期冒泡排序与排序的稳定性: &lt;a href=&quot;https://wznmickey.com/2020/bubble-sort/&quot;&gt;https://wznmickey.com/2020/bubble-sort/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;视频版：&lt;br&gt;Bilibili: &lt;a href=&quot;https://www.bilibili.com/video/BV1W5411e7cF&quot;&gt;https://www.bilibili.com/video/BV1W5411e7cF&lt;/a&gt;&lt;br&gt;YouTube: &lt;a href=&quot;https://www.youtube.com/watch?v=e3Gvnat-_uQ&quot;&gt;https://www.youtube.com/watch?v=e3Gvnat-_uQ&lt;/a&gt;&lt;/p&gt;
@@ -205,6 +253,17 @@
       
       <comments>https://wznmickey.com/2020/selection-sort/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;第二期冒泡排序与排序的稳定性: &lt;a href=&quot;https://wznmickey.com/2020/bubble-sort/&quot;&gt;https://wznmickey.com/2020/bubble-sort/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;视频版：&lt;br&gt;Bilibili: &lt;a href=&quot;https://www.bilibili.com/video/BV1W5411e7cF&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bilibili.com/video/BV1W5411e7cF&lt;/a&gt;&lt;br&gt;YouTube: &lt;a href=&quot;https://www.youtube.com/watch?v=e3Gvnat-_uQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=e3Gvnat-_uQ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文字版：&lt;br&gt;这是一次考试中你们班同学考试的成绩，&lt;br&gt;输入数据后，电脑可以快速告诉你最高分与排名，&lt;br&gt;电脑是怎么做到的？&lt;br&gt;如何有序排列数字？&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/selection-sort/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -212,6 +271,7 @@
       <link>https://wznmickey.com/2020/fandom-and-Trump/</link>
       <guid>https://wznmickey.com/2020/fandom-and-Trump/</guid>
       <pubDate>Fri, 26 Jun 2020 16:07:41 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;　　其实你会发现特朗普（及其团队）的许多操作和饭圈的一些操作是类似的。&lt;/p&gt;
 &lt;p&gt;　　美国黑人虽然声势浩大但现在白人还是有七成多，黑人只占一成。特朗普都不用讨好所有白人，选举人票的制度下他甚至都不需要超过拜登的支持者，只要不断关注帮助自己票仓那几个州就可以了。&lt;br&gt;　　没有黑料就自己创造黑料，然后解释，强化自己的支持者的凝聚力应对外敌。特朗普越攻击示威，再搞些反串，社会秩序越混乱他越稳，把那些支持黑人的人拉到自己阵营。&lt;br&gt;　　社会已经产生了巨大撕裂了，原本多数的中间派已经越来越少了，这就导致原本为了吸引中间派的越来越相近的政党再次背离，从比谁更偏中间到比谁更极端，然后再搞操作把中间的人往极端拉。&lt;/p&gt;
@@ -232,6 +292,19 @@
       
       <comments>https://wznmickey.com/2020/fandom-and-Trump/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;　　其实你会发现特朗普（及其团队）的许多操作和饭圈的一些操作是类似的。&lt;/p&gt;
+&lt;p&gt;　　美国黑人虽然声势浩大但现在白人还是有七成多，黑人只占一成。特朗普都不用讨好所有白人，选举人票的制度下他甚至都不需要超过拜登的支持者，只要不断关注帮助自己票仓那几个州就可以了。&lt;br&gt;　　没有黑料就自己创造黑料，然后解释，强化自己的支持者的凝聚力应对外敌。特朗普越攻击示威，再搞些反串，社会秩序越混乱他越稳，把那些支持黑人的人拉到自己阵营。&lt;br&gt;　　社会已经产生了巨大撕裂了，原本多数的中间派已经越来越少了，这就导致原本为了吸引中间派的越来越相近的政党再次背离，从比谁更偏中间到比谁更极端，然后再搞操作把中间的人往极端拉。&lt;/p&gt;
+&lt;p&gt;　　这些操作几乎都是饭圈的早有的常规操作。&lt;/p&gt;
+&lt;p&gt;　　这也不奇怪，当某种竞争逐渐放弃对对方的吞噬，进行统一，开始选择经营自己的圈子时，引起外战总是很合适的选择，避免了内部出现的矛盾，强化基本盘。&lt;/p&gt;
+&lt;p&gt;　　所以说不要老说饭圈这啊那啊的，其实这些操作是必然的结果，根本不是饭圈的问题而是竞争模式的问题，要解决你就只有等有能力（至少是有雄心）一统的人出现讨好所有人才能解决。历史上多少战争是为了维持自己稳定不出内乱产生的？根本不是特朗普有问题，几乎任何一个在这个时刻的总统都会这样操作，攘外就是为了安内。&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/fandom-and-Trump/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -239,6 +312,7 @@
       <link>https://wznmickey.com/2020/no-blindness/</link>
       <guid>https://wznmickey.com/2020/no-blindness/</guid>
       <pubDate>Thu, 23 Apr 2020 10:25:35 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;blockquote&gt;
 &lt;p&gt;生活中，人们往往在意他人的看法，然而，有时我们要做成一件事，又应该不要太在意他人的看法。对此你有怎样的认识?请写一篇文章，谈谈你的思考。&lt;br&gt;要求：(1)自拟题目;(2)不少于800字。&lt;/p&gt;
@@ -262,6 +336,39 @@
       
       <comments>https://wznmickey.com/2020/no-blindness/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;生活中，人们往往在意他人的看法，然而，有时我们要做成一件事，又应该不要太在意他人的看法。对此你有怎样的认识?请写一篇文章，谈谈你的思考。&lt;br&gt;要求：(1)自拟题目;(2)不少于800字。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;此题为2019年上海市闵行区高三一模作文题。&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;在生活中与人交往，常常听到他人的看法。有人十分在意这些看法，将之视为自己的行为准则，也有人不以为然，毫不顾忌地做自己的事。如何看待这些他人的看法，无疑十分重要。要做的，就是不盲目地对待这些看法。&lt;br&gt;人在社会中生存，与人交往，在交往过程中旁人会对自己的言行进行评价，并由此产生了看法，这些看法是自我评价的重要方式，因为许多的人生价值的实现需要在社会中才能实现，也只有得到了他人的认可才能够真正实现。如果自己的行为只是基于自己意愿的成就，而不考虑他人的评价，被他人不认可甚至鄙夷，这种实现就不能成为真正的实现。通过他人的负面看法，人就有可能改变行为的错误之处，发现自己的疏漏之处，通过他人正面看法，人就会感受到认同感，对自己所做的事更有信心与成就感，激励自己做事更认真。&lt;br&gt;然而对自己成就的评价并不仅仅只有他人的看法，在做事时将他人评价视为金科玉律，就会使自己做事受到束缚。&lt;br&gt;自我评价有局限，他人的看法也有局限。他人之言并非一人之言，而是千万人之言，由于不同人的价值取向不一致，看法也不免千差万别，自相矛盾。如果听到一人之言就盲目做出改变，就可能面对父子携驴出行时的尴尬。&lt;br&gt;太在意他人的看法，更是对自己做好一件事的压制。一方面，他人的看法不一定全部出自善意，在意这些看法做事，盲目地听从，全然不经思考与质疑，就会被人玩弄于股掌之中，丧失自主性，变成他人的工具，难以成事。另一方面，那些动机为善的看法未必带来好的结果，太在意这些看法，就会在他人的善意中畏手畏脚，依赖这些善意。这些丧失了革新勇气的人不敢越雷池半步，永远无法知道这些动机为善的看法是否真的结果是最好的。&lt;br&gt;在社会上做事，如果太在意他人的看法，盲目服从，就丧失了自主性，成为了他人的工具，不再是自己了，变为了他人的外延。丧尸般地服从他人的看法，或许这样会免除自己做事失败的风险，但也同时会丧失与风险并存的做好一件事的成就，更会丧失自己独立思考的能力，没有了他人的看法无法做事，被抹去未来做事的可能。&lt;br&gt;尽管太在意他人看法对做事有害，但这并不能成为忽视他人看法，固执己见的理由。他人的看法就如同生长素这种植物激素，不在意与太在意都对做事无益，他人的看法可能成为做事时的指引与警示，也可能成为丧失自己主动性的开始。这恰恰说明了对待他人的看法要有自己的意志参与。不能盲目接受，亦不可盲目忽视。他人的看法是一个集合，其中的元素是一个个个体的不同的看法。要主动地归纳分类，不在意的那些具体的元素，在意的是从整体上分析得出的看法，加以接受，做出改变。&lt;br&gt;我们的目标是做事而非谄媚他人，对待他人的看法也要从其对做事的关系出发进行分析，采纳那些好的对做事有益的看法，忽视那些阻碍做事的看法，对那些暂时无法确定的，保留下来做事的深入之后再行处理。&lt;br&gt;我们身边不乏一些听风便是雨的，依赖他人的看法的人，也有着油盐不进的人，这二者对待他人的看法看似矛盾，实际都是盲目的行为的结果。对待看法，我们不能忘记自己的初心，不盲目地接受他人的看法。&lt;br&gt;以下为吐槽和原稿&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/no-blindness/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>从3到n——一道数学题|a math problem from 3 to N</title>
+      <link>https://wznmickey.com/2020/a-math-problem-from-3-to-n/</link>
+      <guid>https://wznmickey.com/2020/a-math-problem-from-3-to-n/</guid>
+      <pubDate>Wed, 01 Apr 2020 04:51:40 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;small&gt;此文使用了mathjax，请等待公式加载&lt;/small&gt;&lt;/p&gt;
+&lt;h1 id=&quot;原题&quot;&gt;&lt;a href=&quot;#原题&quot; class=&quot;headerlink&quot; title=&quot;原题&quot;&gt;&lt;/a&gt;原题&lt;/h1&gt;&lt;p&gt;起因是一道考试时遇到的题&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;设$n=\overline{abc}$表示一个三位数，记$f(n)=(a+b+c)+(a\cdot b+b\cdot c+c\cdot a)+a\cdot b\cdot c$，则满足$f(n)=n$的三位数个数是&lt;strong&gt;__&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最暴力的我做题时直接把含a的多项式和含b的多项式及c与$f(n)=100a+10b+c$的对应系数取等号联立方程，然后求出$\begin{cases}b=9\\c=9\end{cases}$，之后求出199,299,399,⋯,999共九个三位数，然而我总感觉有问题，于是写了程序检验了一下，发现$f(n)\leq n$，最后想了好久证明了出来。&lt;br&gt;如下：&lt;br&gt;$f(n)-n \\&lt;br&gt;=(a+b+c)+(a\cdot b+b\cdot c+c\cdot a)+a\cdot b\cdot c-(100a+10b+c)\\&lt;br&gt;=a(1+b+c+b\cdot c)+b(1+a\cdot c)+c-(100a+10b+c)\\&lt;br&gt;=a(1+b+c+b\cdot c-100)+b(1+a\cdot c-10)\\&lt;br&gt;a(1+9+9+9*9-100)+b(1+9-10)\\&lt;br&gt;\leq0$&lt;br&gt;当且仅当$b=c=9$时等号成立&lt;/p&gt;
+&lt;h1 id=&quot;升级&quot;&gt;&lt;a href=&quot;#升级&quot; class=&quot;headerlink&quot; title=&quot;升级&quot;&gt;&lt;/a&gt;升级&lt;/h1&gt;&lt;p&gt;上课老师讲课时化为了$f(n)=(a+1)(b+1)(c+1)-1$进行计算。&lt;br&gt;然后我就想如果是其他位数时,也满足这个条件吗？&lt;br&gt;检验呢一下发现int范围内都符合，当且仅当除最高位都为9时等号成立。&lt;br&gt;想了好久证明，觉得可以用数学归纳法如下：&lt;br&gt;命题：$(a₁+1)(a₂+1)(a₃+1)\dots (aₙ₊₁-1)\leq \overline{a₁a₂a₃⋯aₙ}$对$n \in N^*$且$n \geq 2 $ 恒成立,当且仅当$a₂=a₃=⋯=aₙ=9$时等号成立,$a₁,a₂,a₃ ⋯ aₙ ∈ \{0,1,2,3,4,5,6,7,8,9\}$&lt;br&gt;当$n=2$时，$(a₁+1)(a₂+1)-1-(a₁*10+a₂)=a₁a₂+a₁+a₂-10a₂-a₃=a₁(a₂-9) \leq 0$,当且仅当$a₂=9$时等号成立&lt;br&gt;假设当$n=k \in N^*$且$k \geq 2$时 $(a₁+1)(a₂+1)(a₃+1)⋯(aₖ+1)-1 \leq \overline{a₁a₂a₃⋯aₖ}$成立且当且仅当$a₂=a₃=⋯=aₖ=9$时等号成立&lt;br&gt;当$n=k+1$时，&lt;br&gt;$(a₁+1)(a₂+1)⋯(aₖ+1)(aₖ₊₁+1)-1- \overline{a₁a₂a₃⋯aₖ}\\&lt;br&gt;=(aₖ₊₁+1)[(a₁+1)(a₂+1)⋯(aₖ+1)-1+1]-1-10* \overline{a₁a₂a₃⋯aₖ}-aₖ₊₁\\&lt;br&gt;=(aₖ₊₁+1)[(a₁+1)(a₂+1)⋯(aₖ+1)-1-\overline{a₁a₂a₃⋯aₖ}] +(aₖ₊₁-9)\overline{a₁a₂a₃⋯aₖ}\leq 0$&lt;br&gt;当且仅当$a₂=a₃=⋯=aₖ=aₖ₊₁=9$时等号成立&lt;br&gt;所以$(a₁+1)(a₂+1)(a₃+1)\dots (aₙ₊₁-1)\leq \overline{a₁a₂a₃⋯aₙ}$对$n \in N^*$且$n \geq 2 $ 恒成立,当且仅当$a₂=a₃=⋯=aₙ=9$时等号成立,$a₁,a₂,a₃ ⋯ aₙ ∈ \{0,1,2,3,4,5,6,7,8,9\}$&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/a-math-problem-from-3-to-n/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -269,10 +376,16 @@
       <link>https://wznmickey.com/2020/public-and-private-rights/</link>
       <guid>https://wznmickey.com/2020/public-and-private-rights/</guid>
       <pubDate>Mon, 30 Mar 2020 05:10:30 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;原文有幸被学校微信公众号推送:&lt;br&gt; &lt;a href=&quot;https://mp.weixin.qq.com/s/mz-VzWp2637TcPKCgVAjFg&quot;&gt;https://mp.weixin.qq.com/s/mz-VzWp2637TcPKCgVAjFg&lt;/a&gt;&lt;br&gt;这里在推送的文章上做了一些修改。&lt;/p&gt;
 &lt;/div&gt;
 
+=======
+      <description>
+      
+        &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;原文有幸被学校微信公众号推送:&lt;br&gt; &lt;a href=&quot;https://mp.weixin.qq.com/s/mz-VzWp2637TcPKCgVAjFg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mp.weixin.qq.com/s/mz-VzWp2637TcPKCgVAjFg&lt;/a&gt;&lt;br&gt;这里在推送的文章上做了一些修改。&lt;/p&gt;&lt;/div&gt;
+>>>>>>> origin/old
 &lt;p&gt;　　突如其来的疫情使得不少人的生活节奏慢了下来，却让不少的公权力与私权力的矛盾显现了出来。&lt;/p&gt;
 &lt;p&gt;　　在中国，法的历史极为悠久，但今天中国的法却与过去的法家思想有着许多不同。过去中国的法对于私权力有着极其的限制，儒表法里，统治者借助法律进行控制，百姓只拥有法律所规定的权力，而对于统治阶级却没有什么约束作用。&lt;br&gt;　　这种思想延续到了现在，不少人仍有着这样的认识，对于自己手中的公权力不加限制地加以运用，有着“刑不可知，则威不可测”的思想。另一方面，欧洲的“天赋人权”等思想传入中国，而传统的中国对法的认识却多含人治，这让不少人觉得自己的权力被限制，不再相信相关机构的处理，而诉诸私刑。&lt;/p&gt;
 &lt;p&gt;　　在古籍中常常看到这样的故事，判案的官员根据情况肆意判案，而不根据法律，虽然那些“恶法”不应当被遵守，但是这种十分主观的的判案实际上将“法治”变为了“人治”，判案的官员获取了本不应属于他的权力。虽然这样的事件现在已不多见了，但是在相关的处理当中很多相关人员却误将网络上的呼声当作“民意”，没有注意到“沉默的大多数”的存在。犹记得之前一位公务员因为在朋友圈晒出吃狗肉的照片被一些“爱狗人士”曝光到网络上，相关单位竟以此为由对其进行了处罚，而不顾相关法律法规的存在。&lt;br&gt;　　一来在网络上发声的人看似众多，但仍然只是整个社会中的一小部分人。二来法律要听从民众的呼声，但是也要超越民众的偏见。雅典的公民大会有着百分之十几的公民参与度，却因而造成了不少的多数人的暴政。如果社会治理只用考虑民意，还要什么法律呢？大家直接在互联网上投票不就可以了吗？当法律对民众行为的约束不再明确，用事后法处罚人，民众就难以对未来有合理的预期，在惶惶不可终日中度过。&lt;/p&gt;
@@ -281,6 +394,7 @@
 &lt;p&gt;　　与此同时，不少人也对私权力有了不合适的理解。英国针对疫情做出了“佛系”的应对姿态，鲍里斯说出了“做好失去亲人的准备”这样的话。有人说这是因为诸如韩国、意大利那样的对民众的管制招致了各式各样的表面不违背管制，实质是反对限制的对于权利的宣誓的各类活动，所以英国用不管控的语言让人们不敢于出门，从而达到隔离的效果。我不知道这时候真的是其如此应对的原因，但难道我们真的因为有这些私权力就要去全部使用吗？&lt;br&gt;　　电影辛德勒的名单中主人公为了从纳粹军官手中救人，告诉他权力不是想做什么就做什么的权利，而是有拒绝的权利。香港的那些人有游行的权利吗？有。但是真的只有通过游行才能表明权利，仿佛没有游行示威就没有权利吗，以至于事件在别用用心的人的影响下不断扩大吗？&lt;/p&gt;
 &lt;p&gt;　　中国古代没有公权与私权的区分，从清末开始中国长期在风雨中飘荡，在新的旧的思想的轰击下，不同的人对此有不同的理解。在疫情中暴露出了社会治理的诸多问题，这是好事。这是一次危机，是一次压力测试，也是认识这个社会的好时候。&lt;/p&gt;
 &lt;p&gt;推送的原文如下：&lt;/p&gt;
+<<<<<<< HEAD
 &lt;p&gt;突如其来的疫情使得不少人的生活节奏慢了下来，却让不少的公权力与私权力的矛盾显现了出来。</description>
       
       
@@ -353,6 +467,13 @@
       
       <comments>https://wznmickey.com/2020/a-math-problem-from-3-to-n/#disqus_thread</comments>
       
+=======
+&lt;p&gt;突如其来的疫情使得不少人的生活节奏慢了下来，却让不少的公权力与私权力的矛盾显现了出来。
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/public-and-private-rights/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -360,6 +481,7 @@
       <link>https://wznmickey.com/2020/Where-I-Am/</link>
       <guid>https://wznmickey.com/2020/Where-I-Am/</guid>
       <pubDate>Sat, 28 Mar 2020 14:23:15 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20200328_1.jpg&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;涉及的链接：&lt;br&gt;&lt;a href=&quot;https://github.com/neruthes/neidi-renmin-zhiyuanjun-xianzhang/blob/master/%E5%86%85%E5%9C%B0%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E5%AE%AA%E7%AB%A0.md&quot;&gt;https://github.com/neruthes/neidi-renmin-zhiyuanjun-xianzhang/blob/master/%E5%86%85%E5%9C%B0%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E5%AE%AA%E7%AB%A0.md&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/neruthes/zhao&quot;&gt;https://github.com/neruthes/zhao&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://neruthes.xyz/&quot;&gt;https://neruthes.xyz/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://twitter.com/neruthes&quot;&gt;https://twitter.com/neruthes&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://cybernations.fandom.com/wiki/Communist_Party_of_CyberNations&quot;&gt;https://cybernations.fandom.com/wiki/Communist_Party_of_CyberNations&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://maskbook.com/&quot;&gt;https://maskbook.com/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://ccphq.org/&quot;&gt;https://ccphq.org/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://thewesttimes.com/?lang=en&quot;&gt;https://thewesttimes.com/?lang=en&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/113072138&quot;&gt;https://zhuanlan.zhihu.com/p/113072138&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/people/c3ea1d88feb5&quot;&gt;https://www.zhihu.com/people/c3ea1d88feb5&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.uscyberpatriot.org/Pages/About/What-is-CyberPatriot.aspx&quot;&gt;https://www.uscyberpatriot.org/Pages/About/What-is-CyberPatriot.aspx&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://twitter.com/TheWestTimes&quot;&gt;https://twitter.com/TheWestTimes&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://ccphq.org/&quot;&gt;https://ccphq.org/&lt;/a&gt;&lt;/p&gt;</description>
       
@@ -376,6 +498,15 @@
       
       <comments>https://wznmickey.com/2020/Where-I-Am/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20200328_1.jpg&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;涉及的链接：&lt;br&gt;&lt;a href=&quot;https://github.com/neruthes/neidi-renmin-zhiyuanjun-xianzhang/blob/master/%E5%86%85%E5%9C%B0%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E5%AE%AA%E7%AB%A0.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/neruthes/neidi-renmin-zhiyuanjun-xianzhang/blob/master/%E5%86%85%E5%9C%B0%E4%BA%BA%E6%B0%91%E5%BF%97%E6%84%BF%E5%86%9B%E5%AE%AA%E7%AB%A0.md&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/neruthes/zhao&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/neruthes/zhao&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://neruthes.xyz/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://neruthes.xyz/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://twitter.com/neruthes&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://twitter.com/neruthes&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://cybernations.fandom.com/wiki/Communist_Party_of_CyberNations&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://cybernations.fandom.com/wiki/Communist_Party_of_CyberNations&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://maskbook.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://maskbook.com/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://ccphq.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://ccphq.org/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://thewesttimes.com/?lang=en&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://thewesttimes.com/?lang=en&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/113072138&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://zhuanlan.zhihu.com/p/113072138&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.zhihu.com/people/c3ea1d88feb5&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.zhihu.com/people/c3ea1d88feb5&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.uscyberpatriot.org/Pages/About/What-is-CyberPatriot.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.uscyberpatriot.org/Pages/About/What-is-CyberPatriot.aspx&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://twitter.com/TheWestTimes&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://twitter.com/TheWestTimes&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://ccphq.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://ccphq.org/&lt;/a&gt;&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/Where-I-Am/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -383,9 +514,15 @@
       <link>https://wznmickey.com/2020/China-Will-Not-Save-Europe/</link>
       <guid>https://wznmickey.com/2020/China-Will-Not-Save-Europe/</guid>
       <pubDate>Sat, 28 Mar 2020 14:05:23 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;本文为转载，原文链接:&lt;a href=&quot;https://mogeko.me/2020/077/&quot;&gt;https://mogeko.me/2020/077/&lt;/a&gt;&lt;br&gt;采用知识共享署名 - 非商业性使用 4.0 国际许可协议进行许可&lt;br&gt;译者：&lt;a href=&quot;https://mogeko.me/about/&quot;&gt;Mogeko&lt;/a&gt;&lt;br&gt;原文作者：&lt;a href=&quot;https://thewesttimes.com/?author-0&amp;lang=en&quot;&gt;Neruthes&lt;/a&gt;&lt;br&gt;原文链接：&lt;a href=&quot;https://thewesttimes.com/?article-4--china-will-not-save-europe&amp;lang=en&quot;&gt;China Will Not Save Europe&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
+=======
+      <description>
+      
+        &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;本文为转载，原文链接:&lt;a href=&quot;https://mogeko.me/2020/077/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mogeko.me/2020/077/&lt;/a&gt;&lt;br&gt;采用知识共享署名 - 非商业性使用 4.0 国际许可协议进行许可&lt;br&gt;译者：&lt;a href=&quot;https://mogeko.me/about/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mogeko&lt;/a&gt;&lt;br&gt;原文作者：&lt;a href=&quot;https://thewesttimes.com/?author-0&amp;lang=en&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Neruthes&lt;/a&gt;&lt;br&gt;原文链接：&lt;a href=&quot;https://thewesttimes.com/?article-4--china-will-not-save-europe&amp;lang=en&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;China Will Not Save Europe&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+>>>>>>> origin/old
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/general/1.jpg&quot; alt=&quot;题图&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;翻译了《西方时报》3 月 15 日发的一篇社论，目的是给大家提供一些不一样的思路，不代表我的政治观点和立场。&lt;/p&gt;
@@ -405,6 +542,7 @@
 &lt;p&gt;接下来的几十年中，中国将会越来越有兴趣在欧洲建立准军事组织，以维护海上丝绸之路的安全，这是欧印战略 (Euro-Indian strategy) 的一部分 (确实是个好笑的名字)，无论它是否承认。&lt;/p&gt;
 &lt;h1 id=&quot;瑞士与中国的雄心&quot;&gt;&lt;a href=&quot;#瑞士与中国的雄心&quot; class=&quot;headerlink&quot; title=&quot;瑞士与中国的雄心&quot;&gt;&lt;/a&gt;瑞士与中国的雄心&lt;/h1&gt;&lt;p&gt;最近，欧洲国家间发生了不少冲突。据称德国和意大利截获了本应属于瑞士的医疗用品。瑞士不是欧盟成员国，因此瑞士不可能获得欧盟内部标准的医疗援助。&lt;/p&gt;
 &lt;p&gt;有的人可能会忽略瑞士人民对于这些事态发展有多敏感。(地理上，) 瑞士作为一个小国被法国、德国和意大利这三个欧盟的核心成员国夹在中间。他们都可能拦截瑞士从中国和其他制造基地经海路进口的任何医疗物资。目前，医疗物资的对于国家安全来说比以往任何时候都要重要。瑞士是应该接受自己作为一个小国任人宰割的命运，还是应该寻求欧盟以外的伙伴关系来保护其国家安全不受欧盟朋友的侵犯？虽然中国一直奉行「不结盟」的政策，但政策的实施始终具有灵活性，中国不会受到自己政策的限制。他们将口罩和防护服运送到日内瓦和苏黎世时，可以说「这只是一些民用货物，根本没有军事合作」。瑞士可以在不损害瑞士的永久中立政策的前提下接受中国的援助，而后者可以让瑞士避免因为自己的「欧盟好邻居」而使得流行病大规模爆发。&lt;/p&gt;
+<<<<<<< HEAD
 &lt;p&gt;在与德国发生&lt;a href=&quot;https://www.thelocal.ch/20200312/mask-hysteria&quot;&gt;两起纠纷&lt;/a&gt;后，我们将可以看到瑞士如何加强与中国的联系。猜猜哪些航空公司将因其与中国的物流联系而受到瑞士政府的青睐？&lt;/p&gt;
 &lt;h1 id=&quot;像中国一样团结&quot;&gt;&lt;a href=&quot;#像中国一样团结&quot; class=&quot;headerlink&quot; title=&quot;像中国一样团结&quot;&gt;&lt;/a&gt;像中国一样团结&lt;/h1&gt;&lt;p&gt;现在的欧盟乱成一团。成员国之间相互发表出口禁令。思路很简单。如果疫情被控制在一个地方，那么其他地方将无需应对 (疫情)。供给给疫区的物品 (按照这个逻辑应该是指普通商品) 越晚，疫情就越难以传播到外部。&lt;/p&gt;
 &lt;p&gt;更具讽刺意味的是，在中国 —— 一个经常被西方人歧视的国家 —— 情况却恰恰相反。其他省份为湖北提供了巨大的帮助；湖北的每一个城市都从相应的省获得了全面的医疗援助。动员了数千名医生来抗击疫情。中国人民团结起来。中国人民 (主动) 参与流行病控制，在欧洲这完全是行不通的，甚至是白日梦。现在，谁才是真正的病夫？&lt;/p&gt;
@@ -425,6 +563,16 @@
       
       <comments>https://wznmickey.com/2020/China-Will-Not-Save-Europe/#disqus_thread</comments>
       
+=======
+&lt;p&gt;在与德国发生&lt;a href=&quot;https://www.thelocal.ch/20200312/mask-hysteria&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;两起纠纷&lt;/a&gt;后，我们将可以看到瑞士如何加强与中国的联系。猜猜哪些航空公司将因其与中国的物流联系而受到瑞士政府的青睐？&lt;/p&gt;
+&lt;h1 id=&quot;像中国一样团结&quot;&gt;&lt;a href=&quot;#像中国一样团结&quot; class=&quot;headerlink&quot; title=&quot;像中国一样团结&quot;&gt;&lt;/a&gt;像中国一样团结&lt;/h1&gt;&lt;p&gt;现在的欧盟乱成一团。成员国之间相互发表出口禁令。思路很简单。如果疫情被控制在一个地方，那么其他地方将无需应对 (疫情)。供给给疫区的物品 (按照这个逻辑应该是指普通商品) 越晚，疫情就越难以传播到外部。&lt;/p&gt;
+&lt;p&gt;更具讽刺意味的是，在中国 —— 一个经常被西方人歧视的国家 —— 情况却恰恰相反。其他省份为湖北提供了巨大的帮助；湖北的每一个城市都从相应的省获得了全面的医疗援助。动员了数千名医生来抗击疫情。中国人民团结起来。中国人民 (主动) 参与流行病控制，在欧洲这完全是行不通的，甚至是白日梦。现在，谁才是真正的病夫？&lt;/p&gt;
+&lt;p&gt;除非欧洲像中国那样&lt;strong&gt;团结&lt;/strong&gt;，否则欧洲只能追求而不能实现「真正的欧盟」(a common identity or a common interest)。否则，一旦危险来临，欧洲的合作将会崩溃，而后欧洲国家 (又不得不) 单独向中国寻求帮助。&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/China-Will-Not-Save-Europe/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -432,9 +580,15 @@
       <link>https://wznmickey.com/2020/a-travel-to-the-USA/</link>
       <guid>https://wznmickey.com/2020/a-travel-to-the-USA/</guid>
       <pubDate>Tue, 17 Mar 2020 09:41:26 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;这是几年前去哈佛的记录的一部分。&lt;/p&gt;
 &lt;/div&gt;
+=======
+      <description>
+      
+        &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;这是几年前去哈佛的记录的一部分。&lt;/p&gt;&lt;/div&gt;
+>>>>>>> origin/old
 &lt;h1 id=&quot;Part-1-戏精退化之路（特）&quot;&gt;&lt;a href=&quot;#Part-1-戏精退化之路（特）&quot; class=&quot;headerlink&quot; title=&quot;Part 1 戏精退化之路（特）&quot;&gt;&lt;/a&gt;Part 1 戏精退化之路（特）&lt;/h1&gt;&lt;p&gt;  *TIPS：以下为背景介绍。&lt;br&gt;  第一程（From  上海  To 底特律）一开始很正常，然后拿出手机看完《人民币》后写完政治作业，基本上飞到和北海道同纬度的时候就睡了，之后醒来，再睡，一直循环到从阿留申群岛到阿拉斯加再入境加拿大，最后就剩1小时时才彻底清醒。&lt;br&gt;  第二程（From 底特律 To 波士顿）从计划的4点多一直延误到6点多（下雪），本身计划要用3个小时写作业，然而上了飞机就睡觉。刚睁眼，就发现已经降落了。在飞机到酒店的大巴上也是基本睡过去的。&lt;br&gt;  Day 1早上起来opening ceremony 就是完全听不懂的。参观哈佛就拍了几张照，介绍就听明白有一个图书馆是和泰坦尼克有关的。下午上课用了10分钟等人，然后讲了我能听懂（映射）&amp;amp;学过的（子集个数）集合知识，接下来是老师独白，完全听不懂，之后开始讲pi（8pi-pi=21.99约等于22=》pi=22/7，然后吹了一波古代中国人），过了几分钟又跳回去讲集合，又跳到了排列组合，大概半小时之后就完全听不懂了，老师的板书直接升级为天书。最后撑到最后10分钟还是睡了。（房间本身就昏暗，空调又像不要钱地开）之后的research paper 的课上在听不懂的主要障碍下，当PPT上的字由一页三四行变为十多行的情况下，加之电脑没电，于是又睡了。&lt;/p&gt;
 &lt;p&gt;以下为正文。&lt;br&gt;  从初中的从来上课不睡，到后来高中刚开始强忍不睡，最后在一节地理课睡了开头，最后就是偶尔睡。从一开始的假装我不困，一本正经地上课到后来只在老师看是才演。&lt;br&gt;  Now，opening ceremony时还可以保证一本正经，虽然啥也听不懂，但是装出很认真的样子。下午开始装出听懂了，我不困的样子，再到我就睡了，不演了。&lt;/p&gt;
 &lt;h1 id=&quot;Part-2-不知道上的什么课&quot;&gt;&lt;a href=&quot;#Part-2-不知道上的什么课&quot; class=&quot;headerlink&quot; title=&quot;Part 2 不知道上的什么课&quot;&gt;&lt;/a&gt;Part 2 不知道上的什么课&lt;/h1&gt;&lt;p&gt;  第一节课：[13:00-15:59] THS 1: Section 3: Thesis Seminar (Tuesday)Location: Sever 208Read example paper in your track (listed at go.hauscr.org/red-handbook), take notes and write down which parts you liked or disliked. Come prepared with questions/comments for the Research Orientation workshop in the evening. This should take at least 60 minutes, and if you have extra time you can begin brainstorming for your own paper and writing down ideas.&lt;br&gt;  第二节课：[14:30-15:59] MATH 23C: Mathematics for Computation, Statistics, and Data ScienceLocation: Science Center Hall AProof strategies and logic. Sets, countability, sigma fields, and axiomatic foundations of probability.  Summation of series and evaluation of multiple integrals, with emphasis on calculation of expectation and variance.  Abstract vector spaces and inner product spaces, with applications to analysis of large datasets.  Key functions and theorems of mathematical statistics.  A brief introduction to classical vector calculus as used in electromagnetic theory.  Students will learn to use some of the statistical and graphical display tools in the R scripting language.&lt;/p&gt;
@@ -443,6 +597,7 @@
 &lt;h1 id=&quot;Part-5-意料之外&quot;&gt;&lt;a href=&quot;#Part-5-意料之外&quot; class=&quot;headerlink&quot; title=&quot;Part 5 意料之外&quot;&gt;&lt;/a&gt;Part 5 意料之外&lt;/h1&gt;&lt;p&gt;  Point 1 教室里没有桌子，只有椅子和一块固定在椅子上可移动的小板，别人的电脑只要把键盘放在板上即可，然而我要把屏幕的支架打开，从支架到屏幕都要放上去，每次都是小心翼翼地放和维护。&lt;br&gt;  Point 2 上课，哈佛学生有教案，然而我们没有。&lt;br&gt;  Point 3 The opening ceremony and the second class are full of laughing.（【Although】我啥也没听懂，【但】笑话的确很多）&lt;/p&gt;
 &lt;h1 id=&quot;Part-6-情理之中&quot;&gt;&lt;a href=&quot;#Part-6-情理之中&quot; class=&quot;headerlink&quot; title=&quot;Part 6 情理之中&quot;&gt;&lt;/a&gt;Part 6 情理之中&lt;/h1&gt;&lt;p&gt;  Point 1 坐飞机后就丢了一把伞。&lt;br&gt;  Point 2 下午做活动时，我记住的东西是最少的。&lt;/p&gt;
 &lt;h1 id=&quot;Part-N-其他&quot;&gt;&lt;a href=&quot;#Part-N-其他&quot; class=&quot;headerlink&quot; title=&quot;Part N 其他&quot;&gt;&lt;/a&gt;Part N 其他&lt;/h1&gt;&lt;p&gt;  Point 1 上午吃早饭时在群里穿看见了高晓松，然而我并没有看见。看微博仿佛没有问题，也许Day 2 能看见？&lt;/p&gt;
+<<<<<<< HEAD
 &lt;h1 id=&quot;Part-N-1-情景故事&quot;&gt;&lt;a href=&quot;#Part-N-1-情景故事&quot; class=&quot;headerlink&quot; title=&quot;Part N+1 情景故事&quot;&gt;&lt;/a&gt;Part N+1 情景故事&lt;/h1&gt;&lt;p&gt;  Story 1 启程前说很难吃，但是还好啊。&lt;br&gt;  Story 2 吃完饭出来才发现忘带了东西，在一层楼逛了好几圈才找到那间教室。&lt;br&gt;</description>
       
       
@@ -456,6 +611,46 @@
       
       <comments>https://wznmickey.com/2020/a-travel-to-the-USA/#disqus_thread</comments>
       
+=======
+&lt;h1 id=&quot;Part-N-1-情景故事&quot;&gt;&lt;a href=&quot;#Part-N-1-情景故事&quot; class=&quot;headerlink&quot; title=&quot;Part N+1 情景故事&quot;&gt;&lt;/a&gt;Part N+1 情景故事&lt;/h1&gt;&lt;p&gt;  Story 1 启程前说很难吃，但是还好啊。&lt;br&gt;  Story 2 吃完饭出来才发现忘带了东西，在一层楼逛了好几圈才找到那间教室。&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/a-travel-to-the-USA/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>一道数学题|A Math Problem</title>
+      <link>https://wznmickey.com/2020/a-math-problem/</link>
+      <guid>https://wznmickey.com/2020/a-math-problem/</guid>
+      <pubDate>Fri, 13 Mar 2020 07:52:35 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;一天遇到了一道题&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200313_1.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_1.jpg&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;br&gt;思考半天也不知道第三小问怎么做，幸好首项只有36种可能，枚举了[1,17]中的奇数就算出了答案，老师讲评时也用了枚举法算的，还画出了这幅图，让我有了一种图论题的感觉。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200313_2.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_2.jpg&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;br&gt;老师又让我们思考36改为其他数值的情况，然而我并不能想出来，又想到仿佛可以用图的方法做，于是就写了一段算了一下。结果如下：&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200313_3.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_3.jpg&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;br&gt;这有什么规律吗？去问了老师，结果老师回复&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200313_4.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200313_4.jpg&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;br&gt;是我想太多了。&lt;/p&gt;
+&lt;p&gt;好久没做过题了，也比较懒，数据量也不大，就比较暴力了，代码如下：&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/a-math-problem/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>做一个真正的关注者|Pay true attention</title>
+      <link>https://wznmickey.com/2020/pay-true-attention/</link>
+      <guid>https://wznmickey.com/2020/pay-true-attention/</guid>
+      <pubDate>Fri, 06 Mar 2020 07:01:37 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;生活中，我们自以为是某个事件的关注者，其实，我们往往不明就里，只凑了个热闹，没过多久就忘记了，成为事件的忽视者。请写一篇文章，谈谈你对这种现象的思考。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;此题为2018年上海市闵行区高三二模作文题。&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;　　在生活中我们不可避免关注许多看似热热闹闹的事件，但是不少人的关注却最终变成了忽视，这是为什么呢？&lt;br&gt;　　关注有误。这些成为忽视者的人也许就没有真正关注过。他们口中的关注常常只是瞄上一两眼就随手转发，既不对信息的真实性进行确定，也不深入思考事件发生的原因。这是因为过多的信息导致人们难以分辨信息真假，不少人选择跟随大众，放弃思考，被动接受。同时，网络上还泛滥着大量的无必要关注的娱乐事件，这让人们在遇到严肃事件时难以找回丢失的关注、思考能力。这样，关于事件的记忆只能成为短时记忆，很快就会消失，成为忽视者。&lt;br&gt;　　共情有失。他们成为忽视者，根本的原因是民众共情能力的下降。不少物欲主义的接受者逐渐将金钱视为衡量一切的标准，情感变得麻木起来，只在意自己，而不在意外部世界中千千万万的“我”。怎么能指望那些看淡亲情、友情的人真正在意千里之外的事件相关者呢？这些将金钱视为一切的人是自私的，他们仅仅从利己的角度参与事件。那些本应被真正关注的被投入情感的事件只是他们口中用于炫耀的谈资。这些对灾难中的受害者只是机械地敲着键盘哀悼的看客们怎么能真正关注事件呢？&lt;br&gt;　　看客心态的关注不能成为真正的关注。这样的关注绝不可能深挖事件，找到事件背后的原因，解决事件背后存在的问题。庄子曾说：“以有涯随无涯，殆矣”。同样，在对事件的关注的角度上，关注所有事件也是不可行的。我们应该以事件背后可能存在的问题大小为依据，对事件分层级，抓住主要矛盾，关注那些重要的事，而忽视那些次要的事。&lt;br&gt;　　做一个真正的关注者，我们对事件的关注就不应是凑热闹式的不走心的浏览与从众，不应是对于信息不假思索的接受并以信息的广为豪，而应是向深处挖掘，投入情感，从多角度获取事件信息，认真独立思考、研究，将针对这一事件的短时记忆转变为持久记忆。同时，传统媒体工作者应保持本心，保证作品的质量，并且政府及社交媒体平台也应当加强对信息的审核和监督，阻止不实信息和过度娱乐化信息的传播，传播能让民众恢复缺失的共情能力的信息。&lt;br&gt;　　真正的关注不应是随意的一瞥，而应对事件做感性与理性并存的思考，真正参与事件，让自己不成为加缪笔下的浑浑噩噩过完一生的局外人。那么，为什么我们不行动起来，做一个真正的关注者呢？&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/pay-true-attention/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -463,11 +658,19 @@
       <link>https://wznmickey.com/2020/inote/</link>
       <guid>https://wznmickey.com/2020/inote/</guid>
       <pubDate>Sun, 01 Mar 2020 14:12:51 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200301_1.jpg&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200301_1.jpg&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;文言知识&quot;&gt;&lt;a href=&quot;#文言知识&quot; class=&quot;headerlink&quot; title=&quot;文言知识&quot;&gt;&lt;/a&gt;文言知识&lt;/h1&gt;&lt;h2 id=&quot;词类活用&quot;&gt;&lt;a href=&quot;#词类活用&quot; class=&quot;headerlink&quot; title=&quot;词类活用&quot;&gt;&lt;/a&gt;词类活用&lt;/h2&gt;&lt;h3 id=&quot;一般&quot;&gt;&lt;a href=&quot;#一般&quot; class=&quot;headerlink&quot; title=&quot;一般&quot;&gt;&lt;/a&gt;一般&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;词性→句子中的成分→词类活用类型&lt;/p&gt;
 &lt;/li&gt;
+=======
+      <description>
+      
+        &lt;p&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200301_1.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200301_1.jpg&quot; title=&quot;点击查看大图&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;文言知识&quot;&gt;&lt;a href=&quot;#文言知识&quot; class=&quot;headerlink&quot; title=&quot;文言知识&quot;&gt;&lt;/a&gt;文言知识&lt;/h1&gt;&lt;h2 id=&quot;词类活用&quot;&gt;&lt;a href=&quot;#词类活用&quot; class=&quot;headerlink&quot; title=&quot;词类活用&quot;&gt;&lt;/a&gt;词类活用&lt;/h2&gt;&lt;h3 id=&quot;一般&quot;&gt;&lt;a href=&quot;#一般&quot; class=&quot;headerlink&quot; title=&quot;一般&quot;&gt;&lt;/a&gt;一般&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;词性→句子中的成分→词类活用类型&lt;/li&gt;
+>>>>>>> origin/old
 &lt;li&gt;&lt;p&gt;名词活用&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;作谓语&lt;/p&gt;
@@ -522,6 +725,7 @@
 &lt;li&gt;代替宾语如何&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+<<<<<<< HEAD
 &lt;/ul&gt;</description>
       
       
@@ -565,6 +769,30 @@
       
       <comments>https://wznmickey.com/2020/pay-true-attention/#disqus_thread</comments>
       
+=======
+&lt;/ul&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/inote/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>闵行高三一模作文|Chinese Composition of First Minghang Mock Exam</title>
+      <link>https://wznmickey.com/2020/chinese-composition-of-first-minghang-mock-exam/</link>
+      <guid>https://wznmickey.com/2020/chinese-composition-of-first-minghang-mock-exam/</guid>
+      <pubDate>Sat, 15 Feb 2020 15:31:56 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;衡量一个人是否高贵，虽然有人看重他物质财富的多寡，但重要的还是看他精神境界的高低。对此，你有怎样的思考。请写一篇文章。要求：（1）自拟题目；（2）不少于800字。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;　　物质财富的富饶与精神境界的丰裕是许多人追求的，在衡量一个人高贵与否时，我们常常也从这两方面入手，可是有些人却只注重前者，没有意识到高的精神境界对一个高贵的人更重要，这是因为高贵不但包括在物质的拥有，而且包括其精神上的高，拥有自由的灵魂。&lt;br&gt;　　当一个人变得高贵后，就不会变得平庸，但物质财富的多寡只是暂时的，并不能保证永远拥有。以短暂的物质财富评判个人的永恒的高贵显然是不合适的。&lt;br&gt;　　只追求物质上的多意味着其丧失了自由，被物质所奴役。一个人物质财富的多少不仅仅由个人的努力决定，还受外部环境的限制。只追求物质的丰富的人或最终失去自己仅有的物质，一无所有，或为了获取物质而违背自己意愿，丧失了自由，为了高贵而努力获取更多的物质，越来越禁锢自己的灵魂。不为五斗米折腰是因为一次的折腰不是结束，而是一次又一次的选择的开始，只追求物质而不追去灵魂，便是在一次又一次的选择中折磨，逐渐失去了自由的灵魂。&lt;br&gt;　　精神之高既能让你在物质丰富时不被物欲迷眼，拥有心灵的自由，也能让你在物质较少时保持精神的丰富，而非那些只知物质者一无所有。&lt;br&gt;　　追求精神的人不会被物质所奴役，拥有着自由。当一个人追求心灵的境界而不过分执着于物质，他就不会在做事时只在物质层面计算得失，而是在物质和精神两个层面都进行计算，不同于那些只计较物质而忽略精神的丧失灵魂自由的人，将精神考虑的人不会因小小的物质收获而放弃灵魂。&lt;br&gt;　　精神之高不仅能让人在物质诱惑前拥有自由，还能在物质不足之时保持自我。不同于在丧失物质时会一无所措的只追求易失的物质的人，追求精神境界的人能从容淡定地面对物质的窘迫，并用精神上的丰裕对抗物质的窘迫，将高贵成为永恒的。&lt;br&gt;　　从古至今，从来不缺少那些只追求物质享受而无精神追求的人。那些贪图眼前小利毫无道德操守，全然不在意精神的人给这个国家和社会带来了许多灾难，我们应当从这些人身上吸取教训，在追求高贵时重视精神而非只看重物质。&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/chinese-composition-of-first-minghang-mock-exam/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -572,6 +800,7 @@
       <link>https://wznmickey.com/2020/a-strange-idea/</link>
       <guid>https://wznmickey.com/2020/a-strange-idea/</guid>
       <pubDate>Sat, 15 Feb 2020 14:52:31 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;　　偶然想到1century=10decades=100years，又感觉中文里好像没有对应decade的单位，强行翻译就好像是十十年=一百年，但是想想乘法口诀表好像的确是十十一百，没有问题。这么说其实乘法口诀表“七九六十三”实际上是定义了两个新单位“九”和“六十三”吗？&lt;/p&gt;
 &lt;p&gt;　　另，在纠结decade需不需要加s时看到了一个奇怪的问答。这就去和数学老师对线。网址:&lt;a href=&quot;http://ask.koolearn.com/topic/show/412202.page&quot;&gt;http://ask.koolearn.com/topic/show/412202.page&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200215_1.png&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200215_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　更新内容：&lt;br&gt;　　　　2020-02-16 加入网址&lt;a href=&quot;http://ask.koolearn.com/topic/show/412202.page&quot;&gt;http://ask.koolearn.com/topic/show/412202.page&lt;/a&gt;&lt;/p&gt;</description>
@@ -615,6 +844,16 @@
       
       <comments>https://wznmickey.com/2020/chinese-composition-of-first-minghang-mock-exam/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;　　偶然想到1century=10decades=100years，又感觉中文里好像没有对应decade的单位，强行翻译就好像是十十年=一百年，但是想想乘法口诀表好像的确是十十一百，没有问题。这么说其实乘法口诀表“七九六十三”实际上是定义了两个新单位“九”和“六十三”吗？&lt;/p&gt;
+&lt;p&gt;　　另，在纠结decade需不需要加s时看到了一个奇怪的问答。这就去和数学老师对线。网址:&lt;a href=&quot;http://ask.koolearn.com/topic/show/412202.page&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://ask.koolearn.com/topic/show/412202.page&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200215_1.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200215_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　更新内容：&lt;br&gt;　　　　2020-02-16 加入网址&lt;a href=&quot;http://ask.koolearn.com/topic/show/412202.page&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://ask.koolearn.com/topic/show/412202.page&lt;/a&gt;&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/a-strange-idea/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -622,6 +861,7 @@
       <link>https://wznmickey.com/2020/A%20poem/</link>
       <guid>https://wznmickey.com/2020/A%20poem/</guid>
       <pubDate>Wed, 12 Feb 2020 04:05:14 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;在学校里&lt;del&gt;自愿&lt;/del&gt;写的一首诗。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;A&amp;nbsp;C&amp;nbsp;自动机&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;反证证贪心&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;十月&amp;nbsp;C&amp;nbsp;P&amp;nbsp;P&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;载一已过矣&lt;/strong&gt;&lt;/p&gt;</description>
@@ -639,6 +879,16 @@
       
       <comments>https://wznmickey.com/2020/A%20poem/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;在学校里&lt;del&gt;自愿&lt;/del&gt;写的一首诗。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A&amp;nbsp;C&amp;nbsp;自动机&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;反证证贪心&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;十月&amp;nbsp;C&amp;nbsp;P&amp;nbsp;P&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;载一已过矣&lt;/strong&gt;&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2020/A%20poem/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -646,6 +896,7 @@
       <link>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8F%91%E5%B1%95%E7%A6%BB%E4%B8%8D%E5%BC%80%E8%89%BA%E6%9C%AF/</link>
       <guid>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8F%91%E5%B1%95%E7%A6%BB%E4%B8%8D%E5%BC%80%E8%89%BA%E6%9C%AF/</guid>
       <pubDate>Sun, 15 Dec 2019 07:40:50 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;blockquote&gt;
 &lt;p&gt;阅读下面材料，写一篇作文。&lt;br&gt;荷兰一工作室，利用太阳能创建了一条在黑暗中发光的自行车道，灵感来自梵高的“繁星闪烁的夜晚”。这条路白天吸收太阳能，晚上自己发光发亮。&lt;br&gt;根据上述材料，请自选角度，自拟题目，写一篇文章。&lt;br&gt;要求：（1）不少于800字。（2）不要写成诗歌。（3）不要透露个人相关信息。&lt;/p&gt;
@@ -669,6 +920,19 @@
       
       <comments>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8F%91%E5%B1%95%E7%A6%BB%E4%B8%8D%E5%BC%80%E8%89%BA%E6%9C%AF/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;阅读下面材料，写一篇作文。&lt;br&gt;荷兰一工作室，利用太阳能创建了一条在黑暗中发光的自行车道，灵感来自梵高的“繁星闪烁的夜晚”。这条路白天吸收太阳能，晚上自己发光发亮。&lt;br&gt;根据上述材料，请自选角度，自拟题目，写一篇文章。&lt;br&gt;要求：（1）不少于800字。（2）不要写成诗歌。（3）不要透露个人相关信息。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;此题为2019年上海市杨浦区高三一模作文题。&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;　　荷兰的一家工作室从梵高的画繁星闪烁的夜晚中得到灵感，建造了一条自行车道，借助白天吸收的太阳能，在夜晚发光，让骑行者可以在夜晚骑行的同时感受到梵高画作的的美感。这体现了科技与艺术之间的关系，即科学技术成果的出现离不开艺术。&lt;br&gt;　　艺术为科学技术的发展提供了帮助。一方面艺术可以检验科学技术的成果。托勒密提出的地心说因为与天文学的观测结果的不同而不断地修改，理论中的本轮越来越多，使创建之初的同心匀速圆周运动逐渐失去了简洁美。哥白尼感受到了这种美的崩塌，转而选择太阳作为旋转中心，使得太阳系的天体表达更简洁。另一方面艺术可以直接促进科学技术的发展。牛顿在简洁美的推动下，将地上的力与天上的力统一，研究出了万有引力定律。&lt;br&gt;　　科学研究离不开艺术，根本是因为这二者有共同的目标。无论是科学研究还是艺术创作，都是人的内心追求。就如福楼拜所说的: “艺术越来越科学化, 科学越来越艺术化, 两者在山 麓分手, 有朝一日, 将在山顶重逢。” 科学家通过不断的研究发现更深层次的自然规律，这是自然的美，而人类通过画作、雕塑展现的是人自己的美。这两者都是对美的不同的方向的追求，但目标是统一的。无论是科技还是艺术，都必须对人有实际意义才是有价值的。&lt;br&gt;　　然艺术不是无源的。不同人眼中的艺术价值是不同的，这与不同人的思维方式与实践经验有关。艺术的创作必须来源于实践才有丰富的价值，不能闭门造车。同时，艺术的创作也离不开科学技术的发展，对颜料的不断探索使得画作能有更丰富的颜色，透视法也帮助了画家更好地绘制作品。随着科学技术的发展，许多人的基本需求得到了满足，开始了对美的追求，科学技术的发展使得普通人更容易解除艺术。你不必到美术馆中欣赏梵高的画，而是可以在骑自行车时欣赏这种意境。这种感觉不仅更容易获得，也比美术馆的感受更深。&lt;br&gt;　　科学技术与艺术创作难舍难分。荷兰的工作室将梵高的画与环保的理念融合，是利用艺术应用科学技术的一个例子。但许多人却没有认识到这一体两面的关系，错误地将科学与艺术割裂开，不注重科学技术与艺术的结合，忽视艺术，做出的结果常常没有实际意义。这些研究既是对资金的浪费，更是对人才的浪费。&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8F%91%E5%B1%95%E7%A6%BB%E4%B8%8D%E5%BC%80%E8%89%BA%E6%9C%AF/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -676,6 +940,7 @@
       <link>https://wznmickey.com/2019/%E8%AF%BB%E5%90%8E%E6%84%9F%E2%80%94%E2%80%94%E7%AB%9E%E9%80%89%E5%B7%9E%E9%95%BF/</link>
       <guid>https://wznmickey.com/2019/%E8%AF%BB%E5%90%8E%E6%84%9F%E2%80%94%E2%80%94%E7%AB%9E%E9%80%89%E5%B7%9E%E9%95%BF/</guid>
       <pubDate>Sun, 06 Oct 2019 13:36:42 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;Running for Governor is a novel written by Mark Twain in 1870, which unmasks the darkness of the capitalism. I was nominated for governor of the great State of New York. I thought that I had a big advantage over others, which was good character at first. But then a lot of fake news appeared on the newspaper. I suddenly became a perjurer, a thief, a body-snatcher, a delirium tremen, a corruptionist and an embracer. The editors made up one story after another and asked me to answer these charges and thus I had no choice to give it up.&lt;br&gt;The background of the novel is that after the civil war, the Democratic Party and the Republican Party used a lot of money to attack each other in various ways. Despite the great character of me, I was so weak that I didn’t debate with those who made up fake news so that I give it up, meaning that the ugly politician would finally become the governor, which reflects the disadvantage of the electoral system.&lt;br&gt;The part that impressed me the most is the ending, where nine little toddling children of all shades of colour and degrees of raggedness rushed on to the platform at a public meeting, clasped me around the legs and called me father, reaching the climax of the novel. I can even imagine the picture of it.&lt;br&gt;Despite the fact that it was written more than a century ago, it still has realistic significance now. What happened in the novel was what happened in the 2016 election in the United State. What were reported the most were troubled histories of Hilary and Trump instead of their plans. The idea that Russia has interfered the 2016 election and will interfere the 2020 election to let Trump to be elected has never stopped.&lt;/p&gt;</description>
       
@@ -694,6 +959,15 @@
       
       <comments>https://wznmickey.com/2019/%E8%AF%BB%E5%90%8E%E6%84%9F%E2%80%94%E2%80%94%E7%AB%9E%E9%80%89%E5%B7%9E%E9%95%BF/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;Running for Governor is a novel written by Mark Twain in 1870, which unmasks the darkness of the capitalism. I was nominated for governor of the great State of New York. I thought that I had a big advantage over others, which was good character at first. But then a lot of fake news appeared on the newspaper. I suddenly became a perjurer, a thief, a body-snatcher, a delirium tremen, a corruptionist and an embracer. The editors made up one story after another and asked me to answer these charges and thus I had no choice to give it up.&lt;br&gt;The background of the novel is that after the civil war, the Democratic Party and the Republican Party used a lot of money to attack each other in various ways. Despite the great character of me, I was so weak that I didn’t debate with those who made up fake news so that I give it up, meaning that the ugly politician would finally become the governor, which reflects the disadvantage of the electoral system.&lt;br&gt;The part that impressed me the most is the ending, where nine little toddling children of all shades of colour and degrees of raggedness rushed on to the platform at a public meeting, clasped me around the legs and called me father, reaching the climax of the novel. I can even imagine the picture of it.&lt;br&gt;Despite the fact that it was written more than a century ago, it still has realistic significance now. What happened in the novel was what happened in the 2016 election in the United State. What were reported the most were troubled histories of Hilary and Trump instead of their plans. The idea that Russia has interfered the 2016 election and will interfere the 2020 election to let Trump to be elected has never stopped.&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E8%AF%BB%E5%90%8E%E6%84%9F%E2%80%94%E2%80%94%E7%AB%9E%E9%80%89%E5%B7%9E%E9%95%BF/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -701,6 +975,7 @@
       <link>https://wznmickey.com/2019/%E5%BD%B1%E8%AF%84%E8%8B%B1%E4%BC%A6%E5%AF%B9%E5%86%B3%E2%80%94%E2%80%94%E6%88%90%E9%BE%99%E7%9A%84%E5%8F%88%E4%B8%80%E5%8A%9B%E4%BD%9C/</link>
       <guid>https://wznmickey.com/2019/%E5%BD%B1%E8%AF%84%E8%8B%B1%E4%BC%A6%E5%AF%B9%E5%86%B3%E2%80%94%E2%80%94%E6%88%90%E9%BE%99%E7%9A%84%E5%8F%88%E4%B8%80%E5%8A%9B%E4%BD%9C/</guid>
       <pubDate>Fri, 30 Aug 2019 09:33:48 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;&lt;em&gt;The Foreigner&lt;/em&gt; is a film directed by Martin Campbell. In the film, Jackie Chan acts as a British Vietnamese Chinese whose name is Guan Yuming. He has been a soldier attending the Vietnam War, whose daughter, his last family member, was killed in a terrorist attack in London, but because of the political struggle between the United Kingdom government and the Northern Ireland government and the fact that the vice minister of Northern Ireland who was a member of the terrorist organization and still keeps in touch with the controller wants to take advantage of the attack to trade with the UK government to have better political future, nobody cares about the dead. What’s more, some members discover his plan and struggle with him. There are some spies around him from the UK government and the terrorist organization. Everyone has his or her own idea, but nobody really cares about the dead.&lt;br&gt;To revenge on the terrorist organization and the vice minister, he follows the tracks of him, finds evidence of his errant actions and many other things, and asks for the name list of the attackers. Finally, he manages to kill them and post the evidence on the Internet, making the vice minister lose everything.&lt;br&gt;The story is partly a fiction, but the violent struggle between the UK government and separatists is from the First World War to 1998 is true. This film unmasks the struggle both between the UK government and the terrorist organization and between the terrorists.&lt;br&gt;Actuarially, without the foreigner, the UK government can still deal with the terrorist organization. This film just shows a story about revenge.&lt;br&gt;My favourite character is Guan Yuming because of the action.&lt;br&gt;“Everybody’s here, meet, dad.” is the last saying the daughter to Guan Yuming. Just in front of Guan Yuming, his daughter goes into the house, and minutes later, the bomb burst. Although he immediately rushes into the house to save his only family member. His wife and other sons and daughters has been dead because of the family’s hard trip to the UK. You can imagine how sad Guan Yuming is when he loses his last family member.&lt;/p&gt;</description>
       
@@ -719,6 +994,15 @@
       
       <comments>https://wznmickey.com/2019/%E5%BD%B1%E8%AF%84%E8%8B%B1%E4%BC%A6%E5%AF%B9%E5%86%B3%E2%80%94%E2%80%94%E6%88%90%E9%BE%99%E7%9A%84%E5%8F%88%E4%B8%80%E5%8A%9B%E4%BD%9C/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;&lt;em&gt;The Foreigner&lt;/em&gt; is a film directed by Martin Campbell. In the film, Jackie Chan acts as a British Vietnamese Chinese whose name is Guan Yuming. He has been a soldier attending the Vietnam War, whose daughter, his last family member, was killed in a terrorist attack in London, but because of the political struggle between the United Kingdom government and the Northern Ireland government and the fact that the vice minister of Northern Ireland who was a member of the terrorist organization and still keeps in touch with the controller wants to take advantage of the attack to trade with the UK government to have better political future, nobody cares about the dead. What’s more, some members discover his plan and struggle with him. There are some spies around him from the UK government and the terrorist organization. Everyone has his or her own idea, but nobody really cares about the dead.&lt;br&gt;To revenge on the terrorist organization and the vice minister, he follows the tracks of him, finds evidence of his errant actions and many other things, and asks for the name list of the attackers. Finally, he manages to kill them and post the evidence on the Internet, making the vice minister lose everything.&lt;br&gt;The story is partly a fiction, but the violent struggle between the UK government and separatists is from the First World War to 1998 is true. This film unmasks the struggle both between the UK government and the terrorist organization and between the terrorists.&lt;br&gt;Actuarially, without the foreigner, the UK government can still deal with the terrorist organization. This film just shows a story about revenge.&lt;br&gt;My favourite character is Guan Yuming because of the action.&lt;br&gt;“Everybody’s here, meet, dad.” is the last saying the daughter to Guan Yuming. Just in front of Guan Yuming, his daughter goes into the house, and minutes later, the bomb burst. Although he immediately rushes into the house to save his only family member. His wife and other sons and daughters has been dead because of the family’s hard trip to the UK. You can imagine how sad Guan Yuming is when he loses his last family member.&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E5%BD%B1%E8%AF%84%E8%8B%B1%E4%BC%A6%E5%AF%B9%E5%86%B3%E2%80%94%E2%80%94%E6%88%90%E9%BE%99%E7%9A%84%E5%8F%88%E4%B8%80%E5%8A%9B%E4%BD%9C/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -726,6 +1010,7 @@
       <link>https://wznmickey.com/2019/%E5%BD%B1%E8%AF%842001-%E5%A4%AA%E7%A9%BA%E6%BC%AB%E6%B8%B8%E2%80%94%E2%80%94%E6%9C%80%E5%A5%BD%E7%9A%84%E7%A7%91%E5%B9%BB%E7%94%B5%E5%BD%B1/</link>
       <guid>https://wznmickey.com/2019/%E5%BD%B1%E8%AF%842001-%E5%A4%AA%E7%A9%BA%E6%BC%AB%E6%B8%B8%E2%80%94%E2%80%94%E6%9C%80%E5%A5%BD%E7%9A%84%E7%A7%91%E5%B9%BB%E7%94%B5%E5%BD%B1/</guid>
       <pubDate>Fri, 30 Aug 2019 09:31:29 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;&lt;em&gt;2001: A Space Odyssey&lt;/em&gt; is an adapted science fiction film directed by Stanley Kubrick, released in 1968, more than one year before Armstrong’s “one small step for a man, one giant leap for mankind” on the Moon in 1969. Unlike other adapted film, the novel’s writing, filming and scripting were doing at the same time, which allowed the staff to revise the products by exchanging ideas with others and therefore the film was so realistic that people found that many imaginations was true later. Due to the unadvanced film and TV late stage, the staff used a lot of ways to film, which have been used in many films since then.&lt;br&gt;The film tells a story that long long ago, when apes were fighting against each other for food, a black stone came to the Earth. On touching the stone, the apes mastered the tool-making skills and thus they finally evolved into human beings, dominating the Earth, discovering the space and establishing many bases on the Moon.&lt;br&gt;In 2001, people find a black stone on the Moon. The ratio of the length, width and height is accurately 1:4:9. When the scientists touch the stone, they receive the message that something is on the Jupiter. On the journey, many things happen, and finally only one person arrive the Jupiter, becoming a star child, looking on the space and the Earth.&lt;br&gt;The few words, much music and large area of black make the film an artwork, being full of both the people’s hopes and worries about the future.&lt;br&gt;People can go to the Moon as easily as they take a plane. New technology can help them communicate with others easily. But technology is a double-edged sword. In the film, an AI called HAL, my favourite character, dubbed by Douglas Rain goes wrong in spite of the fact that scientists think that it will never go wrong, killing almost everyone in the spaceship and finally Dave Bowman cuts off the power and saves himself.&lt;br&gt;The television cameras with red light and emotionless voice are at every place in the spaceship, which is the only description of HAL. The camera with red light and emotionless voice in the huge screen, frightening everyone watching the film, makes people produce adrenaline. I love it.&lt;br&gt;Sayings are not necessary in this film, on the contrary, music is. The best part I think is the long flight from the Earth to the Jupiter, with no saying but music, displaying the space and the spaceship from different angle. The lack of animating atmosphere and Aram Khachaturian’s &lt;em&gt;Gayane&lt;/em&gt; let everyone be absorbed in the space travel. Nothing can surpass it.&lt;br&gt;A plot may express the power of technology. When Dave Bowman feels that HAL is probably going wrong, he takes his colleague to a place where HAL can’t hear their voice to discuss how to close HAL, but HAL eavesdrops their conversation by analysing their lip language and is going to kill everyone.&lt;br&gt;Winning a lot of prize, there is no doubt that &lt;em&gt;2001: A Space Odyssey&lt;/em&gt; is the best science fiction film in the world.&lt;/p&gt;</description>
       
@@ -744,6 +1029,15 @@
       
       <comments>https://wznmickey.com/2019/%E5%BD%B1%E8%AF%842001-%E5%A4%AA%E7%A9%BA%E6%BC%AB%E6%B8%B8%E2%80%94%E2%80%94%E6%9C%80%E5%A5%BD%E7%9A%84%E7%A7%91%E5%B9%BB%E7%94%B5%E5%BD%B1/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;&lt;em&gt;2001: A Space Odyssey&lt;/em&gt; is an adapted science fiction film directed by Stanley Kubrick, released in 1968, more than one year before Armstrong’s “one small step for a man, one giant leap for mankind” on the Moon in 1969. Unlike other adapted film, the novel’s writing, filming and scripting were doing at the same time, which allowed the staff to revise the products by exchanging ideas with others and therefore the film was so realistic that people found that many imaginations was true later. Due to the unadvanced film and TV late stage, the staff used a lot of ways to film, which have been used in many films since then.&lt;br&gt;The film tells a story that long long ago, when apes were fighting against each other for food, a black stone came to the Earth. On touching the stone, the apes mastered the tool-making skills and thus they finally evolved into human beings, dominating the Earth, discovering the space and establishing many bases on the Moon.&lt;br&gt;In 2001, people find a black stone on the Moon. The ratio of the length, width and height is accurately 1:4:9. When the scientists touch the stone, they receive the message that something is on the Jupiter. On the journey, many things happen, and finally only one person arrive the Jupiter, becoming a star child, looking on the space and the Earth.&lt;br&gt;The few words, much music and large area of black make the film an artwork, being full of both the people’s hopes and worries about the future.&lt;br&gt;People can go to the Moon as easily as they take a plane. New technology can help them communicate with others easily. But technology is a double-edged sword. In the film, an AI called HAL, my favourite character, dubbed by Douglas Rain goes wrong in spite of the fact that scientists think that it will never go wrong, killing almost everyone in the spaceship and finally Dave Bowman cuts off the power and saves himself.&lt;br&gt;The television cameras with red light and emotionless voice are at every place in the spaceship, which is the only description of HAL. The camera with red light and emotionless voice in the huge screen, frightening everyone watching the film, makes people produce adrenaline. I love it.&lt;br&gt;Sayings are not necessary in this film, on the contrary, music is. The best part I think is the long flight from the Earth to the Jupiter, with no saying but music, displaying the space and the spaceship from different angle. The lack of animating atmosphere and Aram Khachaturian’s &lt;em&gt;Gayane&lt;/em&gt; let everyone be absorbed in the space travel. Nothing can surpass it.&lt;br&gt;A plot may express the power of technology. When Dave Bowman feels that HAL is probably going wrong, he takes his colleague to a place where HAL can’t hear their voice to discuss how to close HAL, but HAL eavesdrops their conversation by analysing their lip language and is going to kill everyone.&lt;br&gt;Winning a lot of prize, there is no doubt that &lt;em&gt;2001: A Space Odyssey&lt;/em&gt; is the best science fiction film in the world.&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E5%BD%B1%E8%AF%842001-%E5%A4%AA%E7%A9%BA%E6%BC%AB%E6%B8%B8%E2%80%94%E2%80%94%E6%9C%80%E5%A5%BD%E7%9A%84%E7%A7%91%E5%B9%BB%E7%94%B5%E5%BD%B1/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -751,6 +1045,7 @@
       <link>https://wznmickey.com/2019/%E5%85%B3%E4%BA%8E%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E6%8E%A2%E6%B5%8B%E5%B7%A5%E7%A8%8B%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/</link>
       <guid>https://wznmickey.com/2019/%E5%85%B3%E4%BA%8E%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E6%8E%A2%E6%B5%8B%E5%B7%A5%E7%A8%8B%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/</guid>
       <pubDate>Wed, 28 Aug 2019 23:08:40 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;　　中国第二次的火星探索计划在2020年发射，然而在网上能看到的资料大多是具体流程和难度，相关的面向大众的活动也只有征集名字一个传统活动，而NASA的活动则相对更多一些，这可能是因为NASA的火星探测车一个又一个，技术上的难度减小了许多和流程也被更多人了解了。但中国在探月过程中，即使已成功发射多个探测器。探测车，面向公众的活动也几乎为零，尽管NASA的活动对于探测活动本身几乎没有什么作用，更多的作用是扩大影响力从而获得经费，在中国这方面的担心相对更少一些，但是我还是希望这样的活动可以多一些。这样我参加后就可以。。。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190829_1.png&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190829_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;/p&gt;</description>
       
@@ -765,6 +1060,15 @@
       
       <comments>https://wznmickey.com/2019/%E5%85%B3%E4%BA%8E%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E6%8E%A2%E6%B5%8B%E5%B7%A5%E7%A8%8B%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;　　中国第二次的火星探索计划在2020年发射，然而在网上能看到的资料大多是具体流程和难度，相关的面向大众的活动也只有征集名字一个传统活动，而NASA的活动则相对更多一些，这可能是因为NASA的火星探测车一个又一个，技术上的难度减小了许多和流程也被更多人了解了。但中国在探月过程中，即使已成功发射多个探测器。探测车，面向公众的活动也几乎为零，尽管NASA的活动对于探测活动本身几乎没有什么作用，更多的作用是扩大影响力从而获得经费，在中国这方面的担心相对更少一些，但是我还是希望这样的活动可以多一些。这样我参加后就可以。。。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190829_1.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190829_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E5%85%B3%E4%BA%8E%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E6%8E%A2%E6%B5%8B%E5%B7%A5%E7%A8%8B%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -772,6 +1076,7 @@
       <link>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E8%90%A5%E6%80%BB%E7%BB%93/</link>
       <guid>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E8%90%A5%E6%80%BB%E7%BB%93/</guid>
       <pubDate>Mon, 15 Jul 2019 17:59:09 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;此为总结，具体内容请看之前的单日blog。&lt;/p&gt;
 &lt;/div&gt;
@@ -790,6 +1095,16 @@
       
       <comments>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E8%90%A5%E6%80%BB%E7%BB%93/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;div class=&quot;note info&quot;&gt;&lt;p&gt;此为总结，具体内容请看之前的单日blog。&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;　　2019年7月7日，我有幸参加了2019青少年高校科学营上海科学营华东理工大学分营。与来自上海、浙江、黑龙江、云南、江苏等全国11个省市和地区的同学和老师们齐聚于上海，参加为期一周的科学营，收获颇丰，并有幸获得“优秀营员”称号。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_1.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_2.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_2.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　在华东理工大学营的开营仪式上，我们有幸听到了“挑战杯”市赛获奖团队代表向我们介绍了他们的研究项目，在第一个研究内容中，我了解到了“设计立县”是一个重塑社会资源、寻求变革的重要尝试。计划由政府介入推动，企业和设计师主导，希望借助部分政府和民间力量，推动建设城市创新综合体，促成设计专业企业、设计机构、设计师和制造业等项目的合作，推出品牌和产品，促进大众审美，引领社会潮流，为产业转型升级和设计服务业的发展提供强有力的支撑。艺术设计与传媒学院研究生何宇瑶通过福建省安溪市的案例介绍他们团队的发展历程，让我具体了解“设计立县”的思路。在安溪调查研究的基础上，从安溪“新三宝，老三宝”中找到了可开发的特色项目，再通过“千年松溪百年蔗”创意设计大赛，进行宣传，再通过“千年松溪百年蔗文化旅游节”带动其他产业发展。我由此感受到了精准扶贫中的不易与复杂。在她的讲述过程中，我常常想到了在地理课上学习的许多内容：“因地制宜”“位（置、）气（候、）地（形、）水（资源、）土（壤、）生（物资源、）资（源），市（场、）交（通、）劳（动力、）工（业基础、）科（技、）集（聚、）政（策）”。“因地制宜”看似简单的四个字，实现起来却很困难，现实远比题目复杂，没有题目中已知的优势产业，独特的产品、资源，必须自己去寻找，同时在宣传和组织上也要花不少心思。“位气地水土生资，市交劳工科集政”也不只是一句简单的口诀，而是在实践中都要考虑的重要因素。缺了什么都不行。&lt;br&gt;　　在第二天上海的开营仪式中，卢宝荣教授以“弘扬钟扬种子精神，探索生命奥秘”为题，向我们介绍了他为了祖国种子的发现、保存和感人肺腑的事迹，激励我们学习钟扬教授这种吃苦的精神。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_3.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_3.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　同时，他也向我们讲解了生命的起源，人与自然的关系，让我们感受到科学的乐趣。学生代表胡诗成向我们讲述了她的研究经历与收获，介绍了她在比赛过程中的经验，给我们这些“科研小白”开了眼界，了解了科学研究的目的。在破冰活动中，在志愿者的帮助下，我们通过“自我介绍”“垃圾分类竞赛”和“你来比划我来猜”的活动，了解了其他营员，为之后的活动奠定了基础。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_4.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_4.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　在第三天的研究活动中，我们了解了材料科学与工程学院的研究内容。听到老师讲述的他与“纳米”碗的故事，我既震惊于纳米材料的强大，又不得不感叹这种技术的复杂，了解了材料结构成分、合成加工、性质、使用性能的“四要素”，了解了材料的金属、无机非金属、高分子和复合材料的分类，了解了在材料“四要素”中物理学、化学和工程学的参与与结合，了解了材料在研究开发过程中需要考虑的组成、加工性、形状、使用性、经济性和再生性的通性，了解了人类社会的发展与材料的进步之间的关系，了解了从石器时代的木片、石器等天然材料到从黏土、铜、铁等矿物中提取的材料，再到从石油、煤等矿物中提炼的高分子材料以及之后发展的各向异性的材料和特征随环境和时间变化的复合材料的发展，了解了材料的“复合化、功能化、智能化”的发展趋势和“低成本、高质量、高效率”的先进制造技术和“节省资源、节约能源、回收再生”的绿色思想，了解了从矿物加工合成基本有机化合物，再合成高分子材料的制造方式。在东莞成铭胶粘剂材料有限公司的林政錬副总经理的带领下，通过对纸尿裤的“解剖”，我们了解了胶粘剂的分类，了解了各种胶粘剂在接触方式、固化方式和破坏过程中的共性，在有趣的故事中了解到安全、涂层效率、储存、抗老化、成本、工厂规模和设施成本等方面对工业生产的重要性。之后，我们认识热熔胶这一胶粘剂，并以此为例认识了接着成功必不可少的“润湿”和“固化”的过程，认识了接着现象的物理原理，认识了“open time”“setting time”两个对于胶粘剂的选择的重要因素。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_5.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_5.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　第四天我们在“材料国家级实验教学示范中心（华东理工大学）”利用热熔胶进行了粘花和创意作品制作的活动，亲身感受了热熔胶的神奇特点，感受到了科技的魅力，在活动过程中与组员们交流，增进了友谊。在创作的过程中，虽然有了许多失败的尝试，但是我们从这些失败的经历中吸取教训，不断完善，逐渐做出了满意的成品。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_6.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_6.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　第五天，我们参观了中华艺术宫、自然博物馆和外滩。在中华艺术宫的“全国优秀摄影作品展览”上，通过照片，我感受到了改革开放以来祖国在各方面的进步成果。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_7.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_7.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　在“全国优秀美术作品展览”和“全国优秀书法纂刻作品展览”上，我看到了不同历史时期的美术作品的风格和变化，感受到了作品的时代气息。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_8.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_8.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　在自然博物馆里，我看到了大量的标本，了解到了上海这个城市地理环境和生物活动的变化。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_9.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_9.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　我们还参观了国家重点实验室，了解了生物工程的许多知识，了解了工业生产的步骤和从实验室走向工厂所需的改变。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_10.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_10.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　除了这些活动，我们还在闲暇时间进行了节目的彩排，从选择到练习、调整，在一次次尝试的失败中，我们也在逐渐成长。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190716_11.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190716_11.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　在科学营中我既收获了与前沿的科学知识，也收获了科研的方法与精神，更收获了与来自全国各地的高中生们的友谊。&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E8%90%A5%E6%80%BB%E7%BB%93/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -797,6 +1112,7 @@
       <link>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day4/</link>
       <guid>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day4/</guid>
       <pubDate>Fri, 12 Jul 2019 07:11:54 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;h1 id=&quot;科学营Day4&quot;&gt;&lt;a href=&quot;#科学营Day4&quot; class=&quot;headerlink&quot; title=&quot;科学营Day4&quot;&gt;&lt;/a&gt;科学营Day4&lt;/h1&gt;&lt;p&gt;　　活动：青少年高校科学营&lt;br&gt;　　地点：华东理工大学（徐汇校区）&lt;br&gt;　　时间：2019年7月11日&lt;/p&gt;
 &lt;h2 id=&quot;操作&quot;&gt;&lt;a href=&quot;#操作&quot; class=&quot;headerlink&quot; title=&quot;操作&quot;&gt;&lt;/a&gt;操作&lt;/h2&gt;&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=667598856&amp;bvid=BV1xa4y1t7yu&amp;cid=173814565&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;
@@ -816,6 +1132,17 @@
       
       <comments>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day4/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;h1 id=&quot;科学营Day4&quot;&gt;&lt;a href=&quot;#科学营Day4&quot; class=&quot;headerlink&quot; title=&quot;科学营Day4&quot;&gt;&lt;/a&gt;科学营Day4&lt;/h1&gt;&lt;p&gt;　　活动：青少年高校科学营&lt;br&gt;　　地点：华东理工大学（徐汇校区）&lt;br&gt;　　时间：2019年7月11日&lt;/p&gt;
+&lt;h2 id=&quot;操作&quot;&gt;&lt;a href=&quot;#操作&quot; class=&quot;headerlink&quot; title=&quot;操作&quot;&gt;&lt;/a&gt;操作&lt;/h2&gt;&lt;p&gt;&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=667598856&amp;bvid=BV1xa4y1t7yu&amp;cid=173814565&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;&lt;br&gt;来源：&lt;a href=&quot;https://mp.weixin.qq.com/s/TBND5n1QCeJxEoSjpuljPw&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mp.weixin.qq.com/s/TBND5n1QCeJxEoSjpuljPw&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;结果&quot;&gt;&lt;a href=&quot;#结果&quot; class=&quot;headerlink&quot; title=&quot;结果&quot;&gt;&lt;/a&gt;结果&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190711_1.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190711_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day4/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -823,6 +1150,7 @@
       <link>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day3/</link>
       <guid>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day3/</guid>
       <pubDate>Wed, 10 Jul 2019 17:42:11 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;h1 id=&quot;科学营Day3&quot;&gt;&lt;a href=&quot;#科学营Day3&quot; class=&quot;headerlink&quot; title=&quot;科学营Day3&quot;&gt;&lt;/a&gt;科学营Day3&lt;/h1&gt;&lt;p&gt;　　活动：青少年高校科学营&lt;br&gt;　　地点：华东理工大学（徐汇校区）&lt;br&gt;　　时间：2019年7月10日&lt;/p&gt;
 &lt;h2 id=&quot;学院介绍&quot;&gt;&lt;a href=&quot;#学院介绍&quot; class=&quot;headerlink&quot; title=&quot;学院介绍&quot;&gt;&lt;/a&gt;学院介绍&lt;/h2&gt;&lt;p&gt;　　在对材料科学与工程学院的介绍中，我对学院的研究内容有了初步的认识，通过老师讲述的他与“纳米”碗的故事，我既震惊于纳米材料的强大，又不得不感叹这种技术的复杂。&lt;/p&gt;
@@ -840,6 +1168,18 @@
       
       <comments>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day3/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;h1 id=&quot;科学营Day3&quot;&gt;&lt;a href=&quot;#科学营Day3&quot; class=&quot;headerlink&quot; title=&quot;科学营Day3&quot;&gt;&lt;/a&gt;科学营Day3&lt;/h1&gt;&lt;p&gt;　　活动：青少年高校科学营&lt;br&gt;　　地点：华东理工大学（徐汇校区）&lt;br&gt;　　时间：2019年7月10日&lt;/p&gt;
+&lt;h2 id=&quot;学院介绍&quot;&gt;&lt;a href=&quot;#学院介绍&quot; class=&quot;headerlink&quot; title=&quot;学院介绍&quot;&gt;&lt;/a&gt;学院介绍&lt;/h2&gt;&lt;p&gt;　　在对材料科学与工程学院的介绍中，我对学院的研究内容有了初步的认识，通过老师讲述的他与“纳米”碗的故事，我既震惊于纳米材料的强大，又不得不感叹这种技术的复杂。&lt;/p&gt;
+&lt;h2 id=&quot;学科介绍&quot;&gt;&lt;a href=&quot;#学科介绍&quot; class=&quot;headerlink&quot; title=&quot;学科介绍&quot;&gt;&lt;/a&gt;学科介绍&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190710_1.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190710_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　通过对材料的分类、性质与发展的介绍，我了解了高分子材料在现代生活中的普遍性。&lt;/p&gt;
+&lt;h2 id=&quot;胶粘剂&quot;&gt;&lt;a href=&quot;#胶粘剂&quot; class=&quot;headerlink&quot; title=&quot;胶粘剂&quot;&gt;&lt;/a&gt;胶粘剂&lt;/h2&gt;&lt;p&gt;　　在东莞成铭胶粘剂材料有限公司的林政錬副总经理的带领下，通过“解剖”纸尿裤，我们了解了胶粘剂的分类和作用机理。通过有奖问答的形式，我们通过数据感受到了热熔胶的优点和在现代生活中的广泛用处。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190710_2.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190710_2.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day3/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -847,6 +1187,7 @@
       <link>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E8%90%A5Day2/</link>
       <guid>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E8%90%A5Day2/</guid>
       <pubDate>Tue, 09 Jul 2019 15:03:52 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;点击图片查看大图&lt;/p&gt;
 &lt;h1 id=&quot;科学营Day2&quot;&gt;&lt;a href=&quot;#科学营Day2&quot; class=&quot;headerlink&quot; title=&quot;科学营Day2&quot;&gt;&lt;/a&gt;科学营Day2&lt;/h1&gt;&lt;p&gt;　　活动：青少年高校科学营&lt;br&gt;　　地点：复旦大学&amp;amp;华东理工大学（徐汇校区）&lt;br&gt;　　时间：2019年7月9日&lt;/p&gt;
@@ -867,6 +1208,21 @@
       
       <comments>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E8%90%A5Day2/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;点击图片查看大图&lt;/p&gt;
+&lt;h1 id=&quot;科学营Day2&quot;&gt;&lt;a href=&quot;#科学营Day2&quot; class=&quot;headerlink&quot; title=&quot;科学营Day2&quot;&gt;&lt;/a&gt;科学营Day2&lt;/h1&gt;&lt;p&gt;　　活动：青少年高校科学营&lt;br&gt;　　地点：复旦大学&amp;amp;华东理工大学（徐汇校区）&lt;br&gt;　　时间：2019年7月9日&lt;/p&gt;
+&lt;h2 id=&quot;上海科学营开营仪式&quot;&gt;&lt;a href=&quot;#上海科学营开营仪式&quot; class=&quot;headerlink&quot; title=&quot;上海科学营开营仪式&quot;&gt;&lt;/a&gt;上海科学营开营仪式&lt;/h2&gt;&lt;p&gt;　　为了从上海的南部赶到上海的北部，可是起得很早啊。5:30就起来&lt;del&gt;睡回笼觉&lt;/del&gt;做作业了，然后吃完早饭便去毛主席像旁边排队上车，感受传说中的空调大巴和保险。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20190709_1.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20190709_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　虽然外面的雨不断变大，在科学研究前进的道路上会有各种各样想象不到的事情发生，但我们前行向着科学的决心不会改变。&lt;br&gt;　　在复旦的会场，复旦的多名学生在暖场节目中展现了他们的才艺。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190709_2.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20190709_2.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　在随后的正式的开营仪式中。卢宝荣教授以“弘扬钟扬种子精神，探索生命奥秘”为题，向我们介绍了他为了祖国的种子的感人事迹，激励我们学习钟扬教授的吃苦精神。同时，他还就生命的起源和人与自然的关系向我们进行了讲解，让我们明白了科学的乐趣。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190709_3.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20190709_3.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　之后学生代表胡诗成向我们讲述了她的研究经历与收获，为我们这些“科研小白”介绍了许多经验。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190709_4.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20190709_4.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　还有来自各所高校和企业的学者向我们讲述了他们的成长故事,为我们的未来给出了寄语。&lt;/p&gt;
+&lt;h2 id=&quot;破冰活动&quot;&gt;&lt;a href=&quot;#破冰活动&quot; class=&quot;headerlink&quot; title=&quot;破冰活动&quot;&gt;&lt;/a&gt;破冰活动&lt;/h2&gt;&lt;p&gt;　　在下午的破冰活动中，在志愿者的帮助下，我们通过活动，增进了友谊。&lt;/p&gt;
+&lt;h3 id=&quot;介绍自己&quot;&gt;&lt;a href=&quot;#介绍自己&quot; class=&quot;headerlink&quot; title=&quot;介绍自己&quot;&gt;&lt;/a&gt;介绍自己&lt;/h3&gt;&lt;p&gt;　　通过队内讨论和相互交流两个部分，我们这些来自天南海北的营员们逐渐熟悉起来，也同时对于其他营员的家乡有了不少的了解。&lt;/p&gt;
+&lt;h3 id=&quot;垃圾分类&quot;&gt;&lt;a href=&quot;#垃圾分类&quot; class=&quot;headerlink&quot; title=&quot;垃圾分类&quot;&gt;&lt;/a&gt;垃圾分类&lt;/h3&gt;&lt;p&gt;　　随着《上海市生活垃圾管理条例》的实施，关于垃圾分类的话题成了人们讨论的焦点，通过分队比拼的方式，我们既学习了垃圾分类的知识，也对自己的组员有了更多的了解。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190709_5.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20190709_5.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;/p&gt;
+&lt;h3 id=&quot;你画我猜&quot;&gt;&lt;a href=&quot;#你画我猜&quot; class=&quot;headerlink&quot; title=&quot;你画我猜&quot;&gt;&lt;/a&gt;你画我猜&lt;/h3&gt;&lt;p&gt;　　在你画我猜的过程中，每个组派出５名成员完成信息的传递。欢笑多多。&lt;br&gt;　　在第一个成语中，虽然我们都轻松猜出了“抓耳挠腮”。&lt;br&gt;　　但到第二个成语中，大汗淋漓——狗血淋头——红颜祸水——汗流浃背——倾盆大雨的传递着实超出了想象。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190709_6.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20190709_6.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E7%A7%91%E5%AD%A6%E8%90%A5Day2/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -874,6 +1230,7 @@
       <link>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day1/</link>
       <guid>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day1/</guid>
       <pubDate>Mon, 08 Jul 2019 14:32:48 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;h1 id=&quot;在科学营的第一天&quot;&gt;&lt;a href=&quot;#在科学营的第一天&quot; class=&quot;headerlink&quot; title=&quot;在科学营的第一天&quot;&gt;&lt;/a&gt;在科学营的第一天&lt;/h1&gt;&lt;p&gt;　　活动：青少年高校科学营&lt;br&gt;　　地点：华东理工大学（徐汇校区）&lt;br&gt;　　时间：2019年7月8日&lt;/p&gt;
 &lt;h2 id=&quot;衣&quot;&gt;&lt;a href=&quot;#衣&quot; class=&quot;headerlink&quot; title=&quot;衣&quot;&gt;&lt;/a&gt;衣&lt;/h2&gt;&lt;p&gt;　　一白一橙&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190708_1.jpg&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190708_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;/p&gt;
@@ -893,6 +1250,20 @@
       
       <comments>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day1/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;h1 id=&quot;在科学营的第一天&quot;&gt;&lt;a href=&quot;#在科学营的第一天&quot; class=&quot;headerlink&quot; title=&quot;在科学营的第一天&quot;&gt;&lt;/a&gt;在科学营的第一天&lt;/h1&gt;&lt;p&gt;　　活动：青少年高校科学营&lt;br&gt;　　地点：华东理工大学（徐汇校区）&lt;br&gt;　　时间：2019年7月8日&lt;/p&gt;
+&lt;h2 id=&quot;衣&quot;&gt;&lt;a href=&quot;#衣&quot; class=&quot;headerlink&quot; title=&quot;衣&quot;&gt;&lt;/a&gt;衣&lt;/h2&gt;&lt;p&gt;　　一白一橙&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190708_1.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190708_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;/p&gt;
+&lt;h2 id=&quot;食&quot;&gt;&lt;a href=&quot;#食&quot; class=&quot;headerlink&quot; title=&quot;食&quot;&gt;&lt;/a&gt;食&lt;/h2&gt;&lt;h3 id=&quot;食堂&quot;&gt;&lt;a href=&quot;#食堂&quot; class=&quot;headerlink&quot; title=&quot;食堂&quot;&gt;&lt;/a&gt;食堂&lt;/h3&gt;&lt;p&gt;　　便宜！&lt;/p&gt;
+&lt;h2 id=&quot;住&quot;&gt;&lt;a href=&quot;#住&quot; class=&quot;headerlink&quot; title=&quot;住&quot;&gt;&lt;/a&gt;住&lt;/h2&gt;&lt;h3 id=&quot;床&quot;&gt;&lt;a href=&quot;#床&quot; class=&quot;headerlink&quot; title=&quot;床&quot;&gt;&lt;/a&gt;床&lt;/h3&gt;&lt;p&gt;　　不同于之前见过的住宿方式，这里的住宿是上下铺式的。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190708_2.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190708_2.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;/p&gt;
+&lt;h3 id=&quot;洗澡&quot;&gt;&lt;a href=&quot;#洗澡&quot; class=&quot;headerlink&quot; title=&quot;洗澡&quot;&gt;&lt;/a&gt;洗澡&lt;/h3&gt;&lt;p&gt;　　曾经我觉得没有独立卫浴会十分不方便，但是在体验后我发现与我想象中的并不一样，因为是统一的浴室，所以在换衣服的地方有座位，温度也因为一直有人洗而比较高，感觉十分舒服。&lt;/p&gt;
+&lt;h2 id=&quot;行&quot;&gt;&lt;a href=&quot;#行&quot; class=&quot;headerlink&quot; title=&quot;行&quot;&gt;&lt;/a&gt;行&lt;/h2&gt;&lt;h3 id=&quot;开营仪式&quot;&gt;&lt;a href=&quot;#开营仪式&quot; class=&quot;headerlink&quot; title=&quot;开营仪式&quot;&gt;&lt;/a&gt;开营仪式&lt;/h3&gt;&lt;p&gt;　　有２位研究生的同学向我们介绍了他（她）们的研究项目，在第一个研究内容中，我了解了“设计立县”的扶贫方式，知道了在精准扶贫中的不易与复杂。在她的讲述过程中，我常常想到了在地理课上学的许多内容。“因地制宜”看似简单的四个字实现起来确实那么困难，现实远远比题目复杂，没有题目中已知的优势产业，独特产品、资源，必须自己去寻找。&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day1/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -900,6 +1271,7 @@
       <link>https://wznmickey.com/2019/%E7%A0%94%E5%AD%A6%E4%B8%AD%E7%9A%84%E6%80%9D%E8%80%83/</link>
       <guid>https://wznmickey.com/2019/%E7%A0%94%E5%AD%A6%E4%B8%AD%E7%9A%84%E6%80%9D%E8%80%83/</guid>
       <pubDate>Sat, 08 Jun 2019 18:12:42 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;　　本来，我计划在这几天里拍vlog，写博客，可是过了2天之后我便开始怀疑自己。不管是blog还是vlog都应该是记录自己的东西，可是做着做着就似乎是为了外人所做。常常在夜晚的时候我就在想，我现在做的事情是有意义的吗？比如拍照片，如果说拍下一张照片，之后再把它删掉，那么我拍摄的意义是什么。&lt;br&gt;　　在北大我仿佛感觉到了这种意义，便是快乐，你每一次按下快门，都会有快乐产生，在人与人的交流过程中这种快乐也会产生。可是当看到一堆的照片时，它们占用着大量的空间，如何处理似乎成了一个问题。快乐仿佛是短暂的，当你拍完之后，这种快乐仿佛就结束了。&lt;br&gt;　　可不应该是这样的，我开始去思考这快乐是来源于快门，还是表现为在分享时的快乐的提前。你发布的照片数与关注数并不是正相关的，你发上去许多最后也无人问津，一张反而可能有众人的关注。&lt;br&gt;　　我逐渐感觉这其实是选择恐惧症的结果，因为不敢选，害怕选错，所以不选，结果是更大的负面。&lt;br&gt;　　但又仿佛不是，因为深层处的原因是社交上的需求，一个人可能需要尊重，为了这个结果，每个人会选择不一样的方式。&lt;br&gt;　　或许这种怀疑的忧虑是难以被解除的吧。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -918,6 +1290,19 @@
       
       <comments>https://wznmickey.com/2019/%E7%A0%94%E5%AD%A6%E4%B8%AD%E7%9A%84%E6%80%9D%E8%80%83/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;　　本来，我计划在这几天里拍vlog，写博客，可是过了2天之后我便开始怀疑自己。不管是blog还是vlog都应该是记录自己的东西，可是做着做着就似乎是为了外人所做。常常在夜晚的时候我就在想，我现在做的事情是有意义的吗？比如拍照片，如果说拍下一张照片，之后再把它删掉，那么我拍摄的意义是什么。&lt;br&gt;　　在北大我仿佛感觉到了这种意义，便是快乐，你每一次按下快门，都会有快乐产生，在人与人的交流过程中这种快乐也会产生。可是当看到一堆的照片时，它们占用着大量的空间，如何处理似乎成了一个问题。快乐仿佛是短暂的，当你拍完之后，这种快乐仿佛就结束了。&lt;br&gt;　　可不应该是这样的，我开始去思考这快乐是来源于快门，还是表现为在分享时的快乐的提前。你发布的照片数与关注数并不是正相关的，你发上去许多最后也无人问津，一张反而可能有众人的关注。&lt;br&gt;　　我逐渐感觉这其实是选择恐惧症的结果，因为不敢选，害怕选错，所以不选，结果是更大的负面。&lt;br&gt;　　但又仿佛不是，因为深层处的原因是社交上的需求，一个人可能需要尊重，为了这个结果，每个人会选择不一样的方式。&lt;br&gt;　　或许这种怀疑的忧虑是难以被解除的吧。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有时 当我有点寂寞 哭过了以后 怀疑没有人懂我 虽然我 带着一点摸索 害怕地颤抖 却只有自己能够 推着自己走&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;火箭少女101 &lt;em&gt;Light&lt;/em&gt;&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E7%A0%94%E5%AD%A6%E4%B8%AD%E7%9A%84%E6%80%9D%E8%80%83/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -925,6 +1310,7 @@
       <link>https://wznmickey.com/2019/%E5%9C%A8%E7%A0%94%E5%AD%A6%E4%B8%AD%E5%AD%A6%E4%B9%A0/</link>
       <guid>https://wznmickey.com/2019/%E5%9C%A8%E7%A0%94%E5%AD%A6%E4%B8%AD%E5%AD%A6%E4%B9%A0/</guid>
       <pubDate>Sat, 08 Jun 2019 03:12:08 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;h1 id=&quot;探究网红小店的“食品”安全&quot;&gt;&lt;a href=&quot;#探究网红小店的“食品”安全&quot; class=&quot;headerlink&quot; title=&quot;探究网红小店的“食品”安全&quot;&gt;&lt;/a&gt;探究网红小店的“食品”安全&lt;/h1&gt;&lt;h2 id=&quot;2019北京研学-Day2-afternoon&quot;&gt;&lt;a href=&quot;#2019北京研学-Day2-afternoon&quot; class=&quot;headerlink&quot; title=&quot;2019北京研学 Day2_afternoon&quot;&gt;&lt;/a&gt;2019北京研学 Day2_afternoon&lt;/h2&gt;&lt;p&gt;　　&lt;a href=&quot;https://www.bilibili.com/video/av54900714&quot;&gt;原版&lt;/a&gt;&lt;/p&gt;
 &lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=54900714&amp;cid=96010830&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;
@@ -961,6 +1347,26 @@
       
       <comments>https://wznmickey.com/2019/%E5%9C%A8%E7%A0%94%E5%AD%A6%E4%B8%AD%E5%AD%A6%E4%B9%A0/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;h1 id=&quot;探究网红小店的“食品”安全&quot;&gt;&lt;a href=&quot;#探究网红小店的“食品”安全&quot; class=&quot;headerlink&quot; title=&quot;探究网红小店的“食品”安全&quot;&gt;&lt;/a&gt;探究网红小店的“食品”安全&lt;/h1&gt;&lt;h2 id=&quot;2019北京研学-Day2-afternoon&quot;&gt;&lt;a href=&quot;#2019北京研学-Day2-afternoon&quot; class=&quot;headerlink&quot; title=&quot;2019北京研学 Day2_afternoon&quot;&gt;&lt;/a&gt;2019北京研学 Day2_afternoon&lt;/h2&gt;&lt;p&gt;　　&lt;a href=&quot;https://www.bilibili.com/video/av54900714&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原版&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=54900714&amp;cid=96010830&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;br&gt;　　&lt;a href=&quot;https://www.bilibili.com/video/av58880715&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;精简版&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=58880715&amp;cid=102646904&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h3&gt;&lt;p&gt;　　因为上午去了北大，听了北大的一个老师的一个关于北大介绍，说是北大希望能够培养学生们的独立的创新的能力。正好呢下午我们来到了这个南锣鼓巷，那里面有很多的小吃奶茶店。我个人是不是很喜欢吃很多这种小吃奶茶，同时在跟同学一起去我们在第一家店呢，我就感觉到说在卫生上面可能是有些问题的。在后来一直在跟同学一起走过程中我就在想我我能不能去进行一些调查，当然这个调查还是非常粗糙的，只能是看看表面功夫。之后我就离开同学，一个人一家店一家店看，然后做了统计，虽然这么简单的调查和专业的一些调查是没有办法比的。但是我觉得这还是有意义的，因为我毕竟作为学生，大部分时间都是呆在学校里面，很少出来接触社会。这次到北京来研学呢是一个很好的机会。我想，所谓研学，就是要学习，除了学习我们书本上的知识之外，我们可以去学习下社会上的知识。因为我们老师可能会告诉我们一些新闻，新闻上很多会提到说某些网红店因为卫生原因被关掉了，让我有一种感觉网红店卫生都很差的感觉。我当然知道这种想法是有问题的，因为很显然的是正常一些网红店没有问题，不被爆出来，我当然也不知道，只有那些有问题的被爆出来了,就形成一种感觉说网红店可能卫生会很差。可是比例是多少我并不知道，我就在想我能不能说去自己进行一个研究，然后去看看究竟如何。&lt;/p&gt;
+&lt;h3 id=&quot;结果如下，耗时约1-5小时&quot;&gt;&lt;a href=&quot;#结果如下，耗时约1-5小时&quot; class=&quot;headerlink&quot; title=&quot;结果如下，耗时约1.5小时&quot;&gt;&lt;/a&gt;结果如下，耗时约1.5小时&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190608_1.png&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190608_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;/p&gt;
+&lt;h3 id=&quot;调查中的不足&quot;&gt;&lt;a href=&quot;#调查中的不足&quot; class=&quot;headerlink&quot; title=&quot;调查中的不足&quot;&gt;&lt;/a&gt;调查中的不足&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;因为只有我一个人，很多店人又很多，看不清，然后时间上也不是很充裕，所以进行的也不是很好，可能统计下来的结果和实际上出入可能是比较大的。&lt;/li&gt;
+&lt;li&gt;因为有的店人太多挤不进去，有的店等了一会也没有顾客，看不到制作过程，没有进行统计，还有的店看不到制作的程序，导致样本数量很少，出来的结果肯定是有很多的问题。&lt;/li&gt;
+&lt;li&gt;我这次调查也非常简单的，仅仅就看了一下表面，因为深层的我也看不到，口罩、手套多久换一次我并不知道。有手套也不一定没手头要好，很久不换的手套，肯定比不过常洗的手干净。同时除此之外的加工过程也是不清楚的。当然我想即使手套口罩有不能说明卫生质量好，如果没有至少说明是食品安全是堪忧的。&lt;h3 id=&quot;看到的其他问题&quot;&gt;&lt;a href=&quot;#看到的其他问题&quot; class=&quot;headerlink&quot; title=&quot;看到的其他问题&quot;&gt;&lt;/a&gt;看到的其他问题&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;有一家我看到的是他们店铺旁边有一个电视机，那么放着他们的宣传片，宣传片中的厨师是有带手套的，但是实际的店员并没有（具体请看&lt;a href=&quot;https://www.bilibili.com/video/av54900714&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;b站视频&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;有一家不仅没有戴口罩手套，同时还是在路边的玻璃后展示。同时旁边有一块牌子写的诚信经营，在售货柜台下面还有着食品安全的法律法规。（具体请看&lt;a href=&quot;https://www.bilibili.com/video/av54900714&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;b站视频&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;有的店铺虽然工作人员戴口罩，却戴在下巴上，只能起形式作用，没有实际作用。（具体请看&lt;a href=&quot;https://www.bilibili.com/video/av54900714&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;b站视频&lt;/a&gt;）&lt;h3 id=&quot;分析&quot;&gt;&lt;a href=&quot;#分析&quot; class=&quot;headerlink&quot; title=&quot;分析&quot;&gt;&lt;/a&gt;分析&lt;/h3&gt;　　戴口罩的比例比较高，不知道是因为认为口罩的重要性更大还是因为顾客在购买过程中先看到脸，而不关注手，还是因为员工觉得手套不舒服，自己拆掉了。&lt;h3 id=&quot;评价&quot;&gt;&lt;a href=&quot;#评价&quot; class=&quot;headerlink&quot; title=&quot;评价&quot;&gt;&lt;/a&gt;评价&lt;/h3&gt;　　尽管在小店里没有手套、口罩是很普遍的现象。但就像王源吸烟一样，这些网红店因为在网络上的出名，受到更多的关注，应当是起带头的作用，不能应当以较低的卫生安全去评价，也许应当加强对于这些店铺的监督。
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E5%9C%A8%E7%A0%94%E5%AD%A6%E4%B8%AD%E5%AD%A6%E4%B9%A0/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -968,6 +1374,7 @@
       <link>https://wznmickey.com/2019/%E5%8C%97%E4%BA%AC%E7%A0%94%E5%AD%A6Day1/</link>
       <guid>https://wznmickey.com/2019/%E5%8C%97%E4%BA%AC%E7%A0%94%E5%AD%A6Day1/</guid>
       <pubDate>Thu, 06 Jun 2019 17:19:16 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;h1 id=&quot;北京研学Day1&quot;&gt;&lt;a href=&quot;#北京研学Day1&quot; class=&quot;headerlink&quot; title=&quot;北京研学Day1&quot;&gt;&lt;/a&gt;北京研学Day1&lt;/h1&gt;&lt;p&gt;　　&lt;a href=&quot;https://www.bilibili.com/video/av54770636&quot;&gt;b站第一天的vlog&lt;/a&gt;&lt;/p&gt;
 &lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=54770636&amp;cid=95800635&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;
@@ -1003,6 +1410,16 @@
       
       <comments>https://wznmickey.com/2019/%E5%8C%97%E4%BA%AC%E7%A0%94%E5%AD%A6Day1/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;h1 id=&quot;北京研学Day1&quot;&gt;&lt;a href=&quot;#北京研学Day1&quot; class=&quot;headerlink&quot; title=&quot;北京研学Day1&quot;&gt;&lt;/a&gt;北京研学Day1&lt;/h1&gt;&lt;p&gt;　　&lt;a href=&quot;https://www.bilibili.com/video/av54770636&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;b站第一天的vlog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=54770636&amp;cid=95800635&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;&lt;br&gt;　　期待已久的北京研学终于开始了，不过刚上高铁就遇到了麻烦。因为没有发车票，我们上车之后都不知道座位在哪里，坐了没有买票的位子，放好行李后又重新拿下来换座位，可是折腾了许久，才坐到最后的座位上。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190607_1.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190607_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;　　&lt;small&gt;进站时拍的照片&lt;/small&gt;&lt;br&gt;    &lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　确定了座位才敢订饭，最后在订了济南东站的外卖。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190607_2.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190607_2.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　幸运的是，之后没有什么问题了，路上有一段下的雨比较大，拍下的照片莫名有种末世感。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190607_3.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190607_3.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　下了高铁之后首先去了国子监和孔庙。历代皇帝都是先进孔庙再进国子监的，我们也是一样。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190607_4.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190607_4.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　在孔庙中，我们看了历年科举中第的士子的进士提名碑，沿着古代皇帝祭拜的路线前进，了解了严嵩乌纱帽落地的典故，对孔子进行了祭拜。&lt;br&gt;　　离开了孔庙，我们到了国子监，在这里，我们越过了龙门。（视频看b站vlog）&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190607_5.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190607_5.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　离开国子监后，我们来到前门大街，在这条老北京最繁华的街上，有着众多的老字号。东来顺便是一家，我们在东来顺吃完晚饭，前往了宾馆。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190607_6.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190607_6.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E5%8C%97%E4%BA%AC%E7%A0%94%E5%AD%A6Day1/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -1010,12 +1427,19 @@
       <link>https://wznmickey.com/2019/%E6%B4%9B%E8%B0%B7P1000%E9%A2%98%E8%A7%A3/</link>
       <guid>https://wznmickey.com/2019/%E6%B4%9B%E8%B0%B7P1000%E9%A2%98%E8%A7%A3/</guid>
       <pubDate>Tue, 30 Apr 2019 13:37:37 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;原题：&lt;a href=&quot;https://www.luogu.org/problem/show?pid=1000&quot;&gt;https://www.luogu.org/problem/show?pid=1000&lt;/a&gt;&lt;/p&gt;
+=======
+      <description>
+      
+        &lt;p&gt;原题：&lt;a href=&quot;https://www.luogu.org/problem/show?pid=1000&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.luogu.org/problem/show?pid=1000&lt;/a&gt;&lt;/p&gt;
+>>>>>>> origin/old
 &lt;blockquote&gt;
 &lt;p&gt;超级玛丽是一个非常经典的游戏。请你用字符画的形式输出超级玛丽中的一个场景。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;                ********&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               ************&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               ####....#.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             #..###.....##....&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             ###.......######              ###            ###&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                ...........               #...#          #...#&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               ##*#######                 #.#.#          #.#.#&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            ####*******######             #.#.#          #.#.#&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           ...#***.****.*###....          #...#          #...#&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           ....**********##.....           ###            ###&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           ....****    *****....&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             ####        ####&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           ######        ######&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;##############################################################&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#...#......#.##...#......#.##...#......#.##------------------#&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;###########################################------------------#&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#..#....#....##..#....#....##..#....#....#####################&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;##########################################    #----------#&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#.....#......##.....#......##.....#......#    #----------#&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;##########################################    #----------#&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;##########################################    ############&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+<<<<<<< HEAD
 
 &lt;p&gt;看了洛谷上的C++的题解都是一行一行打printf，最省的也是每行打一个双引号，没必要啊，直接\n换行就可以了啊。&lt;br&gt;代码如下。&lt;/p&gt;
 &lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;meta-string&quot;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;                ********\n               ************\n               ####....#.\n             #..###.....##....\n             ###.......######              ###            ###\n                ...........               #...#          #...#\n               ##*#######                 #.#.#          #.#.#\n            ####*******######             #.#.#          #.#.#\n           ...#***.****.*###....          #...#          #...#\n           ....**********##.....           ###            ###\n           ....****    *****....\n             ####        ####\n           ######        ######\n##############################################################\n#...#......#.##...#......#.##...#......#.##------------------#\n###########################################------------------#\n#..#....#....##..#....#....##..#....#....#####################\n##########################################    #----------#\n#.....#......##.....#......##.....#......#    #----------#\n##########################################    #----------#\n#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#\n##########################################    ############&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</description>
@@ -1035,6 +1459,13 @@
       
       <comments>https://wznmickey.com/2019/%E6%B4%9B%E8%B0%B7P1000%E9%A2%98%E8%A7%A3/#disqus_thread</comments>
       
+=======
+&lt;p&gt;看了洛谷上的C++的题解都是一行一行打printf，最省的也是每行打一个双引号，没必要啊，直接\n换行就可以了啊。&lt;br&gt;代码如下。&lt;br&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;meta-string&quot;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;                ********\n               ************\n               ####....#.\n             #..###.....##....\n             ###.......######              ###            ###\n                ...........               #...#          #...#\n               ##*#######                 #.#.#          #.#.#\n            ####*******######             #.#.#          #.#.#\n           ...#***.****.*###....          #...#          #...#\n           ....**********##.....           ###            ###\n           ....****    *****....\n             ####        ####\n           ######        ######\n##############################################################\n#...#......#.##...#......#.##...#......#.##------------------#\n###########################################------------------#\n#..#....#....##..#....#....##..#....#....#####################\n##########################################    #----------#\n#.....#......##.....#......##.....#......#    #----------#\n##########################################    #----------#\n#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#\n##########################################    ############&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E6%B4%9B%E8%B0%B7P1000%E9%A2%98%E8%A7%A3/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -1042,6 +1473,7 @@
       <link>https://wznmickey.com/2019/%E6%8E%A2%E8%AE%BF%E5%95%86%E9%A3%9E/</link>
       <guid>https://wznmickey.com/2019/%E6%8E%A2%E8%AE%BF%E5%95%86%E9%A3%9E/</guid>
       <pubDate>Sun, 21 Apr 2019 04:45:01 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;h1 id=&quot;探访商飞&quot;&gt;&lt;a href=&quot;#探访商飞&quot; class=&quot;headerlink&quot; title=&quot;探访商飞&quot;&gt;&lt;/a&gt;探访商飞&lt;/h1&gt;&lt;h2 id=&quot;Part-One&quot;&gt;&lt;a href=&quot;#Part-One&quot; class=&quot;headerlink&quot; title=&quot;Part One&quot;&gt;&lt;/a&gt;Part One&lt;/h2&gt;&lt;p&gt;时间：3月1日星期五&lt;br&gt;地点：上海市闵行区德宏路2698号&lt;br&gt;　　来自上飞公司培训中心的来回老师来到我们学校，讲述大飞机的故事，带我们走近“永不放弃”的企业文化。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190309_1.jpg&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190309_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　在他的讲述中，我们了解了世界商用航空的发展历史，了解了众多企业的变迁以及如今商飞面临的“AB”（Airbus&amp;amp;Boeing）格局，也了解了中国商飞期待的“ABC”的世界格局。为了实现这个目标，在商飞的工作不是“一张报纸，一杯茶，一个下午，一米阳光”的轻松油水肥差，而是晚上12点下班，早上6点上班，一月36小时加班，几百个小时不回家，几十个日夜在科研一线不停歇地工作的奋斗。&lt;br&gt;　　我们还了解了中国大型飞机研制的曲折经历，知道了运十飞机的坎坷过程，了解了商飞人四处打工维持生计的艰难，让我们更加体会到C919成功的不易。&lt;br&gt;　　除了“大飞机”的知识，来回老师还向我们介绍了作为学生如何正确看待学习和压力的方法，分享了他应对压力的方法。&lt;/p&gt;
 &lt;h2 id=&quot;Part-Two&quot;&gt;&lt;a href=&quot;#Part-Two&quot; class=&quot;headerlink&quot; title=&quot;Part Two&quot;&gt;&lt;/a&gt;Part Two&lt;/h2&gt;&lt;p&gt;时间：3月8日星期五&lt;br&gt;地点：上海浦东新区上飞路919号&lt;br&gt;　　下午，我们从学校出发，来到上飞公司，参观运十和C919的总装生产线&lt;/p&gt;
@@ -1065,6 +1497,19 @@
       
       <comments>https://wznmickey.com/2019/%E6%8E%A2%E8%AE%BF%E5%95%86%E9%A3%9E/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;h1 id=&quot;探访商飞&quot;&gt;&lt;a href=&quot;#探访商飞&quot; class=&quot;headerlink&quot; title=&quot;探访商飞&quot;&gt;&lt;/a&gt;探访商飞&lt;/h1&gt;&lt;h2 id=&quot;Part-One&quot;&gt;&lt;a href=&quot;#Part-One&quot; class=&quot;headerlink&quot; title=&quot;Part One&quot;&gt;&lt;/a&gt;Part One&lt;/h2&gt;&lt;p&gt;时间：3月1日星期五&lt;br&gt;地点：上海市闵行区德宏路2698号&lt;br&gt;　　来自上飞公司培训中心的来回老师来到我们学校，讲述大飞机的故事，带我们走近“永不放弃”的企业文化。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190309_1.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190309_1.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;small&gt;点击图片查看大图&lt;/small&gt;&lt;br&gt;　　在他的讲述中，我们了解了世界商用航空的发展历史，了解了众多企业的变迁以及如今商飞面临的“AB”（Airbus&amp;amp;Boeing）格局，也了解了中国商飞期待的“ABC”的世界格局。为了实现这个目标，在商飞的工作不是“一张报纸，一杯茶，一个下午，一米阳光”的轻松油水肥差，而是晚上12点下班，早上6点上班，一月36小时加班，几百个小时不回家，几十个日夜在科研一线不停歇地工作的奋斗。&lt;br&gt;　　我们还了解了中国大型飞机研制的曲折经历，知道了运十飞机的坎坷过程，了解了商飞人四处打工维持生计的艰难，让我们更加体会到C919成功的不易。&lt;br&gt;　　除了“大飞机”的知识，来回老师还向我们介绍了作为学生如何正确看待学习和压力的方法，分享了他应对压力的方法。&lt;/p&gt;
+&lt;h2 id=&quot;Part-Two&quot;&gt;&lt;a href=&quot;#Part-Two&quot; class=&quot;headerlink&quot; title=&quot;Part Two&quot;&gt;&lt;/a&gt;Part Two&lt;/h2&gt;&lt;p&gt;时间：3月8日星期五&lt;br&gt;地点：上海浦东新区上飞路919号&lt;br&gt;　　下午，我们从学校出发，来到上飞公司，参观运十和C919的总装生产线&lt;/p&gt;
+&lt;h3 id=&quot;参观运十&quot;&gt;&lt;a href=&quot;#参观运十&quot; class=&quot;headerlink&quot; title=&quot;参观运十&quot;&gt;&lt;/a&gt;参观运十&lt;/h3&gt;&lt;p&gt;　　上飞始建于1950年，成功研制了我国自行设计、拥有自主知识产权的四发喷气式客机运十，所以我们到来的第一件事就是参观运十。&lt;br&gt;&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190309_2.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190309_2.jpg&quot;&gt;&lt;/a&gt;　　&lt;br&gt;　　运十飞机从1972年开始研制，02架机在1980年9月26日首飞，是第一架国产喷气式旅机，不同于平时对飞机的远观，当真正靠近飞机的引擎时，才感受到它的巨大。在登上飞机后，我发现其内部设计与现在的飞机十分相似，丝毫感觉不到这是一架有40年前的飞机。&lt;/p&gt;
+&lt;p&gt;&lt;div align=&quot;center&quot;&gt;!&lt;a href=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20190309_3.jpg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/quick/images/20190309_3.jpg&quot;&gt;&lt;/a&gt;&lt;br&gt;　　在驾驶舱与同学合影&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&quot;参观C919的总装生产线&quot;&gt;&lt;a href=&quot;#参观C919的总装生产线&quot; class=&quot;headerlink&quot; title=&quot;参观C919的总装生产线&quot;&gt;&lt;/a&gt;参观C919的总装生产线&lt;/h3&gt;&lt;p&gt;　　汽车从大门进入，一路向前，一栋栋建筑被甩到身后，上飞的大姐姐向我们介绍了各类建筑的用途以及在上飞的分布，终于我们最终到达了C919的总装生产线。&lt;br&gt;　　在这里，工作人员向我们介绍了飞机的生产方式和生产线中不同的人员的分工，让我对飞机的生产有了进一步的认识。&lt;br&gt;　　C919的荣耀与商飞人的奋斗是密不可分的。参观完生产线，工会的刘维历和我们分享了“荣耀”背后的故事，以“沟通式”的演讲方式，让我们明白了商飞人在C919的研制过程中的挫折与挑战，在得知我们即将步入高三，即将面对人生的转折点后，她翻出当年的笔记本和错题本，专门拿到现场和我们分享，交流学习得经验，让我收获许多。&lt;br&gt;　　这次的经历让我感受到了中国人在大型飞机研制过程的付出的心血，作为新时代的学生，我们应当继承和发扬前辈的不怕吃苦的精神，为祖国的建设作出自己的贡献。&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E6%8E%A2%E8%AE%BF%E5%95%86%E9%A3%9E/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -1072,6 +1517,7 @@
       <link>https://wznmickey.com/2019/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-2019%E5%B9%B4%E5%AF%92%E5%81%87/</link>
       <guid>https://wznmickey.com/2019/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-2019%E5%B9%B4%E5%AF%92%E5%81%87/</guid>
       <pubDate>Sat, 02 Mar 2019 16:18:39 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;h1 id=&quot;是科学主义与科学精神矛盾吗？&quot;&gt;&lt;a href=&quot;#是科学主义与科学精神矛盾吗？&quot; class=&quot;headerlink&quot; title=&quot;是科学主义与科学精神矛盾吗？&quot;&gt;&lt;/a&gt;是科学主义与科学精神矛盾吗？&lt;/h1&gt;&lt;h2 id=&quot;读《叩响命运的门》第13章有感&quot;&gt;&lt;a href=&quot;#读《叩响命运的门》第13章有感&quot; class=&quot;headerlink&quot; title=&quot;读《叩响命运的门》第13章有感&quot;&gt;&lt;/a&gt;读《叩响命运的门》第13章有感&lt;/h2&gt;&lt;p&gt;　　在这个社会的发展中，科学第一生产力的体现越来越明显。越来越多的社会的财富的增长依赖于科技的发展，然而，在回顾科学的历史时，很多人往往将目光放在中世纪以后，却常常忽略了在这之前的科学的发展。人们常常指责一些行为违反科学精神，却很少注意到科学精神也是在变化的，而科学精神的不断变化正是在科学主义的推动下进行的。古罗马的克劳迪亚斯-盖伦通过解剖各类动物的尸体试图以此类推出人类的结构，我们当然要承认他的贡献，但同时也要指出的是，正是因为当时的宗教影响，解剖人类尸体是被严格禁止的，这导致人们无法认识到人类身体与其他生物的不同。所幸，有一些人违背了这一点，偷偷进行人体尸体解剖，终于认识到了之前盖伦的理论中的许多错误之处。有些人会说，他们违背的并非科学精神，而是宗教思想，科学精神并不认为解剖人的尸体是错误的。其实不然，科学作为一种认识世界的实践方法，在当时就表现为宗教思想。&lt;br&gt;　　但其实不仅科学是这样，在许多方面都是这样，人们往往受限于认知，对那些与世俗伦理向违背的事物表示反对，对于罗马帝国而言，基督教一开始违背人们的认知的，对基督教是仇恨的，但在逐渐的变化之中，基督教成为了罗马帝国的国教。许多崇尚科学的人会认为处在宗教控制下的中世纪是黑暗的，但这是在我们如今的看法，当时的人们信仰基督，以《圣经》作为权威。&lt;br&gt;　　回望过去，如今的我们看待旧中国也是黑暗的，对待文革也常常持批判态度，这其实就是由于文化背景的不同所造成的，而科学精神就是这文化背景中的重要部分。与其说人们是在认同科学精神，不如说人们是在认同或被迫认同那些对文化有影响力的权威的看法。&lt;br&gt;　　牛顿与戈特弗里德·莱布尼茨关于微积分的争论便是一个很好的例子，牛顿作为英国皇家学会会长，通过手段，借皇家学会之名，大肆宣扬莱布尼茨剽窃他所发明的流数法（现称微积分），由于牛顿的崇高地位，皇室排挤他，只能在不受重视的角落度过余生。而其实莱布尼茨和牛顿是各自独立发明出微积分的，他所创造的符号我们至今仍在使用。&lt;br&gt;在基督教成为国教之前，古罗马宗教是权威，在人们对人体结构的进一步了解前，盖伦是权威，在牛顿与莱布尼茨中，牛顿是权威……如今，许多人把所谓的科学精神当做权威，仇视，排挤那些试图挑战权威的人或行为，并给这些崇尚真理的行为一个名字，科学主义。&lt;br&gt;其实，对立的不是科学精神与科学主义，而是权威与那些挑战者。当挑战失败时，是对科学精神的违背，当挑战成功时，则科学精神发生改变。&lt;br&gt;　　还记得《高铁，请等一等你的人民》吗？&lt;/p&gt;</description>
       
@@ -1090,6 +1536,15 @@
       
       <comments>https://wznmickey.com/2019/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-2019%E5%B9%B4%E5%AF%92%E5%81%87/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;h1 id=&quot;是科学主义与科学精神矛盾吗？&quot;&gt;&lt;a href=&quot;#是科学主义与科学精神矛盾吗？&quot; class=&quot;headerlink&quot; title=&quot;是科学主义与科学精神矛盾吗？&quot;&gt;&lt;/a&gt;是科学主义与科学精神矛盾吗？&lt;/h1&gt;&lt;h2 id=&quot;读《叩响命运的门》第13章有感&quot;&gt;&lt;a href=&quot;#读《叩响命运的门》第13章有感&quot; class=&quot;headerlink&quot; title=&quot;读《叩响命运的门》第13章有感&quot;&gt;&lt;/a&gt;读《叩响命运的门》第13章有感&lt;/h2&gt;&lt;p&gt;　　在这个社会的发展中，科学第一生产力的体现越来越明显。越来越多的社会的财富的增长依赖于科技的发展，然而，在回顾科学的历史时，很多人往往将目光放在中世纪以后，却常常忽略了在这之前的科学的发展。人们常常指责一些行为违反科学精神，却很少注意到科学精神也是在变化的，而科学精神的不断变化正是在科学主义的推动下进行的。古罗马的克劳迪亚斯-盖伦通过解剖各类动物的尸体试图以此类推出人类的结构，我们当然要承认他的贡献，但同时也要指出的是，正是因为当时的宗教影响，解剖人类尸体是被严格禁止的，这导致人们无法认识到人类身体与其他生物的不同。所幸，有一些人违背了这一点，偷偷进行人体尸体解剖，终于认识到了之前盖伦的理论中的许多错误之处。有些人会说，他们违背的并非科学精神，而是宗教思想，科学精神并不认为解剖人的尸体是错误的。其实不然，科学作为一种认识世界的实践方法，在当时就表现为宗教思想。&lt;br&gt;　　但其实不仅科学是这样，在许多方面都是这样，人们往往受限于认知，对那些与世俗伦理向违背的事物表示反对，对于罗马帝国而言，基督教一开始违背人们的认知的，对基督教是仇恨的，但在逐渐的变化之中，基督教成为了罗马帝国的国教。许多崇尚科学的人会认为处在宗教控制下的中世纪是黑暗的，但这是在我们如今的看法，当时的人们信仰基督，以《圣经》作为权威。&lt;br&gt;　　回望过去，如今的我们看待旧中国也是黑暗的，对待文革也常常持批判态度，这其实就是由于文化背景的不同所造成的，而科学精神就是这文化背景中的重要部分。与其说人们是在认同科学精神，不如说人们是在认同或被迫认同那些对文化有影响力的权威的看法。&lt;br&gt;　　牛顿与戈特弗里德·莱布尼茨关于微积分的争论便是一个很好的例子，牛顿作为英国皇家学会会长，通过手段，借皇家学会之名，大肆宣扬莱布尼茨剽窃他所发明的流数法（现称微积分），由于牛顿的崇高地位，皇室排挤他，只能在不受重视的角落度过余生。而其实莱布尼茨和牛顿是各自独立发明出微积分的，他所创造的符号我们至今仍在使用。&lt;br&gt;在基督教成为国教之前，古罗马宗教是权威，在人们对人体结构的进一步了解前，盖伦是权威，在牛顿与莱布尼茨中，牛顿是权威……如今，许多人把所谓的科学精神当做权威，仇视，排挤那些试图挑战权威的人或行为，并给这些崇尚真理的行为一个名字，科学主义。&lt;br&gt;其实，对立的不是科学精神与科学主义，而是权威与那些挑战者。当挑战失败时，是对科学精神的违背，当挑战成功时，则科学精神发生改变。&lt;br&gt;　　还记得《高铁，请等一等你的人民》吗？&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-2019%E5%B9%B4%E5%AF%92%E5%81%87/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
     <item>
@@ -1097,6 +1552,7 @@
       <link>https://wznmickey.com/2019/OK/</link>
       <guid>https://wznmickey.com/2019/OK/</guid>
       <pubDate>Wed, 23 Jan 2019 14:22:54 GMT</pubDate>
+<<<<<<< HEAD
       
       <description>&lt;p&gt;　　想自己有一个博客想了很久了，折腾了好久终于完成了啊！&lt;/p&gt;</description>
       
@@ -1111,6 +1567,15 @@
       
       <comments>https://wznmickey.com/2019/OK/#disqus_thread</comments>
       
+=======
+      <description>
+      
+        &lt;p&gt;　　想自己有一个博客想了很久了，折腾了好久终于完成了啊！&lt;br&gt;
+      
+      </description>
+      
+      <comments>https://wznmickey.com/2019/OK/#disqus_thread</comments>
+>>>>>>> origin/old
     </item>
     
   </channel>
