@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wznmickey.com/about/index.html</loc>
+    
+    <lastmod>2020-12-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wznmickey.com/2020/visit-MAO-ZEDONG-old-house/</loc>
     
     <lastmod>2020-12-06</lastmod>
@@ -68,13 +75,6 @@
     <loc>https://wznmickey.com/2020/knapsack-problem/</loc>
     
     <lastmod>2020-09-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wznmickey.com/about/index.html</loc>
-    
-    <lastmod>2020-09-01</lastmod>
     
   </url>
   
