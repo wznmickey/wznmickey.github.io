@@ -213,7 +213,7 @@ body {
 body {
   background: var(--body-bg-color);
   color: var(--text-color);
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -226,7 +226,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -603,7 +603,7 @@ pre {
 }
 pre,
 code {
-  font-family: consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
+  font-family: consolas, Menlo, monospace, 'PingFang SC', 'Microsoft YaHei';
 }
 code {
   border-radius: 3px;
@@ -1139,7 +1139,7 @@ pre code {
   color: #777;
 }
 .post-body .note.default:not(.no-icon)::before {
-  content: "\f0a9";
+  content: '\f0a9';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #777;
@@ -1161,7 +1161,7 @@ pre code {
   color: #6f42c1;
 }
 .post-body .note.primary:not(.no-icon)::before {
-  content: "\f055";
+  content: '\f055';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #6f42c1;
@@ -1183,7 +1183,7 @@ pre code {
   color: #428bca;
 }
 .post-body .note.info:not(.no-icon)::before {
-  content: "\f05a";
+  content: '\f05a';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #428bca;
@@ -1205,7 +1205,7 @@ pre code {
   color: #5cb85c;
 }
 .post-body .note.success:not(.no-icon)::before {
-  content: "\f058";
+  content: '\f058';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #5cb85c;
@@ -1227,7 +1227,7 @@ pre code {
   color: #f0ad4e;
 }
 .post-body .note.warning:not(.no-icon)::before {
-  content: "\f06a";
+  content: '\f06a';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #f0ad4e;
@@ -1249,7 +1249,7 @@ pre code {
   color: #d9534f;
 }
 .post-body .note.danger:not(.no-icon)::before {
-  content: "\f056";
+  content: '\f056';
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   color: #d9534f;
@@ -1408,7 +1408,7 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   margin: 0;
@@ -1628,7 +1628,7 @@ pre code {
 .sidebar-dimmer {
   display: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .sidebar-dimmer {
     background: #000;
     display: block;
@@ -1678,17 +1678,21 @@ pre code {
 .sidebar-overview-active .sidebar-nav-overview:hover {
   color: #fc6423;
 }
-.sidebar-panel {
-  display: none;
+.sidebar-panel-container {
   max-height: var(--sidebar-wrapper-height);
   overflow-x: hidden;
   overflow-y: auto;
 }
-.sidebar-toc-active .post-toc-wrap,
+.sidebar-panel {
+  display: none;
+}
 .sidebar-overview-active .site-overview-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.sidebar-toc-active .post-toc-wrap {
+  display: block;
 }
 .sidebar-toggle {
   bottom: 45px;
@@ -2155,7 +2159,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -2344,11 +2348,12 @@ pre code {
 }
 .post-sticky-flag {
   display: inline-block;
+  margin-right: 8px;
   transform: rotate(30deg);
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
