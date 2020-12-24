@@ -484,7 +484,7 @@
 <script>
 NexT.utils.loadComments('#waline-comments', () => {
   NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', () => {
-    new Waline(Object.assign({"enable":true,"serverURL":"https://waline-blog.vercel.app","placeholder":"让我知道你的存在吧 (昵称必填，其他选填）","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-cn","visitor":true,"requiredFields":["nick"]}, {
+    new Waline(Object.assign({"enable":true,"serverURL":"https://comment.wznmickey.com","placeholder":"让我知道你的存在吧 (昵称必填，其他选填）","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-cn","visitor":true,"requiredFields":["nick"]}, {
       el: '#waline-comments',
       path: "/tags/%E5%9B%BE/"
     }));
