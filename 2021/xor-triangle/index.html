@@ -23,19 +23,24 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"wznmickey.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="记录自己的感受与收获">
-<meta property="og:type" content="website">
-<meta property="og:title" content="静静的小窝">
-<meta property="og:url" content="https://wznmickey.com/tags/%E6%8E%92%E5%BA%8F%E7%9A%84%E7%A8%B3%E5%AE%9A%E6%80%A7/index.html">
+<meta name="description" content="此文使用了mathjax，请等待公式加载这是2021年蓝桥杯国赛A组C++的一道题目。 当时没有来得及写暴力对拍，只是测了示例过了，也就是说不确定是否正确。  　　首先考虑异或操作的特性，可以交换，所以不妨考虑 $a \geq b \geq c$的情况。随后根据三个数字异或为0，不难看出每一位的异或结果都是0。这也就是说每一位的三个数字只有两种可能，2个1一个0或三个0。不难知道a的首位一定是1，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[题解]异或三角形|2021蓝桥杯国赛|xor triangle">
+<meta property="og:url" content="https://wznmickey.com/2021/xor-triangle/index.html">
 <meta property="og:site_name" content="静静的小窝">
-<meta property="og:description" content="记录自己的感受与收获">
+<meta property="og:description" content="此文使用了mathjax，请等待公式加载这是2021年蓝桥杯国赛A组C++的一道题目。 当时没有来得及写暴力对拍，只是测了示例过了，也就是说不确定是否正确。  　　首先考虑异或操作的特性，可以交换，所以不妨考虑 $a \geq b \geq c$的情况。随后根据三个数字异或为0，不难看出每一位的异或结果都是0。这也就是说每一位的三个数字只有两种可能，2个1一个0或三个0。不难知道a的首位一定是1，">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-06-05T17:41:39.000Z">
+<meta property="article:modified_time" content="2021-06-05T17:46:07.538Z">
 <meta property="article:author" content="静静">
-<meta property="article:tag" content="我是静静wznmickey, 静静的小窝, blog of Mickey, 宁静王子, njwz, 静静, 宁静王子_我是静静MICKEY, 记录自己的感受与收获, 学生, 高三, 交附闵分, 交通大学附属中学">
+<meta property="article:tag" content="中文">
+<meta property="article:tag" content="蓝桥杯">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://wznmickey.com/tags/%E6%8E%92%E5%BA%8F%E7%9A%84%E7%A8%B3%E5%AE%9A%E6%80%A7/">
+<link rel="canonical" href="https://wznmickey.com/2021/xor-triangle/">
 
 
 <script class="page-configurations">
@@ -43,7 +48,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script><script>
@@ -56,7 +61,7 @@ var _hmt = _hmt || [];
 })();
 </script>
 
-<title>标签: 排序的稳定性 | 静静的小窝</title>
+<title>[题解]异或三角形|2021蓝桥杯国赛|xor triangle | 静静的小窝</title>
   
 
 
@@ -293,51 +298,209 @@ var _hmt = _hmt || [];
 </noscript>
 
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h2 class="collection-header">排序的稳定性
-          <small>标签</small>
-        </h2>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2021/xor-triangle/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
+      <meta itemprop="name" content="静静">
+      <meta itemprop="description" content="记录自己的感受与收获">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="静静的小窝">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          [题解]异或三角形|2021蓝桥杯国赛|xor triangle
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+
+      <time title="创建时间：2021-06-06 01:41:39 / 修改时间：01:46:07" itemprop="dateCreated datePublished" datetime="2021-06-06T01:41:39+08:00">2021-06-06</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/2021/xor-triangle/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2021/xor-triangle/" data-xid="/2021/xor-triangle/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/2021/xor-triangle/" class="post-meta-item leancloud_visitors" data-flag-title="[题解]异或三角形|2021蓝桥杯国赛|xor triangle" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><small>此文使用了mathjax，请等待公式加载</small><br>这是2021年蓝桥杯国赛A组C++的一道题目。</p>
+<div class="note info"><p>当时没有来得及写暴力对拍，只是测了示例过了，也就是说不确定是否正确。</p>
+</div>
+<p>　　首先考虑异或操作的特性，可以交换，所以不妨考虑 $a \geq b \geq c$的情况。随后根据三个数字异或为0，不难看出每一位的异或结果都是0。这也就是说每一位的三个数字只有两种可能，2个1一个0或三个0。不难知道a的首位一定是1，所以另外两个数字在此处必为一1一0。可由此用反证法证明3个数必不相等：<br>　　如果三个数相等，二进制下首位必相等，与首位一1一0矛盾。如果只有两个数相等，那么这两个数在2进制下必定同1同0。为了满足三个数异或为0，第三个数每一位都只能为0，得出第三数为0，无法形成三角形。</p>
+<a id="more"></a> 
+<p>　　这样一来三个数的排列组合就确定了，直接乘以6即可。<br>　　第一位数已经确定，接下来考虑第二位数，若a为0，则另外2数也只能为0（若都为1则b大于a）。同理从第2位开始的连续的0不会增加可能性。一直递推到（最高位起）第2个1（第一个1为首位，以分析过）。显然另外2数在此处一1一0，因为a为1，所以两种0和1的排列均不会超过a（最多等于）。但是如果所有的1对应的10排列都是b取1，则$a=b$相等，与之前的分析不符，也就是说这么多的排列里面有一种是不可行的。（限制1）再分析0，因为要保证$a&gt;b$，只有在前面已经有a与b不等的情况下才有$a=0,b=1$的可能（c少一位，所以不存在相等的可能）并且不能全为$a=0,b=0$（c为0也不符合条件），即可能情况最多为$2^n-1$（假设有a在这种条件下的1有$n$个）。（限制2）<br>　　另外再分析三角形的条件，若a为1，b与c为0和1，相加不会大于1，若三数均为0，也不会大于a，也就是说至少有一个地方是a为0，另外2数为1。考虑以上条件不难发现需要考虑a的0和1的不同情况进行排列组合。所以不妨从最低位计算到第2高位的1，并且以1作为主要考虑（0依赖与1的情况）。在a为1的位置，为了a为0的方便，不妨假设在这一位b为0，c为1，那么低位的0有$2^n-1$种，低位的1有$2^n$种（n对应各自在低位中的个数）。然后累加一直到第二高位的1。<br>　　在这个过程中一种假设了一个位为$a=1,b=0,c=1$，所以限制1满足，而限制2通过减一也满足了。最后将答案乘以6，即为最大数为a的组合数。<br>　　考虑到输入有多种可能，不妨先根据最大数的大小排序计算，再根据输入顺序排序输出。<br>代码略（没有复制）。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-08-15T23:08:30+08:00"
-              content="2020-08-15">
-          08-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/bubble-sort/" itemprop="url">
-            <span itemprop="name">冒泡排序与排序的稳定性|Bubble Sort and Stability</span>
-          </a>
-      </div>
-
+    
+    
+    
       
-    </header>
-  </article>
+  <div class="popular-posts-header">推荐</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2021\LanQiaoCup2021\" rel="bookmark">2021年蓝桥杯|LanQiaoCup2021</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\bubble-sort\" rel="bookmark">冒泡排序与排序的稳定性|Bubble Sort and Stability</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\knapsack-problem\" rel="bookmark">背包问题|knapsack problem</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\selection-sort\" rel="bookmark">选择排序|Selection Sort</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\洛谷P1000题解\" rel="bookmark">洛谷P1000题解</a></div>
+    </li>
+  </ul>
 
-    </div>
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>静静
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://wznmickey.com/2021/xor-triangle/" title="[题解]异或三角形|2021蓝桥杯国赛|xor triangle">https://wznmickey.com/2021/xor-triangle/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://twitter.com/wznmickey">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+
+          <span class="label">Twitter</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/images/wechat.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/rss2.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
   </div>
-  
-  
-  
+</div>
 
+          <div class="post-tags">
+              <a href="/tags/%E4%B8%AD%E6%96%87/" rel="tag"># 中文</a>
+              <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/" rel="tag"># 蓝桥杯</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+              <a href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag"># 题解</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/LanQiaoCup2021/" rel="prev" title="2021年蓝桥杯|LanQiaoCup2021">
+                  <i class="fa fa-chevron-left"></i> 2021年蓝桥杯|LanQiaoCup2021
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -419,7 +582,38 @@ var _hmt = _hmt || [];
 
 
 
-  
+  <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'none'
+      },
+      options: {
+        renderActions: {
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
   <script>
@@ -427,7 +621,7 @@ var _hmt = _hmt || [];
       quicklink.listen({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://wznmickey.com/tags/%E6%8E%92%E5%BA%8F%E7%9A%84%E7%A8%B3%E5%AE%9A%E6%80%A7/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://wznmickey.com/2021/xor-triangle/',]
       });
       });
   </script>
@@ -438,7 +632,7 @@ NexT.utils.loadComments('#waline-comments', () => {
       lang: 'zh-CN'
     }, {"enable":true,"serverURL":"https://comment.wznmickey.com","placeholder":"让我知道你的存在吧 (昵称必填，其他选填）","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":true,"comment_count":true,"requiredFields":["nick"],"lang":"zh-cn"}, {
       el: '#waline-comments',
-      path: "/tags/%E6%8E%92%E5%BA%8F%E7%9A%84%E7%A8%B3%E5%AE%9A%E6%80%A7/",
+      path: "/2021/xor-triangle/",
     }));
   }, window.Waline);
 });
