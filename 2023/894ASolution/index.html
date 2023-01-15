@@ -21,30 +21,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"wznmickey.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.11.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":200},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="John died.  Mr. Smith opened his diary with a strong sense of curiosity, wondering what made him stir the city for a month. Reading John’s diary, Smith believed he knew what happened. Everything start">
+    <meta name="description" content="这是之前出的一道题，稍微进行了一些小修改。题目链接:https:&#x2F;&#x2F;codeforces.com&#x2F;contest&#x2F;894&#x2F;problem&#x2F;A  最简单的方法就是搜索遍历所有的可能的排列情况，即枚举结果字符串的每一位在原字符串中的位置，故复杂度为$O(n^3)$，如果需要的匹配的字符串更长，那么复杂度更高。  随后可以发现目标字符串要完全符合要求，意即只要有一位不符合就一定不被计算，故可剪枝，只有当">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Smith’s death">
-<meta property="og:url" content="https://wznmickey.com/2022/Smith%E2%80%99s-death/index.html">
+<meta property="og:title" content="894A题解|894A Solution">
+<meta property="og:url" content="https://wznmickey.com/2023/894ASolution/index.html">
 <meta property="og:site_name" content="静静的小窝">
-<meta property="og:description" content="John died.  Mr. Smith opened his diary with a strong sense of curiosity, wondering what made him stir the city for a month. Reading John’s diary, Smith believed he knew what happened. Everything start">
+<meta property="og:description" content="这是之前出的一道题，稍微进行了一些小修改。题目链接:https:&#x2F;&#x2F;codeforces.com&#x2F;contest&#x2F;894&#x2F;problem&#x2F;A  最简单的方法就是搜索遍历所有的可能的排列情况，即枚举结果字符串的每一位在原字符串中的位置，故复杂度为$O(n^3)$，如果需要的匹配的字符串更长，那么复杂度更高。  随后可以发现目标字符串要完全符合要求，意即只要有一位不符合就一定不被计算，故可剪枝，只有当">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-08-26T03:45:37.000Z">
-<meta property="article:modified_time" content="2022-12-29T08:35:22.389Z">
+<meta property="article:published_time" content="2023-01-15T15:53:17.000Z">
+<meta property="article:modified_time" content="2023-01-15T16:18:45.621Z">
 <meta property="article:author" content="静静">
-<meta property="article:tag" content="作业">
-<meta property="article:tag" content="English">
-<meta property="article:tag" content="小说">
+<meta property="article:tag" content="中文">
+<meta property="article:tag" content="题解">
+<meta property="article:tag" content="c++">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="动态规划">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://wznmickey.com/2022/Smith%E2%80%99s-death/">
+<link rel="canonical" href="https://wznmickey.com/2023/894ASolution/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wznmickey.com/2022/Smith%E2%80%99s-death/","path":"2022/Smith’s-death/","title":"Smith’s death"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wznmickey.com/2023/894ASolution/","path":"2023/894ASolution/","title":"894A题解|894A Solution"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Smith’s death | 静静的小窝</title>
+<title>894A题解|894A Solution | 静静的小窝</title>
   
 
 
@@ -258,7 +260,7 @@ var _hmt = _hmt || [];
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2022/Smith%E2%80%99s-death/">
+    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2023/894ASolution/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
@@ -271,12 +273,12 @@ var _hmt = _hmt || [];
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Smith’s death | 静静的小窝">
+      <meta itemprop="name" content="894A题解|894A Solution | 静静的小窝">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Smith’s death
+          894A题解|894A Solution
         </h1>
 
         <div class="post-meta-container">
@@ -287,14 +289,14 @@ var _hmt = _hmt || [];
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2022-08-26 11:45:37" itemprop="dateCreated datePublished" datetime="2022-08-26T11:45:37+08:00">2022-08-26</time>
+      <time title="创建时间：2023-01-15 23:53:17" itemprop="dateCreated datePublished" datetime="2023-01-15T23:53:17+08:00">2023-01-15</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-12-29 16:35:22" itemprop="dateModified" datetime="2022-12-29T16:35:22+08:00">2022-12-29</time>
+      <time title="修改时间：2023-01-16 00:18:45" itemprop="dateModified" datetime="2023-01-16T00:18:45+08:00">2023-01-16</time>
     </span>
 
   
@@ -306,13 +308,13 @@ var _hmt = _hmt || [];
     </span>
     <span class="post-meta-item-text">Waline：</span>
   
-    <a title="waline" href="/2022/Smith%E2%80%99s-death/#waline-comments" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" id="/2022/Smith%E2%80%99s-death/" data-xid="/2022/Smith%E2%80%99s-death/" itemprop="commentCount"></span>
+    <a title="waline" href="/2023/894ASolution/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2023/894ASolution/" data-xid="/2023/894ASolution/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
-    <span id="/2022/Smith%E2%80%99s-death/" class="post-meta-item leancloud_visitors" data-flag-title="Smith’s death" title="阅读次数">
+    <span id="/2023/894ASolution/" class="post-meta-item leancloud_visitors" data-flag-title="894A题解|894A Solution" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -326,14 +328,14 @@ var _hmt = _hmt || [];
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>4.6k</span>
+      <span>992</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>4 分钟</span>
+      <span>1 分钟</span>
     </span>
 </div>
 
@@ -344,29 +346,21 @@ var _hmt = _hmt || [];
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>John died. </p>
-<p>Mr. Smith opened his diary with a strong sense of curiosity, wondering what made him stir the city for a month. Reading John’s diary, Smith believed he knew what happened.</p>
-<p>Everything started two months ago which was the time John started his diary by his self-introduction “As one of the young individuals who had just graduated as a doctor in 2050, full of hope in life, John, the writer, is sitting behind the screen, with his hands flying above the keyboard.”, followed by his recalling what his parents told him when he was young. </p>
-<a id="more"></a>
-<p>That world was far more different from what he suffered. At that time, there is no need to become a doctor merely for a simple work that a primary graduate can master. Instead, graduation from a university was enough to get that job. Unlike him, after 30 years of life as a student, he could only find a job that could exactly afford him without any entertainment. </p>
-<p>Smith could imagine the situation that looking around, John patrolled the area where he lived, a room that had more than 3 square meters and that’s what he could pay and that’s why he is still working on his computer. </p>
-<p>In the diary, he wrote down an idea that could survive him. With being exposed to more and more reports and warnings on the leak of personal privacy, John, as well as almost anyone else on the Earth, was increasingly loath to be monitored and controlled by those multinational Internet technology giants, the government, and plenty of criminals. Luckily, thanks to the wave of technological decentralization, which grew 30 years ago, getting out of their hands became possible, and that is what John majors in. “I can build a net without any track, which could give me countless money.” He wrote.</p>
-<p>After John’s efforts in every sleepless night, he successfully made a super program that could prevent the giant from being detected. Smith could figure it out as the next log is one month later, pointing out the challenge John had. A super high-performance computer server is needed to run this program, but it’s obvious that John, the poor hero, could not afford one, which makes his entire efforts meaningless. “No. I must bring it to the world.” John wrote to himself. He tried to get some investment and kept his phone on his ear for the whole day, but there was nothing he could get. Every phone number on the notebook is marked as failed. “I lay down on his bed. Moonlight, flickering under the veil of clouds, shone on his face through the glass beside the bed.” </p>
-<p>After a one-night-long meditation, he must choose to take the risk, hacking others’ computers to build his net. Smith told himself when he noticed the date of that diary is May 23, which Smith will not forget.</p>
-<p>The same night, those giants got the message that John had a program that could build a no-tracking network. If they build one, that company will be able to block all other companies from tracking in the system and become the king above them. They did not need to buy that, instead, they could just steal it, like what they were keen on for decades. They connected those criminals to stealing it from John. Smith was one of them.</p>
-<p>“How shameless they are!” Smith still remembers the night that his father’s work was stolen by Tliboogle, one of the most glamorous in the country. He had no alternative but to become a gang member until now.</p>
-<p>Only one page left, the suicide note of weak John.</p>
-<p>“The sun rose and I started my little tricks on the system of the cloud servers. I immersed myself in the joy of victory until I found that I had accidentally uncovered where I live on the Internet. Having no other options, I ran out to evade pursuit at once. There are also some illegal organizations that had an interest in my program. What they could do is unimaginable.</p>
-<p>“I started my travels in sewers, jungles, and alleys.</p>
-<p>“Last night, I jumped in from the manhole cover, evading capture. In the past month, I was consistently frightened by everything around me, being scared that there were spies from those who wanted to catch me or that my actions would be reported by somebody around me. There was no good night’s sleep and no good meal. </p>
-<p>“Despite my best cautiousness, I have still been tracked down many times, and each time I must do everything I could do to escape and wait for a more robust challenge in the next few days. I could not use any electronic devices. They must publicize his location. I know.</p>
-<p>“I was walking in a dark alley, which is also the home of millions of mosquitoes, in wet clothes. Their noise made me even more irritable after I had not rested for a long time. I took the water-logged ground like a mirror and looked at myself. </p>
-<p>“After a month of unorganized appearance, it seemed that it would be difficult for me to integrate into normal society again. I don’t want to live a life like this forever. I should not hide anymore. </p>
-<p>“When I calm down, I’m already here.”</p>
-<p>The last passage ends.</p>
-<p>Smith looks up at the invisible roof of the high-rise building. “He jumped, going to another world after his last writing.”</p>
-<p>Not far from his body is the disk, with his super program, which was broken. Smith took it back and paid a lot to repair that hard drive. Nothing in it, except a crazy soul without sleep. </p>
-<p>“Ha Ha. I give everything I have into it, just to get this result. Right. If it is possible that a hero could break that existing rule independently, why there is no one broken it in the past 30 years with technological decentralization? That is the imagination. The reality is the death of our hero. I am so silly.” The building welcomes the next person.</p>
+        <p>这是之前出的一道题，稍微进行了一些小修改。<br>题目链接:<span class="exturl" data-url="aHR0cHM6Ly9jb2RlZm9yY2VzLmNvbS9jb250ZXN0Lzg5NC9wcm9ibGVtL0E=">https://codeforces.com/contest/894/problem/A<i class="fa fa-external-link-alt"></i></span></p>
+<ol>
+<li><p>最简单的方法就是搜索遍历所有的可能的排列情况，即枚举结果字符串的每一位在原字符串中的位置，故复杂度为$O(n^3)$，如果需要的匹配的字符串更长，那么复杂度更高。</p>
+</li>
+<li><p>随后可以发现目标字符串要完全符合要求，意即只要有一位不符合就一定不被计算，故可剪枝，只有当前面的字符串都符合要求的时候才继续遍历，常数可以进行优化为原来的$\frac{1}{26}$，但复杂度仍旧不变。</p>
+</li>
+<li><p>从前面的剪枝可以发现并不一定要遍历每种可能才可以，可以保存中间量直接相加即<strong>动态规划</strong>。</p>
+</li>
+</ol>
+<p>可以一维存储原字符串的下标，一维存目标字符串的下标，表示到目前为止符合的字符串数量，随后从前往后相加得最后得数。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">105</span>; j++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        dp[i][j] = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    dp[<span class="number">0</span>][j]=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; st.length(); j++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (st[j] == base[i])</span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>][j + <span class="number">1</span>] = dp[i][j] + dp[i+<span class="number">1</span>][j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>][j + <span class="number">1</span>] = dp[i + <span class="number">1</span>][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>最后输出<code>dp[3][st.length()]</code>作为答案。</p>
+<p>可以注意到过程当中一直是<code>dp[i]</code>到<code>dp[i+1]</code>，说明实际并不需要这一维度，可以删去这一维度到</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">&#123;</span><br><span class="line">    dp[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">dp[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; st.length(); j++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (st[j] == base[i])</span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>] = dp[i] + dp[i + <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>] = dp[i + <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>同时注意到<code>else</code>实际上什么都没有做，可以直接删去。</p>
 
     </div>
 
@@ -386,7 +380,7 @@ var _hmt = _hmt || [];
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://wznmickey.com/2022/Smith%E2%80%99s-death/" title="Smith’s death">https://wznmickey.com/2022/Smith’s-death/</a>
+      <a href="https://wznmickey.com/2023/894ASolution/" title="894A题解|894A Solution">https://wznmickey.com/2023/894ASolution/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -432,23 +426,22 @@ var _hmt = _hmt || [];
 </div>
 
           <div class="post-tags">
-              <a href="/tags/%E4%BD%9C%E4%B8%9A/" rel="tag"># 作业</a>
-              <a href="/tags/English/" rel="tag"># English</a>
-              <a href="/tags/%E5%B0%8F%E8%AF%B4/" rel="tag"># 小说</a>
+              <a href="/tags/%E4%B8%AD%E6%96%87/" rel="tag"># 中文</a>
+              <a href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag"># 题解</a>
+              <a href="/tags/c/" rel="tag"># c++</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag"># 动态规划</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/first-cross-wall/" rel="prev" title="第一次翻墙|first cross wall">
-                  <i class="fa fa-chevron-left"></i> 第一次翻墙|first cross wall
+                <a href="/2022/VY223-Journal/" rel="prev" title="VY223 Journal">
+                  <i class="fa fa-chevron-left"></i> VY223 Journal
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/VY223-Journal/" rel="next" title="VY223 Journal">
-                  VY223 Journal <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -522,12 +515,12 @@ var _hmt = _hmt || [];
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://wznmickey.com/2022/Smith%E2%80%99s-death/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://wznmickey.com/2023/894ASolution/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 <script>
 NexT.utils.loadComments('#waline-comments', () => {
@@ -536,7 +529,7 @@ NexT.utils.loadComments('#waline-comments', () => {
       lang: 'zh-CN'
     }, {"enable":true,"serverURL":"https://comment.wznmickey.com","placeholder":"让我知道你的存在吧 (昵称必填，其他选填）","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":true,"comment_count":true,"requiredFields":["nick"],"lang":"zh-cn"}, {
       el: '#waline-comments',
-      path: "/2022/Smith%E2%80%99s-death/",
+      path: "/2023/894ASolution/",
     }));
   }, window.Waline);
 });
