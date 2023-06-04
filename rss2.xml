@@ -9,8 +9,35 @@
     <atom:link href="https://wznmickey.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>记录自己的感受与收获</description>
-    <pubDate>Sun, 15 Jan 2023 16:18:45 GMT</pubDate>
+    <pubDate>Sun, 04 Jun 2023 13:16:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>hadoop 3.2.2 Cluster Setup | hadoop 3.2.2 的集群启动</title>
+      <link>https://wznmickey.com/2023/hadoop-3-2-2-usage/</link>
+      <guid>https://wznmickey.com/2023/hadoop-3-2-2-usage/</guid>
+      <pubDate>Sun, 04 Jun 2023 12:32:01 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description></description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://wznmickey.com/tags/%E4%B8%AD%E6%96%87/">中文</category>
+      
+      <category domain="https://wznmickey.com/tags/hadoop/">hadoop</category>
+      
+      
+      <comments>https://wznmickey.com/2023/hadoop-3-2-2-usage/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>894A题解|894A Solution</title>

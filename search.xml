@@ -16,18 +16,6 @@
       </tags>
   </entry>
   <entry>
-    <title>诗</title>
-    <url>/2020/A%20poem/</url>
-    <content><![CDATA[<p>在学校里<del>自愿</del>写的一首诗。</p>
-<p><strong>A&nbsp;C&nbsp;自动机</strong><br><strong>反证证贪心</strong><br><strong>十月&nbsp;C&nbsp;P&nbsp;P</strong><br><strong>载一已过矣</strong></p>
-<a id="more"></a> ]]></content>
-      <tags>
-        <tag>中文</tag>
-        <tag>作业</tag>
-        <tag>想法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2019科学营Day3</title>
     <url>/2019/2019%E7%A7%91%E5%AD%A6%E8%90%A5Day3/</url>
     <content><![CDATA[<h1 id="科学营Day3"><a href="#科学营Day3" class="headerlink" title="科学营Day3"></a>科学营Day3</h1><p>　　活动：青少年高校科学营<br>　　地点：华东理工大学（徐汇校区）<br>　　时间：2019年7月10日</p>
@@ -53,6 +41,45 @@
       <tags>
         <tag>经历</tag>
         <tag>中文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>894A题解|894A Solution</title>
+    <url>/2023/894ASolution/</url>
+    <content><![CDATA[<p>这是之前出的一道题，稍微进行了一些小修改。<br>题目链接:<span class="exturl" data-url="aHR0cHM6Ly9jb2RlZm9yY2VzLmNvbS9jb250ZXN0Lzg5NC9wcm9ibGVtL0E=">https://codeforces.com/contest/894/problem/A<i class="fa fa-external-link-alt"></i></span></p>
+<ol>
+<li><p>最简单的方法就是搜索遍历所有的可能的排列情况，即枚举结果字符串的每一位在原字符串中的位置，故复杂度为$O(n^3)$，如果需要的匹配的字符串更长，那么复杂度更高。</p>
+</li>
+<li><p>随后可以发现目标字符串要完全符合要求，意即只要有一位不符合就一定不被计算，故可剪枝，只有当前面的字符串都符合要求的时候才继续遍历，常数可以进行优化为原来的$\frac{1}{26}$，但复杂度仍旧不变。</p>
+</li>
+<li><p>从前面的剪枝可以发现并不一定要遍历每种可能才可以，可以保存中间量直接相加即<strong>动态规划</strong>。</p>
+</li>
+</ol>
+<p>可以一维存储原字符串的下标，一维存目标字符串的下标，表示到目前为止符合的字符串数量，随后从前往后相加得最后得数。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">105</span>; j++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        dp[i][j] = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    dp[<span class="number">0</span>][j]=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; st.length(); j++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (st[j] == base[i])</span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>][j + <span class="number">1</span>] = dp[i][j] + dp[i+<span class="number">1</span>][j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>][j + <span class="number">1</span>] = dp[i + <span class="number">1</span>][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>最后输出<code>dp[3][st.length()]</code>作为答案。</p>
+<p>可以注意到过程当中一直是<code>dp[i]</code>到<code>dp[i+1]</code>，说明实际并不需要这一维度，可以删去这一维度到</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">&#123;</span><br><span class="line">    dp[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">dp[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; st.length(); j++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (st[j] == base[i])</span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>] = dp[i] + dp[i + <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>] = dp[i + <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>同时注意到<code>else</code>实际上什么都没有做，可以直接删去。</p>
+]]></content>
+      <tags>
+        <tag>中文</tag>
+        <tag>题解</tag>
+        <tag>c++</tag>
+        <tag>算法</tag>
+        <tag>动态规划</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>诗</title>
+    <url>/2020/A%20poem/</url>
+    <content><![CDATA[<p>在学校里<del>自愿</del>写的一首诗。</p>
+<p><strong>A&nbsp;C&nbsp;自动机</strong><br><strong>反证证贪心</strong><br><strong>十月&nbsp;C&nbsp;P&nbsp;P</strong><br><strong>载一已过矣</strong></p>
+<a id="more"></a> ]]></content>
+      <tags>
+        <tag>中文</tag>
+        <tag>作业</tag>
+        <tag>想法</tag>
       </tags>
   </entry>
   <entry>
@@ -92,30 +119,15 @@
       </tags>
   </entry>
   <entry>
-    <title>894A题解|894A Solution</title>
-    <url>/2023/894ASolution/</url>
-    <content><![CDATA[<p>这是之前出的一道题，稍微进行了一些小修改。<br>题目链接:<span class="exturl" data-url="aHR0cHM6Ly9jb2RlZm9yY2VzLmNvbS9jb250ZXN0Lzg5NC9wcm9ibGVtL0E=">https://codeforces.com/contest/894/problem/A<i class="fa fa-external-link-alt"></i></span></p>
-<ol>
-<li><p>最简单的方法就是搜索遍历所有的可能的排列情况，即枚举结果字符串的每一位在原字符串中的位置，故复杂度为$O(n^3)$，如果需要的匹配的字符串更长，那么复杂度更高。</p>
-</li>
-<li><p>随后可以发现目标字符串要完全符合要求，意即只要有一位不符合就一定不被计算，故可剪枝，只有当前面的字符串都符合要求的时候才继续遍历，常数可以进行优化为原来的$\frac{1}{26}$，但复杂度仍旧不变。</p>
-</li>
-<li><p>从前面的剪枝可以发现并不一定要遍历每种可能才可以，可以保存中间量直接相加即<strong>动态规划</strong>。</p>
-</li>
-</ol>
-<p>可以一维存储原字符串的下标，一维存目标字符串的下标，表示到目前为止符合的字符串数量，随后从前往后相加得最后得数。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">105</span>; j++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        dp[i][j] = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    dp[<span class="number">0</span>][j]=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; st.length(); j++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (st[j] == base[i])</span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>][j + <span class="number">1</span>] = dp[i][j] + dp[i+<span class="number">1</span>][j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>][j + <span class="number">1</span>] = dp[i + <span class="number">1</span>][j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>最后输出<code>dp[3][st.length()]</code>作为答案。</p>
-<p>可以注意到过程当中一直是<code>dp[i]</code>到<code>dp[i+1]</code>，说明实际并不需要这一维度，可以删去这一维度到</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">&#123;</span><br><span class="line">    dp[i] = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">dp[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; st.length(); j++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (st[j] == base[i])</span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>] = dp[i] + dp[i + <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            dp[i + <span class="number">1</span>] = dp[i + <span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>同时注意到<code>else</code>实际上什么都没有做，可以直接删去。</p>
+    <title>2021年蓝桥杯|LanQiaoCup2021</title>
+    <url>/2021/LanQiaoCup2021/</url>
+    <content><![CDATA[<p>省赛的经历在写作业的时候写了<a href="https://wznmickey.com/2021/attending-contest">一部分</a>。比赛过程中感觉自己好久没有打过比赛了，非常不自信，基本上按着最稳的写法写，能短则短，像最短路也是三重循环，害怕自己哪里有疏忽（但还是浮点数操作出了问题）。一个感觉就是之前一位填答案题是比较简单的，但是做了之后发现其实时空限制放宽了，但是必须保证自己写对，不能有一点问题，而写代码的题目根据题目条件还有拿部分分的可能。国赛的时候还是求稳，算质数还是暴力法（一开始数组开小了还炸了一次）。少数的没有暴力的也没有来得及对拍测验。只能说还是离开NOIP很久了，完全没有感觉，也忘了不少东西。不过蓝桥杯能查函数还是很好的，之前高中有一次优先队列忘记拼写，还是到头文件库里找的。希望这次国赛能有个好成绩吧。<br>写了个<a href="https://wznmickey.com/2021/xor-triangle">题解</a>，大家可以看看。</p>
 ]]></content>
       <tags>
+        <tag>经历</tag>
         <tag>中文</tag>
-        <tag>题解</tag>
-        <tag>c++</tag>
-        <tag>算法</tag>
-        <tag>动态规划</tag>
+        <tag>想法</tag>
+        <tag>蓝桥杯</tag>
       </tags>
   </entry>
   <entry>
@@ -134,15 +146,13 @@
       </tags>
   </entry>
   <entry>
-    <title>2021年蓝桥杯|LanQiaoCup2021</title>
-    <url>/2021/LanQiaoCup2021/</url>
-    <content><![CDATA[<p>省赛的经历在写作业的时候写了<a href="https://wznmickey.com/2021/attending-contest">一部分</a>。比赛过程中感觉自己好久没有打过比赛了，非常不自信，基本上按着最稳的写法写，能短则短，像最短路也是三重循环，害怕自己哪里有疏忽（但还是浮点数操作出了问题）。一个感觉就是之前一位填答案题是比较简单的，但是做了之后发现其实时空限制放宽了，但是必须保证自己写对，不能有一点问题，而写代码的题目根据题目条件还有拿部分分的可能。国赛的时候还是求稳，算质数还是暴力法（一开始数组开小了还炸了一次）。少数的没有暴力的也没有来得及对拍测验。只能说还是离开NOIP很久了，完全没有感觉，也忘了不少东西。不过蓝桥杯能查函数还是很好的，之前高中有一次优先队列忘记拼写，还是到头文件库里找的。希望这次国赛能有个好成绩吧。<br>写了个<a href="https://wznmickey.com/2021/xor-triangle">题解</a>，大家可以看看。</p>
-]]></content>
+    <title>OK!</title>
+    <url>/2019/OK/</url>
+    <content><![CDATA[<p>　　想自己有一个博客想了很久了，折腾了好久终于完成了啊！</p>
+<a id="more"></a> ]]></content>
       <tags>
-        <tag>经历</tag>
         <tag>中文</tag>
         <tag>想法</tag>
-        <tag>蓝桥杯</tag>
       </tags>
   </entry>
   <entry>
@@ -158,16 +168,6 @@
         <tag>作业</tag>
         <tag>想法</tag>
         <tag>English</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OK!</title>
-    <url>/2019/OK/</url>
-    <content><![CDATA[<p>　　想自己有一个博客想了很久了，折腾了好久终于完成了啊！</p>
-<a id="more"></a> ]]></content>
-      <tags>
-        <tag>中文</tag>
-        <tag>想法</tag>
       </tags>
   </entry>
   <entry>
@@ -341,6 +341,17 @@
       </tags>
   </entry>
   <entry>
+    <title>一个诡异的脑洞|A strange idea</title>
+    <url>/2020/a-strange-idea/</url>
+    <content><![CDATA[<p>　　偶然想到1century=10decades=100years，又感觉中文里好像没有对应decade的单位，强行翻译就好像是十十年=一百年，但是想想乘法口诀表好像的确是十十一百，没有问题。这么说其实乘法口诀表“七九六十三”实际上是定义了两个新单位“九”和“六十三”吗？</p>
+<p>　　另，在纠结decade需不需要加s时看到了一个奇怪的问答。这就去和数学老师对线。网址:<span class="exturl" data-url="aHR0cDovL2Fzay5rb29sZWFybi5jb20vdG9waWMvc2hvdy80MTIyMDIucGFnZQ==">http://ask.koolearn.com/topic/show/412202.page<i class="fa fa-external-link-alt"></i></span><br><a href="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200215_1.png"><img src="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200215_1.jpg"></a><br><small>点击图片查看大图</small><br>　　更新内容：<br>　　　　2020-02-16 加入网址<span class="exturl" data-url="aHR0cDovL2Fzay5rb29sZWFybi5jb20vdG9waWMvc2hvdy80MTIyMDIucGFnZQ==">http://ask.koolearn.com/topic/show/412202.page<i class="fa fa-external-link-alt"></i></span></p>
+<a id="more"></a> ]]></content>
+      <tags>
+        <tag>中文</tag>
+        <tag>想法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>美国之行|A Travel To The USA</title>
     <url>/2020/a-travel-to-the-USA/</url>
     <content><![CDATA[<div class="note info"><p>这是几年前去哈佛的记录的一部分。</p>
@@ -358,17 +369,6 @@
       <tags>
         <tag>经历</tag>
         <tag>中文</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一个诡异的脑洞|A strange idea</title>
-    <url>/2020/a-strange-idea/</url>
-    <content><![CDATA[<p>　　偶然想到1century=10decades=100years，又感觉中文里好像没有对应decade的单位，强行翻译就好像是十十年=一百年，但是想想乘法口诀表好像的确是十十一百，没有问题。这么说其实乘法口诀表“七九六十三”实际上是定义了两个新单位“九”和“六十三”吗？</p>
-<p>　　另，在纠结decade需不需要加s时看到了一个奇怪的问答。这就去和数学老师对线。网址:<span class="exturl" data-url="aHR0cDovL2Fzay5rb29sZWFybi5jb20vdG9waWMvc2hvdy80MTIyMDIucGFnZQ==">http://ask.koolearn.com/topic/show/412202.page<i class="fa fa-external-link-alt"></i></span><br><a href="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/highquality/images/20200215_1.png"><img src="https://cdn.jsdelivr.net/gh/wznmickey/jsdeliver@images/quick/images/20200215_1.jpg"></a><br><small>点击图片查看大图</small><br>　　更新内容：<br>　　　　2020-02-16 加入网址<span class="exturl" data-url="aHR0cDovL2Fzay5rb29sZWFybi5jb20vdG9waWMvc2hvdy80MTIyMDIucGFnZQ==">http://ask.koolearn.com/topic/show/412202.page<i class="fa fa-external-link-alt"></i></span></p>
-<a id="more"></a> ]]></content>
-      <tags>
-        <tag>中文</tag>
-        <tag>想法</tag>
       </tags>
   </entry>
   <entry>
@@ -3058,9 +3058,9 @@
       </tags>
   </entry>
   <entry>
-    <title>影评2001:太空漫游——最好的科幻电影</title>
-    <url>/2019/%E5%BD%B1%E8%AF%842001-%E5%A4%AA%E7%A9%BA%E6%BC%AB%E6%B8%B8%E2%80%94%E2%80%94%E6%9C%80%E5%A5%BD%E7%9A%84%E7%A7%91%E5%B9%BB%E7%94%B5%E5%BD%B1/</url>
-    <content><![CDATA[<p><em>2001: A Space Odyssey</em> is an adapted science fiction film directed by Stanley Kubrick, released in 1968, more than one year before Armstrong’s “one small step for a man, one giant leap for mankind” on the Moon in 1969. Unlike other adapted film, the novel’s writing, filming and scripting were doing at the same time, which allowed the staff to revise the products by exchanging ideas with others and therefore the film was so realistic that people found that many imaginations was true later. Due to the unadvanced film and TV late stage, the staff used a lot of ways to film, which have been used in many films since then.<br>The film tells a story that long long ago, when apes were fighting against each other for food, a black stone came to the Earth. On touching the stone, the apes mastered the tool-making skills and thus they finally evolved into human beings, dominating the Earth, discovering the space and establishing many bases on the Moon.<br>In 2001, people find a black stone on the Moon. The ratio of the length, width and height is accurately 1:4:9. When the scientists touch the stone, they receive the message that something is on the Jupiter. On the journey, many things happen, and finally only one person arrive the Jupiter, becoming a star child, looking on the space and the Earth.<br>The few words, much music and large area of black make the film an artwork, being full of both the people’s hopes and worries about the future.<br>People can go to the Moon as easily as they take a plane. New technology can help them communicate with others easily. But technology is a double-edged sword. In the film, an AI called HAL, my favourite character, dubbed by Douglas Rain goes wrong in spite of the fact that scientists think that it will never go wrong, killing almost everyone in the spaceship and finally Dave Bowman cuts off the power and saves himself.<br>The television cameras with red light and emotionless voice are at every place in the spaceship, which is the only description of HAL. The camera with red light and emotionless voice in the huge screen, frightening everyone watching the film, makes people produce adrenaline. I love it.<br>Sayings are not necessary in this film, on the contrary, music is. The best part I think is the long flight from the Earth to the Jupiter, with no saying but music, displaying the space and the spaceship from different angle. The lack of animating atmosphere and Aram Khachaturian’s <em>Gayane</em> let everyone be absorbed in the space travel. Nothing can surpass it.<br>A plot may express the power of technology. When Dave Bowman feels that HAL is probably going wrong, he takes his colleague to a place where HAL can’t hear their voice to discuss how to close HAL, but HAL eavesdrops their conversation by analysing their lip language and is going to kill everyone.<br>Winning a lot of prize, there is no doubt that <em>2001: A Space Odyssey</em> is the best science fiction film in the world.</p>
+    <title>影评英伦对决——成龙的又一力作</title>
+    <url>/2019/%E5%BD%B1%E8%AF%84%E8%8B%B1%E4%BC%A6%E5%AF%B9%E5%86%B3%E2%80%94%E2%80%94%E6%88%90%E9%BE%99%E7%9A%84%E5%8F%88%E4%B8%80%E5%8A%9B%E4%BD%9C/</url>
+    <content><![CDATA[<p><em>The Foreigner</em> is a film directed by Martin Campbell. In the film, Jackie Chan acts as a British Vietnamese Chinese whose name is Guan Yuming. He has been a soldier attending the Vietnam War, whose daughter, his last family member, was killed in a terrorist attack in London, but because of the political struggle between the United Kingdom government and the Northern Ireland government and the fact that the vice minister of Northern Ireland who was a member of the terrorist organization and still keeps in touch with the controller wants to take advantage of the attack to trade with the UK government to have better political future, nobody cares about the dead. What’s more, some members discover his plan and struggle with him. There are some spies around him from the UK government and the terrorist organization. Everyone has his or her own idea, but nobody really cares about the dead.<br>To revenge on the terrorist organization and the vice minister, he follows the tracks of him, finds evidence of his errant actions and many other things, and asks for the name list of the attackers. Finally, he manages to kill them and post the evidence on the Internet, making the vice minister lose everything.<br>The story is partly a fiction, but the violent struggle between the UK government and separatists is from the First World War to 1998 is true. This film unmasks the struggle both between the UK government and the terrorist organization and between the terrorists.<br>Actuarially, without the foreigner, the UK government can still deal with the terrorist organization. This film just shows a story about revenge.<br>My favourite character is Guan Yuming because of the action.<br>“Everybody’s here, meet, dad.” is the last saying the daughter to Guan Yuming. Just in front of Guan Yuming, his daughter goes into the house, and minutes later, the bomb burst. Although he immediately rushes into the house to save his only family member. His wife and other sons and daughters has been dead because of the family’s hard trip to the UK. You can imagine how sad Guan Yuming is when he loses his last family member.</p>
 <a id="more"></a> ]]></content>
       <tags>
         <tag>作业</tag>
@@ -3070,9 +3070,9 @@
       </tags>
   </entry>
   <entry>
-    <title>影评英伦对决——成龙的又一力作</title>
-    <url>/2019/%E5%BD%B1%E8%AF%84%E8%8B%B1%E4%BC%A6%E5%AF%B9%E5%86%B3%E2%80%94%E2%80%94%E6%88%90%E9%BE%99%E7%9A%84%E5%8F%88%E4%B8%80%E5%8A%9B%E4%BD%9C/</url>
-    <content><![CDATA[<p><em>The Foreigner</em> is a film directed by Martin Campbell. In the film, Jackie Chan acts as a British Vietnamese Chinese whose name is Guan Yuming. He has been a soldier attending the Vietnam War, whose daughter, his last family member, was killed in a terrorist attack in London, but because of the political struggle between the United Kingdom government and the Northern Ireland government and the fact that the vice minister of Northern Ireland who was a member of the terrorist organization and still keeps in touch with the controller wants to take advantage of the attack to trade with the UK government to have better political future, nobody cares about the dead. What’s more, some members discover his plan and struggle with him. There are some spies around him from the UK government and the terrorist organization. Everyone has his or her own idea, but nobody really cares about the dead.<br>To revenge on the terrorist organization and the vice minister, he follows the tracks of him, finds evidence of his errant actions and many other things, and asks for the name list of the attackers. Finally, he manages to kill them and post the evidence on the Internet, making the vice minister lose everything.<br>The story is partly a fiction, but the violent struggle between the UK government and separatists is from the First World War to 1998 is true. This film unmasks the struggle both between the UK government and the terrorist organization and between the terrorists.<br>Actuarially, without the foreigner, the UK government can still deal with the terrorist organization. This film just shows a story about revenge.<br>My favourite character is Guan Yuming because of the action.<br>“Everybody’s here, meet, dad.” is the last saying the daughter to Guan Yuming. Just in front of Guan Yuming, his daughter goes into the house, and minutes later, the bomb burst. Although he immediately rushes into the house to save his only family member. His wife and other sons and daughters has been dead because of the family’s hard trip to the UK. You can imagine how sad Guan Yuming is when he loses his last family member.</p>
+    <title>影评2001:太空漫游——最好的科幻电影</title>
+    <url>/2019/%E5%BD%B1%E8%AF%842001-%E5%A4%AA%E7%A9%BA%E6%BC%AB%E6%B8%B8%E2%80%94%E2%80%94%E6%9C%80%E5%A5%BD%E7%9A%84%E7%A7%91%E5%B9%BB%E7%94%B5%E5%BD%B1/</url>
+    <content><![CDATA[<p><em>2001: A Space Odyssey</em> is an adapted science fiction film directed by Stanley Kubrick, released in 1968, more than one year before Armstrong’s “one small step for a man, one giant leap for mankind” on the Moon in 1969. Unlike other adapted film, the novel’s writing, filming and scripting were doing at the same time, which allowed the staff to revise the products by exchanging ideas with others and therefore the film was so realistic that people found that many imaginations was true later. Due to the unadvanced film and TV late stage, the staff used a lot of ways to film, which have been used in many films since then.<br>The film tells a story that long long ago, when apes were fighting against each other for food, a black stone came to the Earth. On touching the stone, the apes mastered the tool-making skills and thus they finally evolved into human beings, dominating the Earth, discovering the space and establishing many bases on the Moon.<br>In 2001, people find a black stone on the Moon. The ratio of the length, width and height is accurately 1:4:9. When the scientists touch the stone, they receive the message that something is on the Jupiter. On the journey, many things happen, and finally only one person arrive the Jupiter, becoming a star child, looking on the space and the Earth.<br>The few words, much music and large area of black make the film an artwork, being full of both the people’s hopes and worries about the future.<br>People can go to the Moon as easily as they take a plane. New technology can help them communicate with others easily. But technology is a double-edged sword. In the film, an AI called HAL, my favourite character, dubbed by Douglas Rain goes wrong in spite of the fact that scientists think that it will never go wrong, killing almost everyone in the spaceship and finally Dave Bowman cuts off the power and saves himself.<br>The television cameras with red light and emotionless voice are at every place in the spaceship, which is the only description of HAL. The camera with red light and emotionless voice in the huge screen, frightening everyone watching the film, makes people produce adrenaline. I love it.<br>Sayings are not necessary in this film, on the contrary, music is. The best part I think is the long flight from the Earth to the Jupiter, with no saying but music, displaying the space and the spaceship from different angle. The lack of animating atmosphere and Aram Khachaturian’s <em>Gayane</em> let everyone be absorbed in the space travel. Nothing can surpass it.<br>A plot may express the power of technology. When Dave Bowman feels that HAL is probably going wrong, he takes his colleague to a place where HAL can’t hear their voice to discuss how to close HAL, but HAL eavesdrops their conversation by analysing their lip language and is going to kill everyone.<br>Winning a lot of prize, there is no doubt that <em>2001: A Space Odyssey</em> is the best science fiction film in the world.</p>
 <a id="more"></a> ]]></content>
       <tags>
         <tag>作业</tag>
@@ -3202,6 +3202,29 @@
         <tag>想法</tag>
         <tag>English</tag>
         <tag>读书笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hadoop 3.2.2 Cluster Setup | hadoop 3.2.2 的集群启动</title>
+    <url>/2023/hadoop-3-2-2-usage/</url>
+    <content><![CDATA[<p>这学期上了一门关于数据处理的课程，需要使用hadoop，版本为3.2.2（一个在<span class="exturl" data-url="aHR0cHM6Ly9kb3dubG9hZHMuYXBhY2hlLm9yZy9oYWRvb3AvY29tbW9uLw==">hadoop官网下载链接<i class="fa fa-external-link-alt"></i></span>里面都没有的的旧版本。<br>但是在我们组的电脑上(manjaro + WSL + VM ware + Virtual box 各种东西齐了)根据官方的教程没有能够成功开启多机的集群（不过启动了单机的伪集群），经过一些分析和上网的查询，发现是自带的bash脚本存在问题，导致启动失败，使用完脚本之后，<code>jps</code>显示并没有启动任务。</p>
+<p>换用<code>hdfs</code> 和 <code>yarn</code> 直接启动可以避免这个问题。</p>
+<p>在namenode上，使用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 第一行是前台运行，第二行是后台启动，第三行是停止后台的任务。</span></span><br><span class="line">hdfs namenode </span><br><span class="line">hdfs --daemon start namenode</span><br><span class="line">hdfs --daemon stop namenode</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第一行是前台运行，第二行是后台启动，第三行是停止后台的任务。</span></span><br><span class="line">yarn resourcemanager</span><br><span class="line">yarn --daemon start resourcemanager</span><br><span class="line">yarn --daemon stop resourcemanager</span><br></pre></td></tr></table></figure>
+
+<p>在datanode上，使用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 第一行是前台运行，第二行是后台启动，第三行是停止后台的任务。</span></span><br><span class="line">hdfs datanode </span><br><span class="line">hdfs --daemon start datanode</span><br><span class="line">hdfs --daemon stop datanode</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第一行是前台运行，第二行是后台启动，第三行是停止后台的任务。</span></span><br><span class="line">yarn nodemanager</span><br><span class="line">yarn --daemon start nodemanager</span><br><span class="line">yarn --daemon stop nodemanager</span><br></pre></td></tr></table></figure>
+
+<p>个人感觉可以先多开终端前台运行，方便及时看到出现的各种问题：</p>
+<ol>
+<li>format格式化出现问题，解决方法：重新format（根据网上的资料，好像要使用Y，而不能是y，必须大写）。这种情况可能在多次失败重启之后发生。</li>
+<li>提示hdfs的文件夹访问失败，解决方法：删除对应的文件夹，然后重新启动。这种情况可能在多次失败重启之后发生。</li>
+</ol>
+<p>注意使用虚拟机时，注意对应的IP，端口，hostname的对应关系，如果出现了提示链接失败，无法连接服务器的日志，有可能就是这些地方有问题导致无法访问，当然也可能是对吗服务器的node炸了。可以使用<code>lsof -i</code> 去确认网络连接情况，确认是否端口在listen，对面机器是否有成功连接过。当然，还有可能是防火墙之类的阻断了连接。</p>
+]]></content>
+      <tags>
+        <tag>中文</tag>
+        <tag>hadoop</tag>
       </tags>
   </entry>
 </search>
