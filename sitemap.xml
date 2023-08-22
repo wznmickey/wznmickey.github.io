@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wznmickey.com/2023/Xcomment0-2/</loc>
+    <loc>https://wznmickey.com/about/index.html</loc>
     
     <lastmod>2023-08-22</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>https://wznmickey.com/about/index.html</loc>
+    <loc>https://wznmickey.com/2023/Xcomment0-2/</loc>
     
-    <lastmod>2023-08-19</lastmod>
+    <lastmod>2023-08-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
