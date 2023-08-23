@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://wznmickey.com/2023/Xcomment0-2/</loc>
+    <loc>https://wznmickey.com/2023/XComment0-3/</loc>
+    <lastmod>2023-08-23</lastmod>
+  </url>
+  <url>
+    <loc>https://wznmickey.com/2023/XComment0-2/</loc>
     <lastmod>2023-08-22</lastmod>
   </url>
   <url>
-    <loc>https://wznmickey.com/2023/XComment0.1/</loc>
-    <lastmod>2023-08-19</lastmod>
+    <loc>https://wznmickey.com/2023/XComment0-1/</loc>
+    <lastmod>2023-08-22</lastmod>
   </url>
   <url>
     <loc>https://wznmickey.com/2023/hadoop-3-2-2-usage/</loc>
