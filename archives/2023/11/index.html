@@ -20,30 +20,26 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"wznmickey.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.17.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":200},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="此文使用了mathjax，请等待公式加载 原题起因是一道考试时遇到的题  设$n&#x3D;\overline{abc}$表示一个三位数，记$f(n)&#x3D;(a+b+c)+(a\cdot b+b\cdot c+c\cdot a)+a\cdot b\cdot c$，则满足$f(n)&#x3D;n$的三位数个数是______。  最暴力的我做题时直接把含a的多项式和含b的多项式及c与$f(n)&#x3D;100a+10b+c$的对应系">
-<meta property="og:type" content="article">
-<meta property="og:title" content="从3到n——一道数学题|a math problem from 3 to N">
-<meta property="og:url" content="https://wznmickey.com/2020/a-math-problem-from-3-to-n/index.html">
+    <meta name="description" content="记录自己的感受与收获">
+<meta property="og:type" content="website">
+<meta property="og:title" content="静静的小窝">
+<meta property="og:url" content="https://wznmickey.com/archives/2023/11/index.html">
 <meta property="og:site_name" content="静静的小窝">
-<meta property="og:description" content="此文使用了mathjax，请等待公式加载 原题起因是一道考试时遇到的题  设$n&#x3D;\overline{abc}$表示一个三位数，记$f(n)&#x3D;(a+b+c)+(a\cdot b+b\cdot c+c\cdot a)+a\cdot b\cdot c$，则满足$f(n)&#x3D;n$的三位数个数是______。  最暴力的我做题时直接把含a的多项式和含b的多项式及c与$f(n)&#x3D;100a+10b+c$的对应系">
+<meta property="og:description" content="记录自己的感受与收获">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-01T04:51:40.000Z">
-<meta property="article:modified_time" content="2020-04-01T04:51:40.000Z">
 <meta property="article:author" content="静静">
-<meta property="article:tag" content="中文">
-<meta property="article:tag" content="数学">
-<meta property="article:tag" content="数学归纳法">
+<meta property="article:tag" content="王梓宁 静静 技术 本科 电子与计算机工程 ECE">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://wznmickey.com/2020/a-math-problem-from-3-to-n/">
+<link rel="canonical" href="https://wznmickey.com/archives/2023/11/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wznmickey.com/2020/a-math-problem-from-3-to-n/","path":"2020/a-math-problem-from-3-to-n/","title":"从3到n——一道数学题|a math problem from 3 to N"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2023/11/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>从3到n——一道数学题|a math problem from 3 to N | 静静的小窝</title>
+<title>归档 | 静静的小窝</title>
   
 
 
@@ -87,7 +83,7 @@ var _hmt = _hmt || [];
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <p class="site-title">静静的小窝</p>
+      <h1 class="site-title">静静的小窝</h1>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">记录自己的感受与收获</p>
@@ -141,7 +137,7 @@ var _hmt = _hmt || [];
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -154,7 +150,6 @@ var _hmt = _hmt || [];
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8E%9F%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">原题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%87%E7%BA%A7"><span class="nav-number">2.</span> <span class="nav-text">升级</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -242,196 +237,51 @@ var _hmt = _hmt || [];
 
     </div>
 
-    <div class="main-inner post posts-expand">
+    <div class="main-inner archive posts-collapse">
 
 
   
-
-
-<div class="post-block">
   
   
+  <div class="post-block">
+    <div class="post-content">
+      <div class="collection-title">
+        
+        <span class="collection-header">不错! 目前共计 51 篇日志。 继续努力。</span>
+      </div>
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2020/a-math-problem-from-3-to-n/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
-      <meta itemprop="name" content="静静">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="静静的小窝">
-      <meta itemprop="description" content="记录自己的感受与收获">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="从3到n——一道数学题|a math problem from 3 to N | 静静的小窝">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          从3到n——一道数学题|a math problem from 3 to N
-        </h1>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2020-04-01 12:51:40" itemprop="dateCreated datePublished" datetime="2020-04-01T12:51:40+08:00">2020-04-01</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="far fa-comment"></i>
-    </span>
-    <span class="post-meta-item-text">Waline：</span>
-  
-    <a title="waline" href="/2020/a-math-problem-from-3-to-n/#waline-comments" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" id="/2020/a-math-problem-from-3-to-n/" data-xid="/2020/a-math-problem-from-3-to-n/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-    <span id="/2020/a-math-problem-from-3-to-n/" class="post-meta-item leancloud_visitors" data-flag-title="从3到n——一道数学题|a math problem from 3 to N" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.3k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody"><p><small>此文使用了mathjax，请等待公式加载</small></p>
-<h1 id="原题"><a href="#原题" class="headerlink" title="原题"></a>原题</h1><p>起因是一道考试时遇到的题</p>
-<blockquote>
-<p>设$n=\overline{abc}$表示一个三位数，记$f(n)=(a+b+c)+(a\cdot b+b\cdot c+c\cdot a)+a\cdot b\cdot c$，则满足$f(n)=n$的三位数个数是______。</p>
-</blockquote>
-<p>最暴力的我做题时直接把含a的多项式和含b的多项式及c与$f(n)=100a+10b+c$的对应系数取等号联立方程，然后求出$\begin{cases}b=9\\c=9\end{cases}$，之后求出199,299,399,⋯,999共九个三位数，然而我总感觉有问题，于是写了程序检验了一下，发现$f(n)\leq n$，最后想了好久证明了出来。<br>如下：<br>$f(n)-n \<br>=(a+b+c)+(a\cdot b+b\cdot c+c\cdot a)+a\cdot b\cdot c-(100a+10b+c)\<br>=a(1+b+c+b\cdot c)+b(1+c)+c-(100a+10b+c)\<br>=a(1+b+c+b\cdot c-100)+b(1+c-10)\<br>\leq a(1+9+9+9*9-100)+b(1+9-10)=0$<br>当且仅当$b=c=9$时等号成立</p>
-<h1 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h1><p>上课老师讲课时化为了$f(n)=(a+1)(b+1)(c+1)-1$进行计算。<br>然后我就想如果是其他位数时,也满足这个条件吗？<br>检验呢一下发现int范围内都符合，当且仅当除最高位都为9时等号成立。<br>想了好久证明，觉得可以用数学归纳法如下：<br>命题：$(a₁+1)(a₂+1)(a₃+1)\dots (aₙ₊₁-1)\leq \overline{a₁a₂a₃⋯aₙ}$对$n \in N^*$且$n \geq 2 $ 恒成立,当且仅当$a₂=a₃=⋯=aₙ=9$时等号成立,$a₁,a₂,a₃ ⋯ aₙ ∈ \{0,1,2,3,4,5,6,7,8,9\}$<br>当$n=2$时，$(a₁+1)(a₂+1)-1-(a₁*10+a₂)=a₁a₂+a₁+a₂-10a₂-a₃=a₁(a₂-9) \leq 0$,当且仅当$a₂=9$时等号成立<br>假设当$n=k \in N^*$且$k \geq 2$时 $(a₁+1)(a₂+1)(a₃+1)⋯(aₖ+1)-1 \leq \overline{a₁a₂a₃⋯aₖ}$成立且当且仅当$a₂=a₃=⋯=aₖ=9$时等号成立<br>当$n=k+1$时，<br>$(a₁+1)(a₂+1)⋯(aₖ+1)(aₖ₊₁+1)-1- \overline{a₁a₂a₃⋯aₖ}\<br>=(aₖ₊₁+1)[(a₁+1)(a₂+1)⋯(aₖ+1)-1+1]-1-10* \overline{a₁a₂a₃⋯aₖ}-aₖ₊₁\<br>=(aₖ₊₁+1)[(a₁+1)(a₂+1)⋯(aₖ+1)-1-\overline{a₁a₂a₃⋯aₖ}] +(aₖ₊₁-9)\overline{a₁a₂a₃⋯aₖ}\leq 0$<br>当且仅当$a₂=a₃=⋯=aₖ=aₖ₊₁=9$时等号成立<br>所以$(a₁+1)(a₂+1)(a₃+1)\dots (aₙ₊₁-1)\leq \overline{a₁a₂a₃⋯aₙ}$对$n \in N^*$且$n \geq 2 $ 恒成立,当且仅当$a₂=a₃=⋯=aₙ=9$时等号成立,$a₁,a₂,a₃ ⋯ aₙ ∈ \{0,1,2,3,4,5,6,7,8,9\}$</p>
-<a id="more"></a> 
+      
+    <div class="collection-year">
+      <span class="collection-header">2023</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2023-11-16T16:29:33+08:00"
+              content="2023-11-16">
+          11-16
+        </time>
+      </div>
 
-    <footer class="post-footer">
-          
-
-<div class="post-copyright">
-<ul>
-  <li class="post-copyright-author">
-      <strong>本文作者： </strong>静静
-  </li>
-  <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://wznmickey.com/2020/a-math-problem-from-3-to-n/" title="从3到n——一道数学题|a math problem from 3 to N">https://wznmickey.com/2020/a-math-problem-from-3-to-n/</a>
-  </li>
-  <li class="post-copyright-license">
-      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
-
-          <div class="followme">
-  <span>欢迎关注我的其它发布渠道</span>
-
-  <div class="social-list">
-
-      <div class="social-item">
-          <a target="_blank" class="social-link" href="https://twitter.com/wznmickey">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
-
-            <span class="label">Twitter</span>
+      <div class="post-title">
+          <a class="post-title-link" href="/2023/AIcoding/" itemprop="url">
+            <span itemprop="name">AI 写代码？| AI coding?</span>
           </a>
       </div>
 
-      <div class="social-item">
-          <span class="social-link">
-            <span class="icon">
-              <i class="fab fa-weixin"></i>
-            </span>
-
-            <span class="label">WeChat</span>
-          </span>
-
-          <img class="social-item-img" src="/images/wechat.jpg">
-      </div>
-
-      <div class="social-item">
-          <a target="_blank" class="social-link" href="/rss2.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-      </div>
-  </div>
-</div>
-
-          <div class="post-tags">
-              <a href="/tags/%E4%B8%AD%E6%96%87/" rel="tag"># 中文</a>
-              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
-              <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95/" rel="tag"># 数学归纳法</a>
-          </div>
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/2020/public-and-private-rights/" rel="prev" title="公权与私权|public and private rights">
-                  <i class="fa fa-chevron-left"></i> 公权与私权|public and private rights
-                </a>
-            </div>
-            <div class="post-nav-item">
-                <a href="/2020/no-blindness/" rel="next" title="不盲目|No Blindness">
-                  不盲目|No Blindness <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-          </div>
-    </footer>
+      
+    </header>
   </article>
-</div>
 
 
+    </div>
+  </div>
+  
+  
+  
 
-
-
-
-    <div class="comments" id="waline-comments"></div>
 </div>
   </main>
 
@@ -506,12 +356,12 @@ https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
   <script src="https://lib.baomitu.com/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://wznmickey.com/2020/a-math-problem-from-3-to-n/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://wznmickey.com/archives/2023/11/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 <script>
 NexT.utils.loadComments('#waline-comments', () => {
@@ -520,7 +370,7 @@ NexT.utils.loadComments('#waline-comments', () => {
       lang: 'zh-CN'
     }, {"enable":true,"serverURL":"https://comment.wznmickey.com","placeholder":"让我知道你的存在吧 (昵称必填，其他选填）","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":true,"comment_count":true,"requiredFields":["nick"],"lang":"zh-cn"}, {
       el: '#waline-comments',
-      path: "/2020/a-math-problem-from-3-to-n/",
+      path: "/archives/2023/11/",
     }));
   }, window.Waline);
 });
