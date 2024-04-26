@@ -15,10 +15,10 @@
 
 
 
-<link rel="stylesheet" href="https://lib.baomitu.com/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://lib.baomitu.com/font-awesome/6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://lib.baomitu.com/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"wznmickey.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.17.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":200},"copycode":{"enable":true,"style":"flat"},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wznmickey.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.19.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":200},"copycode":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="本文所指AI，仅包括ChatGPT(GPT3.5)，Copilot以及文心一言。其他模型没有进行尝试。    用AI写代码在过去的一年中可能已经很常见了，不过我则是几乎没有使用过。这一周为了迁移代码从Python到C++，可是和AI斗法废了一番功夫。 先介绍一下背景吧，毕设涉及到了汽车的图像识别，考虑各种情况最后选择了intel的神经计算棒加速，自然也就用了OpenVINO。因为我负责的是项目其他">
 <meta property="og:type" content="article">
@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20231116_1.jpg">
 <meta property="article:published_time" content="2023-11-16T08:29:33.000Z">
-<meta property="article:modified_time" content="2023-11-16T09:31:25.433Z">
+<meta property="article:modified_time" content="2023-11-16T09:33:12.022Z">
 <meta property="article:author" content="静静">
 <meta property="article:tag" content="经历">
 <meta property="article:tag" content="中文">
@@ -284,7 +284,7 @@ var _hmt = _hmt || [];
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-11-16 16:29:33 / 修改时间：17:31:25" itemprop="dateCreated datePublished" datetime="2023-11-16T16:29:33+08:00">2023-11-16</time>
+      <time title="创建时间：2023-11-16 16:29:33 / 修改时间：17:33:12" itemprop="dateCreated datePublished" datetime="2023-11-16T16:29:33+08:00">2023-11-16</time>
     </span>
 
   
@@ -340,7 +340,10 @@ var _hmt = _hmt || [];
 <p>先介绍一下背景吧，毕设涉及到了汽车的图像识别，考虑各种情况最后选择了intel的神经计算棒加速，自然也就用了OpenVINO。因为我负责的是项目其他部分，所以并没有在意这个部分，直到我们的Python版本测试效果不错，需要合入C++版本的时候，“噩梦”才开始了。</p>
 <p>因为之前在RoboMaster时有干过Python转C++的活，干的也是Opencv的东西。所以一开始听说转换有问题的时候，觉得我应该能搞定，就跟着一起搞，觉得opencv的api在cpp和python上基本一样，一行行照抄改不就是了。然后就发现遇到了问题，有这样一行代码：<code>image = image.transpose((2, 0, 1))</code>用于对opencv读到的图片进行维度转换以符合模型的输入要求，然而当我去查opencv的api时，发现opencv的transpose并不长这样，只有一个输入和输出。搜索后发现，这里是用了numpy的函数进行了转换。可是cpp没有numpy啊，为了一个这个功能再搞eigen？好像也不合适。此时cpp的代码已经写好了可以编译运行，只是模型结果和python的不一样，识别不出车子来。于是去看cpp代码是怎么写的，发现是cvtColor，emm？于是队友就开始问了AI，给出的方案是手动三重循环转换，copy进代码跑，发现还是不行。于是反复循环问ai，copy进代码，发现不行。我也试了copilot的翻译代码功能到cpp，结果照样不行。反复尝试换模型（FP32,FP16），修改遍历顺序，修改不同的api，都不行。</p>
 <p>我于是尝试搞到自己电脑上跑。原来的编译是直接g++跑，但是换了环境之后自然是跑不了了，再加上其他部分代码都是cmake编译的，便尝试搞成cmake，弄了好久搞定了，在编译时会提示使用了2024要被废弃（如废）的框架。于是我想到不如用新框架也许能更好写，便问了队友初始的python代码是从哪个文档里面学来的，得知也是AI生成的。</p>
-<p>我想着AI只能出旧框架，那我要不上网搜索有没有新框架。于是花了可能就一分钟就找到了知乎上的文章，然后照着抄，抄的时候看到文章里面的转换，感觉和我们的代码一样，可能还是不行的时候，突然反应过来不一样的地方：之前的尝试，都只是在改模型部分的类型在各种变化，但是Mat读的时候，一直是at成float读的，但是我们的图片读进来是int啊，到原来代码里面一改，模型输出正确了。<br><img src="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20231116_1.jpg"><br><small>关键的修改</small></p>
+<p>我想着AI只能出旧框架，那我要不上网搜索有没有新框架。于是花了可能就一分钟就找到了知乎上的文章，然后照着抄，抄的时候看到文章里面的转换，感觉和我们的代码一样，可能还是不行的时候，突然反应过来不一样的地方：之前的尝试，都只是在改模型部分的类型在各种变化，但是Mat读的时候，一直是at成float读的，但是我们的图片读进来是int啊，到原来代码里面一改，模型输出正确了。<br><img src="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/highquality/images/20231116_1.jpg"></p>
+<center><small>关键的修改</small></center>
+
+
 <p>唉，与其去搞AI问答，不如当初就直接搜索引擎搜索，早解决了。看起来C++开发暂时还是不会被AI取代的，需要的各类信息比Python一类的代码多得多。</p>
 
     </div>
@@ -417,7 +420,7 @@ var _hmt = _hmt || [];
           <div class="post-nav">
             <div class="post-nav-item">
                 <a href="/2023/XComment1-1/" rel="prev" title="X静评1.1：谷歌，快成了？| XComment1.1 Is Google's Success Coming?">
-                  <i class="fa fa-chevron-left"></i> X静评1.1：谷歌，快成了？| XComment1.1 Is Google's Success Coming?
+                  <i class="fa fa-angle-left"></i> X静评1.1：谷歌，快成了？| XComment1.1 Is Google's Success Coming?
                 </a>
             </div>
             <div class="post-nav-item">
@@ -441,15 +444,14 @@ var _hmt = _hmt || [];
 
   <div class="beian"><span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbg==">沪ICP备20021750号-1 </span>
   </div>
-
-<div class="copyright">
-  &copy; 2019 – 
-  <span itemprop="copyrightYear">2023</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">静静</span>
-</div>
+  <div class="copyright">
+    &copy; 2019 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">静静</span>
+  </div>
 <div class="wordcount">
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
@@ -472,8 +474,10 @@ var _hmt = _hmt || [];
 <img src="https://img.shields.io/badge/dynamic/json?color=D52C2B&label=%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dweibo%26queryKey%3D2182785432" style="display:unset">
 </p>
 <p>
-https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
+<a href="https://wznmickey.com/agreement">使用须知</a>
+<a href="https://wznmickey.com/about">关于</a>
 </p>
+
 
     </div>
   </footer>
