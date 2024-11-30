@@ -3323,4 +3323,36 @@
         <tag>想法</tag>
       </tags>
   </entry>
+  <entry>
+    <title>虚拟直播之路 | Living as a V</title>
+    <url>/2024/Living_as_a_V/</url>
+    <content><![CDATA[<div class="note info"><p>这不是一个常规的虚拟直播需求，而是有一些怪异点的需求(Linux&amp;直播pk&amp;3d皮&amp;免费&amp;变声)，所以实现得很别扭，如果你是普通用户，可能和你关系不大。</p>
+</div>
+<p>一直想着做虚拟形象来直播，遇到了蛮多的状况的，有一些网上也没有搜到的，这里写出来和大家分享一下。</p>
+<h2 id="皮套"><a href="#皮套" class="headerlink" title="皮套"></a>皮套</h2><p>皮套有3D和2D两种的，可以使用不同的软件绘制。这里我是用来steam上面的VRoid Studio来画的，目前可以用proton兼容层跑，做出来.vrm的模型格式。我是在默认给的皮上面随便改了改，有更高要求的可以尝试一下自己搞，或者找人搞。画出来的皮套保存在本地，之后动捕软件需要读取这个皮套。</p>
+<h2 id="生成画面"><a href="#生成画面" class="headerlink" title="生成画面"></a>生成画面</h2><p>虽然有一些软件是直接完成从摄像头捕捉到生成整个画面的过程，一些工具链会按2个部分单独完成，中间的结构图像是LLVM的IR。</p>
+<h3 id="动捕"><a href="#动捕" class="headerlink" title="动捕"></a>动捕</h3><p>动捕是需要读取摄像头的话画面，识别其中的人脸（以及肢体）画面并转换为抽象的结构图。有一些软件可以从iPhone等设备上拍，但是鉴于我没有，所以就用了笔记本上面的。在软件上有OpenSeeFace，这个是用python写的脚本，可以纯CPU识别。</p>
+<h3 id="合成"><a href="#合成" class="headerlink" title="合成"></a>合成</h3><p>在获得了动捕软件的结构图之后，这一部分需要把机构图绑定到皮套的骨骼上面，并同时渲染场景光照等内容。这部分是比较麻烦的，很多软件在这里会间或出现渲染的问题，可能和环境有关系，毕竟Linux下的很乱。</p>
+<p>我大致跑下来有这几种方案。</p>
+<ol>
+<li>使用<span class="exturl" data-url="aHR0cHM6Ly8zZC5rYWxpZG9mYWNlLmNvbS8=">https://3d.kalidoface.com/<i class="fa fa-external-link-alt"></i></span> 这是一个在线的系统，可以自己读取摄像头输出渲染后的画面，优点就是只依赖浏览器，缺点也是纯浏览器，导出画面相对复杂。</li>
+<li>使用vpuppr + 动捕，目前vpuppr已经停止维护了。个人感觉操作比较麻烦，有时候会卡住。</li>
+<li>使用steam上面的VTube Studio，需要proton套一层，很看运气，需要能正常跑出来， 经常会崩溃。</li>
+<li>使用SysMocap，有原生的Linux版本，但是不知道为什么，放大之后渲染会出问题。</li>
+</ol>
+<h2 id="推流"><a href="#推流" class="headerlink" title="推流"></a>推流</h2><p>使用OBS捕捉生成的画面然后填写rtmp推出去就行了。如果是绿幕的皮套配上一个色度键就可以了，比较简单，OBS在Linux上面没什么大问题。但是声音问题比较大，Linux的音频系统叠岭层峦的，再加上我想要变声，目前比较无解。我自己放弃监听，直接麦克风导入输出出去。变声的软件还没搞定，试了好几只方案都不是太好。</p>
+<h2 id="互动"><a href="#互动" class="headerlink" title="互动"></a>互动</h2><p>如果是OBS推流B站的话是没法使用各种互动功能的，必须使用b站的直播姬。有浏览器版本但是功能不全，不能用，所以只能想办法用win版本的。<br>设置OBS虚拟摄像头，然后让直播姬直接捕捉摄像头画面输出出去。或者可以自己设置一个服务器一边推一边拉，延迟比较大，但是因为是基于网络的，相对来说问题少一点，只要能配得明白网络。</p>
+<ol>
+<li>wine套上直播姬。在bottles里面尝试了很多配置最后能进去，但是不稳定，重启以后可能就不行了，需要再配来配去。导入的摄像头画面有问题，不确定是什么原因，可能和分辨率有关系。</li>
+<li>KVM上Windows，之后打开直播姬。问题是KVM没法捕捉<code>/dev/video</code>流，只能USB重定向，故对于虚拟摄像头不管用。在网上看到好像有新的patch可以导入，但是没搜到太多的使用的文档，还没试过。</li>
+<li>VirtualBox开Windows，使用增强功能包之后可以导入摄像头。目前在使用这个方案。</li>
+</ol>
+<h2 id="录播"><a href="#录播" class="headerlink" title="录播"></a>录播</h2><p>开了服务器挂上了biliup，另外开了一个号上传录播。<br>见 <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vMzU0NjczNzM5NDMyMTY2MQ==">https://space.bilibili.com/3546737394321661<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Linus_Nvidia.jpg</p>
+]]></content>
+      <tags>
+        <tag>经历</tag>
+        <tag>中文</tag>
+      </tags>
+  </entry>
 </search>
