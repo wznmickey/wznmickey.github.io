@@ -247,6 +247,125 @@ var _hmt = _hmt || [];
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2024/Living_as_a_V_2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
+      <meta itemprop="name" content="静静">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="静静的小窝">
+      <meta itemprop="description" content="记录自己的感受与收获">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 静静的小窝">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/Living_as_a_V_2/" class="post-title-link" itemprop="url">虚拟直播之路2 | Living as a V 2</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-12-15 23:38:20" itemprop="dateCreated datePublished" datetime="2024-12-15T23:38:20+08:00">2024-12-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-12-16 13:48:08" itemprop="dateModified" datetime="2024-12-16T13:48:08+08:00">2024-12-16</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/2024/Living_as_a_V_2/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2024/Living_as_a_V_2/" data-xid="/2024/Living_as_a_V_2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/2024/Living_as_a_V_2/" class="post-meta-item leancloud_visitors" data-flag-title="虚拟直播之路2 | Living as a V 2" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>597</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <a href="/2024/Living_as_a_V/" title="前面一篇博文">前面一篇博文</a>写了一些之前做虚拟主播的过程，得到了一些反馈，根据反馈又做了一些调整，做了一些改变，现在来写一下调整后的情况。
+
+<h2 id="皮套"><a href="#皮套" class="headerlink" title="皮套"></a>皮套</h2><p>一些反馈说皮套颜色不太好，太像灭霸了，所以修改了一下颜色，现在不知道大家觉得会不会好一点呢？我自己有一些色弱，对于色彩科学相关的了解也不多，也就是看着感觉改了一些，不一定好，大家有好的建议也可以提出来。</p>
+<h2 id="虚拟麦克风"><a href="#虚拟麦克风" class="headerlink" title="虚拟麦克风"></a>虚拟麦克风</h2><p>之前以为必须要虚拟一个麦克风出来作为OBS和虚拟机之间的中介，后来发现好像不需要，直接连线把OBS的输出连到虚拟机输入上面就可以了。至少我Pipewire没什么问题。</p>
+<h2 id="OBS"><a href="#OBS" class="headerlink" title="OBS"></a>OBS</h2><p>原来的OBS是在Flatpak上面的包，但是感觉附加插件不是很支持，遇到了一些问题，然后转成了snap上面的包，然后装了一个显示鼠标的插件。同时snap包自己还带了一个VST的变声模块，我不怎么会用，就改了一下pitch，好处是不需要再担心linux的音频问题了，直接obs内部就处理好了。</p>
+<h2 id="AI字幕"><a href="#AI字幕" class="headerlink" title="AI字幕"></a>AI字幕</h2><p>试了一些集成方案，现在自己用上游的whisper.cpp的项目跑，但是whisper的模型不太好设置简体和繁体，网上的方案是prompt上面写，可惜自带的stream代码不能处理prompt，只能自己改了一改，发现自己好久不写C++已经有些生疏了。</p>
+<h2 id="LLM接入"><a href="#LLM接入" class="headerlink" title="LLM接入"></a>LLM接入</h2><p>解释一下为什么不接入LLM。目前没有在直播上面太盈利的打算，所以不会挂机直播。我真人回复就可以了，还达不到需要LLM回复的地步。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2024/Living_as_a_V/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -356,124 +475,6 @@ var _hmt = _hmt || [];
 </ol>
 <h2 id="录播"><a href="#录播" class="headerlink" title="录播"></a>录播</h2><p>开了服务器挂上了biliup，另外开了一个号上传录播。<br>见 <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vMzU0NjczNzM5NDMyMTY2MQ==">https://space.bilibili.com/3546737394321661<i class="fa fa-external-link-alt"></i></span></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Linus_Nvidia.jpg</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2024/Living_as_a_V_2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
-      <meta itemprop="name" content="静静">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="静静的小窝">
-      <meta itemprop="description" content="记录自己的感受与收获">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 静静的小窝">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/Living_as_a_V_2/" class="post-title-link" itemprop="url">虚拟直播之路2 | Living as a V 2</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-12-15 23:38:20" itemprop="dateCreated datePublished" datetime="2024-12-15T23:38:20+08:00">2024-12-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-12-16 13:28:33" itemprop="dateModified" datetime="2024-12-16T13:28:33+08:00">2024-12-16</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="far fa-comment"></i>
-    </span>
-    <span class="post-meta-item-text">Waline：</span>
-  
-    <a title="waline" href="/2024/Living_as_a_V_2/#waline-comments" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" id="/2024/Living_as_a_V_2/" data-xid="/2024/Living_as_a_V_2/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-    <span id="/2024/Living_as_a_V_2/" class="post-meta-item leancloud_visitors" data-flag-title="虚拟直播之路2 | Living as a V 2" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-  
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>597</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><a href="./Living_as_a_V.md">前面一篇博文</a>写了一些之前做虚拟主播的过程，得到了一些反馈，根据反馈又做了一些调整，做了一些改变，现在来写一下调整后的情况。</p>
-<h2 id="皮套"><a href="#皮套" class="headerlink" title="皮套"></a>皮套</h2><p>一些反馈说皮套颜色不太好，太像灭霸了，所以修改了一下颜色，现在不知道大家觉得会不会好一点呢？我自己有一些色弱，对于色彩科学相关的了解也不多，也就是看着感觉改了一些，不一定好，大家有好的建议也可以提出来。</p>
-<h2 id="虚拟麦克风"><a href="#虚拟麦克风" class="headerlink" title="虚拟麦克风"></a>虚拟麦克风</h2><p>之前以为必须要虚拟一个麦克风出来作为OBS和虚拟机之间的中介，后来发现好像不需要，直接连线把OBS的输出连到虚拟机输入上面就可以了。至少我Pipewire没什么问题。</p>
-<h2 id="OBS"><a href="#OBS" class="headerlink" title="OBS"></a>OBS</h2><p>原来的OBS是在Flatpak上面的包，但是感觉附加插件不是很支持，遇到了一些问题，然后转成了snap上面的包，然后装了一个显示鼠标的插件。同时snap包自己还带了一个VST的变声模块，我不怎么会用，就改了一下pitch，好处是不需要再担心linux的音频问题了，直接obs内部就处理好了。</p>
-<h2 id="AI字幕"><a href="#AI字幕" class="headerlink" title="AI字幕"></a>AI字幕</h2><p>试了一些集成方案，现在自己用上游的whisper.cpp的项目跑，但是whisper的模型不太好设置简体和繁体，网上的方案是prompt上面写，可惜自带的stream代码不能处理prompt，只能自己改了一改，发现自己好久不写C++已经有些生疏了。</p>
-<h2 id="LLM接入"><a href="#LLM接入" class="headerlink" title="LLM接入"></a>LLM接入</h2><p>解释一下为什么不接入LLM。目前没有在直播上面太盈利的打算，所以不会挂机直播。我真人回复就可以了，还达不到需要LLM回复的地步。</p>
 
       
     </div>
