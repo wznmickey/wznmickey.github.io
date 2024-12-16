@@ -9,8 +9,37 @@
     <atom:link href="https://wznmickey.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>记录自己的感受与收获</description>
-    <pubDate>Mon, 16 Dec 2024 05:28:33 GMT</pubDate>
+    <pubDate>Mon, 16 Dec 2024 05:30:38 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>虚拟直播之路 | Living as a V</title>
+      <link>https://wznmickey.com/2024/Living_as_a_V/</link>
+      <guid>https://wznmickey.com/2024/Living_as_a_V/</guid>
+      <pubDate>Fri, 29 Nov 2024 11:42:24 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description></description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://wznmickey.com/tags/%E7%BB%8F%E5%8E%86/">经历</category>
+      
+      <category domain="https://wznmickey.com/tags/%E4%B8%AD%E6%96%87/">中文</category>
+      
+      <category domain="https://wznmickey.com/tags/Linux/">Linux</category>
+      
+      
+      <comments>https://wznmickey.com/2024/Living_as_a_V/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>虚拟直播之路2 | Living as a V 2</title>
@@ -38,33 +67,6 @@
       
       
       <comments>https://wznmickey.com/2024/Living_as_a_V_2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>虚拟直播之路 | Living as a V</title>
-      <link>https://wznmickey.com/2024/Living_as_a_V/</link>
-      <guid>https://wznmickey.com/2024/Living_as_a_V/</guid>
-      <pubDate>Fri, 29 Nov 2024 11:42:24 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description></description>
-          
-        
-      
-      
-      
-      
-      
-      <category domain="https://wznmickey.com/tags/%E7%BB%8F%E5%8E%86/">经历</category>
-      
-      <category domain="https://wznmickey.com/tags/%E4%B8%AD%E6%96%87/">中文</category>
-      
-      
-      <comments>https://wznmickey.com/2024/Living_as_a_V/#disqus_thread</comments>
       
     </item>
     
