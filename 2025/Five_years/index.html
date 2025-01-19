@@ -20,29 +20,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"wznmickey.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.19.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"width":200},"copycode":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"waline","storage":true,"lazyload":false,"nav":null,"activeClass":"waline"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="这学期上了一门关于数据处理的课程，需要使用hadoop，版本为3.2.2（一个在hadoop官网下载链接里面都没有的的旧版本。但是在我们组的电脑上(manjaro + WSL + VM ware + Virtual box 各种东西齐了)根据官方的教程没有能够成功开启多机的集群（不过启动了单机的伪集群），经过一些分析和上网的查询，发现是自带的bash脚本存在问题，导致启动失败，使用完脚本之后，jp">
+    <meta name="description" content="收到了一封邮件。五年了啊，算上加入之前的时间，可能已经快六年了。​记得刚开始建站的时候，只是看到其他人有题解发在博客上，想着自己做的那些题，有些想法好像也是网上题解没有的，发出来分享记录一下。但其实好像也没有写出来什么，毕竟建站的时候基本已经不大oi竞赛了。​一开始只是网上搜有什么免费的路子，开始在github上面搭网站，之后想着做更多的东西，就自己搞了一个服务器开始搭。那时候还什么都不懂呢，就在">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hadoop 3.2.2 Cluster Setup | hadoop 3.2.2 的集群启动">
-<meta property="og:url" content="https://wznmickey.com/2023/hadoop-3-2-2-usage/index.html">
+<meta property="og:title" content="五年了啊 | Five years">
+<meta property="og:url" content="https://wznmickey.com/2025/Five_years/index.html">
 <meta property="og:site_name" content="静静的小窝">
-<meta property="og:description" content="这学期上了一门关于数据处理的课程，需要使用hadoop，版本为3.2.2（一个在hadoop官网下载链接里面都没有的的旧版本。但是在我们组的电脑上(manjaro + WSL + VM ware + Virtual box 各种东西齐了)根据官方的教程没有能够成功开启多机的集群（不过启动了单机的伪集群），经过一些分析和上网的查询，发现是自带的bash脚本存在问题，导致启动失败，使用完脚本之后，jp">
+<meta property="og:description" content="收到了一封邮件。五年了啊，算上加入之前的时间，可能已经快六年了。​记得刚开始建站的时候，只是看到其他人有题解发在博客上，想着自己做的那些题，有些想法好像也是网上题解没有的，发出来分享记录一下。但其实好像也没有写出来什么，毕竟建站的时候基本已经不大oi竞赛了。​一开始只是网上搜有什么免费的路子，开始在github上面搭网站，之后想着做更多的东西，就自己搞了一个服务器开始搭。那时候还什么都不懂呢，就在">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-06-04T12:32:01.000Z">
-<meta property="article:modified_time" content="2023-06-04T13:16:24.621Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/Five_years/email.png">
+<meta property="article:published_time" content="2025-01-18T14:25:32.000Z">
+<meta property="article:modified_time" content="2025-01-19T03:35:53.573Z">
 <meta property="article:author" content="静静">
-<meta property="article:tag" content="中文">
-<meta property="article:tag" content="hadoop">
+<meta property="article:tag" content="王梓宁 静静 技术 本科 电子与计算机工程 ECE">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/Five_years/email.png">
 
 
-<link rel="canonical" href="https://wznmickey.com/2023/hadoop-3-2-2-usage/">
+<link rel="canonical" href="https://wznmickey.com/2025/Five_years/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wznmickey.com/2023/hadoop-3-2-2-usage/","path":"2023/hadoop-3-2-2-usage/","title":"hadoop 3.2.2 Cluster Setup | hadoop 3.2.2 的集群启动"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wznmickey.com/2025/Five_years/","path":"2025/Five_years/","title":"五年了啊 | Five years"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>hadoop 3.2.2 Cluster Setup | hadoop 3.2.2 的集群启动 | 静静的小窝</title>
+<title>五年了啊 | Five years | 静静的小窝</title>
   
 
 
@@ -251,7 +252,7 @@ var _hmt = _hmt || [];
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2023/hadoop-3-2-2-usage/">
+    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2025/Five_years/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
@@ -264,12 +265,12 @@ var _hmt = _hmt || [];
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="hadoop 3.2.2 Cluster Setup | hadoop 3.2.2 的集群启动 | 静静的小窝">
+      <meta itemprop="name" content="五年了啊 | Five years | 静静的小窝">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          hadoop 3.2.2 Cluster Setup | hadoop 3.2.2 的集群启动
+          五年了啊 | Five years
         </h1>
 
         <div class="post-meta-container">
@@ -279,9 +280,15 @@ var _hmt = _hmt || [];
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-06-04 20:32:01 / 修改时间：21:16:24" itemprop="dateCreated datePublished" datetime="2023-06-04T20:32:01+08:00">2023-06-04</time>
+      <time title="创建时间：2025-01-18 22:25:32" itemprop="dateCreated datePublished" datetime="2025-01-18T22:25:32+08:00">2025-01-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-01-19 11:35:53" itemprop="dateModified" datetime="2025-01-19T11:35:53+08:00">2025-01-19</time>
     </span>
 
   
@@ -293,13 +300,13 @@ var _hmt = _hmt || [];
     </span>
     <span class="post-meta-item-text">Waline：</span>
   
-    <a title="waline" href="/2023/hadoop-3-2-2-usage/#waline-comments" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" id="/2023/hadoop-3-2-2-usage/" data-xid="/2023/hadoop-3-2-2-usage/" itemprop="commentCount"></span>
+    <a title="waline" href="/2025/Five_years/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/2025/Five_years/" data-xid="/2025/Five_years/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
-    <span id="/2023/hadoop-3-2-2-usage/" class="post-meta-item leancloud_visitors" data-flag-title="hadoop 3.2.2 Cluster Setup | hadoop 3.2.2 的集群启动" title="阅读次数">
+    <span id="/2025/Five_years/" class="post-meta-item leancloud_visitors" data-flag-title="五年了啊 | Five years" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -313,7 +320,7 @@ var _hmt = _hmt || [];
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>997</span>
+      <span>798</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -330,20 +337,8 @@ var _hmt = _hmt || [];
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>这学期上了一门关于数据处理的课程，需要使用hadoop，版本为3.2.2（一个在<span class="exturl" data-url="aHR0cHM6Ly9kb3dubG9hZHMuYXBhY2hlLm9yZy9oYWRvb3AvY29tbW9uLw==">hadoop官网下载链接<i class="fa fa-external-link-alt"></i></span>里面都没有的的旧版本。<br>但是在我们组的电脑上(manjaro + WSL + VM ware + Virtual box 各种东西齐了)根据官方的教程没有能够成功开启多机的集群（不过启动了单机的伪集群），经过一些分析和上网的查询，发现是自带的bash脚本存在问题，导致启动失败，使用完脚本之后，<code>jps</code>显示并没有启动任务。</p>
-<p>换用<code>hdfs</code> 和 <code>yarn</code> 直接启动可以避免这个问题。</p>
-<p>在namenode上，使用以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第一行是前台运行，第二行是后台启动，第三行是停止后台的任务。</span></span><br><span class="line">hdfs namenode </span><br><span class="line">hdfs --daemon start namenode</span><br><span class="line">hdfs --daemon stop namenode</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第一行是前台运行，第二行是后台启动，第三行是停止后台的任务。</span></span><br><span class="line">yarn resourcemanager</span><br><span class="line">yarn --daemon start resourcemanager</span><br><span class="line">yarn --daemon stop resourcemanager</span><br></pre></td></tr></table></figure>
-
-<p>在datanode上，使用以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第一行是前台运行，第二行是后台启动，第三行是停止后台的任务。</span></span><br><span class="line">hdfs datanode </span><br><span class="line">hdfs --daemon start datanode</span><br><span class="line">hdfs --daemon stop datanode</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第一行是前台运行，第二行是后台启动，第三行是停止后台的任务。</span></span><br><span class="line">yarn nodemanager</span><br><span class="line">yarn --daemon start nodemanager</span><br><span class="line">yarn --daemon stop nodemanager</span><br></pre></td></tr></table></figure>
-
-<p>个人感觉可以先多开终端前台运行，方便及时看到出现的各种问题：</p>
-<ol>
-<li>format格式化出现问题，解决方法：重新format（根据网上的资料，好像要使用Y，而不能是y，必须大写）。这种情况可能在多次失败重启之后发生。</li>
-<li>提示hdfs的文件夹访问失败，解决方法：删除对应的文件夹，然后重新启动。这种情况可能在多次失败重启之后发生。</li>
-</ol>
-<p>注意使用虚拟机时，注意对应的IP，端口，hostname的对应关系，如果出现了提示链接失败，无法连接服务器的日志，有可能就是这些地方有问题导致无法访问，当然也可能是对吗服务器的node炸了。可以使用<code>lsof -i</code> 去确认网络连接情况，确认是否端口在listen，对面机器是否有成功连接过。当然，还有可能是防火墙之类的阻断了连接。</p>
+    <div class="post-body" itemprop="articleBody"><p>收到了一封邮件。<br>五年了啊，算上加入之前的时间，可能已经快六年了。​记得刚开始建站的时候，只是看到其他人有题解发在博客上，想着自己做的那些题，有些想法好像也是网上题解没有的，发出来分享记录一下。但其实好像也没有写出来什么，毕竟建站的时候基本已经不大oi竞赛了。​<br>一开始只是网上搜有什么免费的路子，开始在github上面搭网站，之后想着做更多的东西，就自己搞了一个服务器开始搭。那时候还什么都不懂呢，就在网上其他人发的内容里面抄抄改改。服务器系统也不懂。记得一开始在oi里面接触Linux的时候，我还想着这些cdls的真复杂啊，没想到建站过程中用的越来越多居然轻松记住了。​<br>那时候也不懂nginx，网上找到配置开始各种改勉强跑了起来，后面又知道了https，又是一堆代码的摘抄，当然现在我也没搞明白换caddy了。那时候也不懂git，也就是网上找到了hook代码，让服务器接收到推送之后自动复制到网站目录下，当然之后我也没用过hook了。也搞了cloudflare，逐渐学习互联网的构成，开始dns配置，搞缓存，防火墙。<br>我一开始找到的是hexo，没想到这就用下来了。为了做个性化，我又靠着自己那点c++的知识开始用js改，还有操作html和css，确实很难理解啊，属性太多了。也要处理npm的一堆包，更新后的各种变动，更换那些不维护的组件，东西逐渐多了起来。<br>上大学之后，反而操作变少了，也没再折腾什么一直拿着原来的框架跑，只是在平常的学习中，那些以前积累的东西倒是帮助了不少，用linux时候不用再手忙脚乱了。五年前我基本都是从开源社区拿东西，却好像没有给过什么，现在我逐渐也能写一点代码送回去了。<br>​十年这就过去了一半。当时我想着，十年好久啊，要等到我高考结束，大学本科毕业，现在不知不觉居然就已经过去了。有时候我想，如果我是小说中的人物，我是已经出场了还是已经退幕了呢？<br>​但，来年的事情，谁知道呢？</p>
+<p><img src="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/Five_years/email.png"></p>
 
     </div>
 
@@ -361,7 +356,7 @@ var _hmt = _hmt || [];
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://wznmickey.com/2023/hadoop-3-2-2-usage/" title="hadoop 3.2.2 Cluster Setup | hadoop 3.2.2 的集群启动">https://wznmickey.com/2023/hadoop-3-2-2-usage/</a>
+      <a href="https://wznmickey.com/2025/Five_years/" title="五年了啊 | Five years">https://wznmickey.com/2025/Five_years/</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -408,23 +403,16 @@ var _hmt = _hmt || [];
   </div>
 </div>
 
-          <div class="post-tags">
-              <a href="/tags/%E4%B8%AD%E6%96%87/" rel="tag"><i class="fa fa-tag"></i> 中文</a>
-              <a href="/tags/hadoop/" rel="tag"><i class="fa fa-tag"></i> hadoop</a>
-          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2023/894ASolution/" rel="prev" title="894A题解|894A Solution">
-                  <i class="fa fa-angle-left"></i> 894A题解|894A Solution
+                <a href="/2025/A-strange-estimation/" rel="prev" title="一个奇怪的估算 | A strange estimation">
+                  <i class="fa fa-angle-left"></i> 一个奇怪的估算 | A strange estimation
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/XComment0-1/" rel="next" title="X静评0.1：一纸限令，毁掉一个政策？| XComment0.1 One Paper, One Dead Policy?">
-                  X静评0.1：一纸限令，毁掉一个政策？| XComment0.1 One Paper, One Dead Policy? <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -519,7 +507,7 @@ var _hmt = _hmt || [];
 
 
   <script src="https://lib.baomitu.com/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://wznmickey.com/2023/hadoop-3-2-2-usage/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://wznmickey.com/2025/Five_years/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 <script>
 NexT.utils.loadComments('#waline-comments', () => {
@@ -528,7 +516,7 @@ NexT.utils.loadComments('#waline-comments', () => {
       lang: 'zh-CN'
     }, {"enable":true,"serverURL":"https://comment.wznmickey.com","placeholder":"让我知道你的存在吧 (昵称必填，其他选填）","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":true,"comment_count":true,"requiredFields":["nick"],"lang":"zh-cn"}, {
       el: '#waline-comments',
-      path: "/2023/hadoop-3-2-2-usage/",
+      path: "/2025/Five_years/",
     }));
   }, window.Waline);
 });
