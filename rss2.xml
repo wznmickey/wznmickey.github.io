@@ -9,7 +9,7 @@
     <atom:link href="https://wznmickey.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>记录自己的感受与收获</description>
-    <pubDate>Sun, 19 Jan 2025 03:35:53 GMT</pubDate>
+    <pubDate>Sun, 19 Jan 2025 03:39:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -29,6 +29,12 @@
       
       
       
+      
+      <category domain="https://wznmickey.com/tags/%E7%BB%8F%E5%8E%86/">经历</category>
+      
+      <category domain="https://wznmickey.com/tags/%E4%B8%AD%E6%96%87/">中文</category>
+      
+      <category domain="https://wznmickey.com/tags/%E6%83%B3%E6%B3%95/">想法</category>
       
       
       <comments>https://wznmickey.com/2025/Five_years/#disqus_thread</comments>
