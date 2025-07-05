@@ -3,6 +3,10 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
+  <follow_challenge>
+    <feedId>164144393697137664</feedId>
+    <userId>164071127208989696</userId>
+</follow_challenge>
     <title>静静的小窝</title>
     <link>https://wznmickey.com/</link>
     
