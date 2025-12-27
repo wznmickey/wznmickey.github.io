@@ -1467,7 +1467,7 @@ pre code {
     transition: all 0.2s ease-in-out;
   }
   .links-of-author a::before {
-    background: #f64d70;
+    background: #ffe58f;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3223,9 +3223,12 @@ mjx-math {
   width: 1em;
   height: 1em;
   vertical-align: -0.125em;
-  background: no-repeat center/contain;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center/contain;
+  mask: no-repeat center/contain;
+  line-height: 1;
 }
-/* 你的某个自定义图标 */
 .i-onlyfans {
-  background-image: url("/icons/onlyfans.svg");
+  -webkit-mask-image: url("/icons/onlyfans.svg");
+  mask-image: url("/icons/onlyfans.svg");
 }
