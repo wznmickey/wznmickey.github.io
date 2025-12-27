@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wznmickey.com/links/index.html</loc>
+    
+    <lastmod>2025-12-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wznmickey.com/about/index.html</loc>
     
     <lastmod>2025-12-27</lastmod>
@@ -21,15 +30,6 @@
   
   <url>
     <loc>https://wznmickey.com/agreement/index.html</loc>
-    
-    <lastmod>2025-12-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wznmickey.com/links/index.html</loc>
     
     <lastmod>2025-12-26</lastmod>
     
