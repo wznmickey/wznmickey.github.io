@@ -1219,7 +1219,7 @@ pre code {
 }
 .comments {
   margin-top: 60px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .comment-button-group {
   display: flex;
@@ -1467,7 +1467,7 @@ pre code {
     transition: all 0.2s ease-in-out;
   }
   .links-of-author a::before {
-    background: #59b973;
+    background: #7fcfff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3216,6 +3216,9 @@ header.header {
 }
 mjx-math {
   white-space: normal !important;
+}
+.comments {
+  overflow: visible;
 }
 .i-svg {
   display: inline-block;
