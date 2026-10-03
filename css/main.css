@@ -1219,7 +1219,7 @@ pre code {
 }
 .comments {
   margin-top: 60px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .comment-button-group {
   display: flex;
