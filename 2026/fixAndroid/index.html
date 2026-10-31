@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo_32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo_16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wznmickey.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.29.0","exturl":true,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"tomorrow-night"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":-1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="前几天，安卓设备出了一些问题，一开始是发现通知不会显示出来，在看具体情况的时候发现，下拉的状态栏里面的设置快捷键等也点击无反应了。一开始以为是设置问题，到系统设置里面去看，发现没找到问题。用KDE connect连到电脑上，电脑上是能看到kde connect过去的通知的，但是只是设备上面看不到，说明不是通知的推送问题，而是系统里面的通知栏组件问题。在出问题之后，因为正好前面还有一次系统更新没更新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安卓系统出问题，除了安全模式，还有维修模式|Android fixing: safe mode, also repair mode.">
+<meta property="og:url" content="https://wznmickey.com/2026/fixAndroid/index.html">
+<meta property="og:site_name" content="静静的小窝">
+<meta property="og:description" content="前几天，安卓设备出了一些问题，一开始是发现通知不会显示出来，在看具体情况的时候发现，下拉的状态栏里面的设置快捷键等也点击无反应了。一开始以为是设置问题，到系统设置里面去看，发现没找到问题。用KDE connect连到电脑上，电脑上是能看到kde connect过去的通知的，但是只是设备上面看不到，说明不是通知的推送问题，而是系统里面的通知栏组件问题。在出问题之后，因为正好前面还有一次系统更新没更新">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-10-30T18:50:28.000Z">
+<meta property="article:modified_time" content="2026-10-31T07:22:52.464Z">
+<meta property="article:author" content="静静">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="中文">
+<meta property="article:tag" content="经历">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wznmickey.com/2026/fixAndroid/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wznmickey.com/2026/fixAndroid/","path":"2026/fixAndroid/","title":"安卓系统出问题，除了安全模式，还有维修模式|Android fixing: safe mode, also repair mode."}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>安卓系统出问题，除了安全模式，还有维修模式|Android fixing: safe mode, also repair mode. | 静静的小窝</title>
+  
+
+
+
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{&quot;token&quot;: &quot;8f06b7f4a0704870b0a18c556a0332f9&quot;}'></script>
+
+
+
+
+
+  
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script><script src="/js/bookmark.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.5.0/dist/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","display_overflow":"scroll","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-mml-chtml.js","integrity":"sha256-ihPtDDm7pTmSF9ViEsItlvsrBTsNkz0MOXMchzOwCQw="}}</script>
+<script src="/js/third-party/math/mathjax.js" defer></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@3.0.1/dist/quicklink.umd.js" integrity="sha256-44BednzIpUeQJcY8qtLyarFu0UCCTbgmWOvaoehiFQQ=" crossorigin="anonymous" defer></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://wznmickey.com/2026/fixAndroid/"}</script>
+  <script src="/js/third-party/quicklink.js" defer></script>
+<link rel="dns-prefetch" href="https://comment.wznmickey.com"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?fec397109c6f59e50f63db0338dc6432";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/rss2.xml" title="静静的小窝" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">静静的小窝</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">记录自己的感受与收获</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">34</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">57</span></a></li><li class="menu-item menu-item-cv"><a href="/CV/" rel="section"><i class="fa fa-address-card fa-fw"></i>CV</a></li><li class="menu-item menu-item-作品|works"><a href="/works/" rel="section"><i class="fas fa-images fa-fw"></i>作品|works</a></li><li class="menu-item menu-item-工具|tools"><a href="/tools/" rel="section"><i class="fa fa-wrench fa-fw"></i>工具|Tools</a></li><li class="menu-item menu-item-订阅|rss"><a href="/rss2.xml" rel="section"><i class="fa fa-rss fa-fw"></i>订阅|RSS</a></li><li class="menu-item menu-item-开往|travelling"><span class="exturl" data-url="aHR0cHM6Ly93d3cudHJhdmVsbGluZ3MuY24vZ28uaHRtbA=="><i class="fa fa-train-subway fa-fw"></i>开往|Travelling</span></li><li class="menu-item menu-item-友链|links"><a href="/links/" rel="section"><i class="fa fa-users fa-fw"></i>友链|Links</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="静静"
+      src="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
+  <p class="site-author-name" itemprop="name">静静</p>
+  <div class="site-description" itemprop="description">记录自己的感受与收获</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">57</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">34</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3d6bm1pY2tleQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wznmickey"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:first@wznmickey.com" title="E-Mail → mailto:first@wznmickey.com" rel="noopener me"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vODkyMjI0NjE=" title="哔哩哔哩生活 → https:&#x2F;&#x2F;space.bilibili.com&#x2F;89222461"><i class="fab fa-bilibili fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vNjI4NjQ2OTM5" title="哔哩哔哩静静谈 → https:&#x2F;&#x2F;space.bilibili.com&#x2F;628646939"><i class="fab fa-bilibili fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93ZWliby5jb20vd3pubWlja2V5" title="微博 → https:&#x2F;&#x2F;weibo.com&#x2F;wznmickey"><i class="fab fa-weibo fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS93em5taWNrZXk=" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;wznmickey"><i class="fab fa-twitter fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS93em5taWNrZXlFbg==" title="Twitter in English → https:&#x2F;&#x2F;twitter.com&#x2F;wznmickeyEn"><i class="fab fa-twitter fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS91c2Vycy8xNjkxNDcyNS93em5taWNrZXk=" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;16914725&#x2F;wznmickey"><i class="fab fa-stack-overflow fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vQHd6bm1pY2tleQ==" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;@wznmickey"><i class="fab fa-youtube fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9pbnN0YWdyYW0uY29tL3d6bm1pY2tleWNu" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;wznmickeycn"><i class="fab fa-instagram fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9vbmx5ZmFucy5jb20vd3pubWlja2V5" title="OnlyFans → https:&#x2F;&#x2F;onlyfans.com&#x2F;wznmickey"><i class="i-svg i-onlyfans fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3d6bm1pY2tleS8=" title="领英|LinkedIn → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;wznmickey&#x2F;"><i class="fab fa-linkedin fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS93em5taWNrZXk=" title="知乎|Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wznmickey"><i class="fab fa-zhihu fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          链接
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly93d3cuZm9yZXZlcmJsb2cuY24=" title="https:&#x2F;&#x2F;www.foreverblog.cn">十年之约</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly93d3cudHJhdmVsbGluZ3MuY24vZ28uaHRtbA==" title="https:&#x2F;&#x2F;www.travellings.cn&#x2F;go.html">开往</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+        
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wznmickey.com/2026/fixAndroid/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh//wznmickey/jsdeliver@images/logo.png">
+      <meta itemprop="name" content="静静">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="静静的小窝">
+      <meta itemprop="description" content="记录自己的感受与收获">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="安卓系统出问题，除了安全模式，还有维修模式|Android fixing: safe mode, also repair mode. | 静静的小窝">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          安卓系统出问题，除了安全模式，还有维修模式|Android fixing: safe mode, also repair mode.
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2026-10-31 02:50:28 / 修改时间：15:22:52" itemprop="dateCreated datePublished" datetime="2026-10-31T02:50:28+08:00">2026-10-31</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/2026/fixAndroid/#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/2026/fixAndroid/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-item" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="waline-pageview-count" data-path="/2026/fixAndroid/"></span>
+    </span>
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>908</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>前几天，安卓设备出了一些问题，一开始是发现通知不会显示出来，在看具体情况的时候发现，下拉的状态栏里面的设置快捷键等也点击无反应了。一开始以为是设置问题，到系统设置里面去看，发现没找到问题。用KDE
+connect连到电脑上，电脑上是能看到kde
+connect过去的通知的，但是只是设备上面看不到，说明不是通知的推送问题，而是系统里面的通知栏组件问题。在出问题之后，因为正好前面还有一次系统更新没更新，于是想着有没有可能通过更新解决，但是并没有。重启/关机开机
+好几次也没变化，充满之后又放了好久，然后再返回循环几次也没好，我才感觉可能需要我操作了。</p>
+<p>考虑到之前出现过存储满了的情况，当时就出过几次闪退，想着是不是设置系统里面的关键数据没有写进去同步导致的。之前也遇到过类似的情况，可以通过清除设置程序的存储情况解决，然后发现，应用程序的列表里面，虽然可以看到各个应用程序，但是打不开，也就是说没法进入到设置权限，查看占用空间的界面。之后又尝试直接用第三方的应用直接调起activity，也不行。开始问了问AI，AI的回复一个是说进安全模式，另外一个是说ADB。我想着先试ADB。具体情况我记不清了，开发者模式我之前就已经启动了，但是ADB有没有激活允许调试不记得了，反正是连上电脑之后<code>adb devices</code>没有检测到设备，于是在我尝试开开发者选项改的时候发现，开发者选项也点不开了。又因为通知栏也没了，于是我也没法在通知里面去点开连接线之后的模式，试着在用连接电脑的KDE
+connect里面去点通知也没有反应。于是只能试安全模式了。（现在AI发展，很多设备默认把电源键长按唤起助手了，而不是进去关机菜单，好在这个地方的设置我还能进去）遗憾的是，虽然安全模式进去了，但是问题没有解决，前面出问题的地方还是出问题了。再问AI的助手，给的反馈就只能刷机了。</p>
+<p>因为目前设备其他地方还没有看到问题，刷机还要处理数据等问题，想着先等等。再扫的时候看到了维修模式，想着再试试点开了，重启之后在新环境里面设置居然正常了。不过，维修模式与正常系统按照说明和设计应该是隔离的，理论上不应该影响到正常系统的设置数据，但是在维修模式里面设置之后重启，问题居然解决了，可能是重载设置解决了之前的数据不同步的问题之类的？因为我在维修模式里面的开发者选项的调整好像没有同步到主系统里面。</p>
+<p>于是写了这篇博客，希望如果后来还有人遇到过类似的问题，在安全模式解决不了的话，可以在刷机前，先进维修模式再试试，万一就成了呢？</p>
+<p><img
+src="https://i.programmerhumor.io/2025/08/b6508bd6db00bfba6848adaef0c8e1129c99c4df76299a8d8cde738243e8a5ed.png" /></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>静静
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://wznmickey.com/2026/fixAndroid/" title="安卓系统出问题，除了安全模式，还有维修模式|Android fixing: safe mode, also repair mode.">https://wznmickey.com/2026/fixAndroid/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/wznmickey">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/wznmickey">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </span>
+
+          <img class="social-item-img" src="/images/wechat.jpg">
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/rss2.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%BB%8F%E5%8E%86/" rel="tag"><i class="fa fa-tag"></i> 经历</a>
+              <a href="/tags/%E4%B8%AD%E6%96%87/" rel="tag"><i class="fa fa-tag"></i> 中文</a>
+              <a href="/tags/AI/" rel="tag"><i class="fa fa-tag"></i> AI</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/OpenClawWithOpenRouter/" rel="prev" title="在VPS服务器上面安装OpenClaw并使用OpenRouter的免费API的一些“坑” | Some &quot;pits&quot; about installing OpenClaw and using OpenRouter&#39;s free API on a VPS server">
+                  <i class="fa fa-angle-left"></i> 在VPS服务器上面安装OpenClaw并使用OpenRouter的免费API的一些“坑” | Some "pits" about installing OpenClaw and using OpenRouter's free API on a VPS server
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbg==">沪ICP备20021750号-1 </span>
+  </div>
+  <div class="copyright">
+    &copy; 2019 – 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">静静</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">58k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:31</span>
+  </span>
+</div>
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9waXNjZXMv">NexT.Pisces</span> 强力驱动
+  </div><p>
+<a href="/agreement">使用须知</a>
+<a href="/about">关于</a>
+</p>
+
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"https://comment.wznmickey.com","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":true,"locale":{"placeholder":"让我知道你的存在吧 (昵称必填，其他选填）"},"avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"requiredFields":["nick"],"comment_count":true,"reaction":true,"emoji":["https://unpkg.com/@waline/emojis@1.4.0/weibo","https://unpkg.com/@waline/emojis@1.4.0/alus","https://unpkg.com/@waline/emojis@1.4.0/bilibili","https://unpkg.com/@waline/emojis@1.4.0/qq","https://unpkg.com/@waline/emojis@1.4.0/tieba","https://unpkg.com/@waline/emojis@1.4.0/tw-emoji"],"el":"#waline","comment":true,"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","path":"/2026/fixAndroid/"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+
+</body>
+</html>
